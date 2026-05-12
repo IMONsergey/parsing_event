@@ -1,0 +1,502 @@
+{
+  "checked_at": "2026-05-12T18:58:28.120145+00:00",
+  "total_contact_rows": 571,
+  "unique_companies": 392,
+  "companies_with_email": 307,
+  "companies_without_email": 85,
+  "companies_with_website": 392,
+  "companies_without_website": 0,
+  "companies_with_multiple_contacts": 81,
+  "max_contacts_per_company": 18,
+  "average_contacts_per_company": 1.46,
+  "companies_by_segment": {
+    "event": 106,
+    "branding": 76,
+    "communications": 59,
+    "marketing": 45,
+    "community": 31,
+    "digital": 23,
+    "pr": 20,
+    "consulting": 14,
+    "education": 12,
+    "production": 4,
+    "hr": 2
+  },
+  "companies_by_priority": {
+    "A": 236,
+    "B": 91,
+    "C": 65
+  },
+  "companies_by_country": {
+    "Россия": 380,
+    "Казахстан": 5,
+    "ОАЭ": 2,
+    "Беларусь": 1,
+    "International": 1,
+    "Армения": 1,
+    "Грузия": 1,
+    "Узбекистан": 1
+  },
+  "companies_by_status_best": {
+    "Проверить": 234,
+    "Готово": 158
+  },
+  "duplicate_company_candidates": [],
+  "top_domains_with_multiple_companies": [],
+  "top_companies_by_contacts": [
+    {
+      "company_key": "mbschool.ru",
+      "Компания": "Moscow Business School",
+      "Сайт": "https://mbschool.ru/",
+      "contacts_count": 18,
+      "emails": [
+        "a_bibikova@mbschool.ru",
+        "a_ivannikova@mbschool.ru",
+        "a_popova@mbschool.ru",
+        "an_derevianko@mbschool.ru",
+        "dekanat@mbschool.ru",
+        "e_armyanovskaya@mbschool.ru",
+        "e_faizrahmanova@mbschool.ru",
+        "e_solovieva@mbschool.ru",
+        "education@mbschool.ru",
+        "i_shernikova@mbschool.ru",
+        "m_chizhikova@mbschool.ru",
+        "mbs@mbschool.ru",
+        "n_vlasova@mbschool.ru",
+        "o_mitrokhina@mbschool.ru",
+        "oa_murashova@mbschool.ru",
+        "p_likhodedova@mbschool.ru",
+        "seminar@mbschool.ru",
+        "t_chugunova@mbschool.ru"
+      ],
+      "segment": "education",
+      "priority": "B"
+    },
+    {
+      "company_key": "crocus-expo.ru",
+      "Компания": "Крокус Экспо",
+      "Сайт": "https://crocus-expo.ru/",
+      "contacts_count": 11,
+      "emails": [
+        "contract@crocus-expo.ru",
+        "e.gorshkova@crocus-expo.ru",
+        "hr@crocus-expo.ru",
+        "kleshniks@crocus-expo.ru",
+        "l.skvortsova@crocus-expo.ru",
+        "o.hohlova@crocus-expo.ru",
+        "service@crocus-expo.ru",
+        "shapovalova@crocus-expo.ru",
+        "tihovskaja@crocus-expo.ru",
+        "trans@crocus-expo.ru",
+        "v.alekseev@crocus-expo.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "iidf.ru",
+      "Компания": "Акселератор Спринт",
+      "Сайт": "https://sprint.iidf.ru/",
+      "contacts_count": 8,
+      "emails": [
+        "aalekseeva@iidf.ru",
+        "accelerator@iidf.ru",
+        "info@iidf.ru",
+        "partners@iidf.ru",
+        "pr@iidf.ru",
+        "securityhotline@iidf.ru",
+        "sprint@iidf.ru",
+        "support@iidf.ru"
+      ],
+      "segment": "community",
+      "priority": "A"
+    },
+    {
+      "company_key": "medianet.ru",
+      "Компания": "Medianet",
+      "Сайт": "http://www.medianet.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "infoekaterinburg@medianet.ru",
+        "infokrasnodar@medianet.ru",
+        "infomoscow@medianet.ru",
+        "infonovosibirsk@medianet.ru",
+        "infosamara@medianet.ru",
+        "infospb@medianet.ru",
+        "infovladivostok@medianet.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
+      "company_key": "interforums.ru",
+      "Компания": "InterForum",
+      "Сайт": "https://interforums.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "a.romanovich@interforums.ru",
+        "borisova@interforums.ru",
+        "dedenko@interforums.ru",
+        "info@interforums.ru",
+        "maxim@interforums.ru",
+        "spirin.a@interforums.ru",
+        "stepanov@interforums.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "ranepa.ru",
+      "Компания": "РАНХиГС Бизнес-образование",
+      "Сайт": "https://www.ranepa.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "anticorruption@ranepa.ru",
+        "army@ranepa.ru",
+        "information@ranepa.ru",
+        "intensive@ranepa.ru",
+        "pkranepa@ranepa.ru",
+        "press@ranepa.ru",
+        "rabota@ranepa.ru"
+      ],
+      "segment": "education",
+      "priority": "A"
+    },
+    {
+      "company_key": "cipr.ru",
+      "Компания": "CIPR",
+      "Сайт": "https://cipr.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "award@cipr.ru",
+        "info@cipr.ru",
+        "pozhidaev@cipr.ru",
+        "pr@cipr.ru",
+        "sales@cipr.ru",
+        "speaker@cipr.ru",
+        "techfriendly.speaker@cipr.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "dpgrussia.com",
+      "Компания": "DPG Russia",
+      "Сайт": "https://dpgrussia.com/",
+      "contacts_count": 6,
+      "emails": [
+        "agency@dpgrussia.com",
+        "kremer@dpgrussia.com",
+        "mikheikina@dpgrussia.com",
+        "miller@dpgrussia.com",
+        "saviniukhova@dpgrussia.com",
+        "shvedova@dpgrussia.com"
+      ],
+      "segment": "communications",
+      "priority": "A"
+    },
+    {
+      "company_key": "equium.kz",
+      "Компания": "Эквиум Казахстан",
+      "Сайт": "https://equium.kz/",
+      "contacts_count": 6,
+      "emails": [
+        "coordinator@equium-heidelberg.de",
+        "dubai@equium.club",
+        "equium.minsk@gmail.com",
+        "equiumkz@gmail.com",
+        "nnv@equium.club",
+        "tatarstan@equium.club"
+      ],
+      "segment": "community",
+      "priority": "A"
+    },
+    {
+      "company_key": "mgubs.ru",
+      "Компания": "МГУ Бизнес-школа",
+      "Сайт": "https://mgubs.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "admission@edu.mgubs.ru",
+        "ba@edu.mgubs.ru",
+        "d.denisova@edu.mgubs.ru",
+        "db@edu.mgubs.ru",
+        "ma@edu.mgubs.ru",
+        "mba@edu.mgubs.ru"
+      ],
+      "segment": "education",
+      "priority": "A"
+    },
+    {
+      "company_key": "mice-excellence.ru",
+      "Компания": "MICE Excellence",
+      "Сайт": "https://www.mice-excellence.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "hello@mice-excellence.ru",
+        "irina@mice-excellence.ru",
+        "sales@mice-excellence.ru",
+        "tatiana@mice-excellence.ru",
+        "team@mice-excellence.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "cstb.ru",
+      "Компания": "CSTB.PRO.MEDIA / Мидэкспо",
+      "Сайт": "https://cstb.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "anna.v@midexpo.org",
+        "aslanova@midexpo.org",
+        "cstb.conf@midexpo.org",
+        "tatyana@midexpo.org",
+        "zhanna@midexpo.org"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "highload.ru",
+      "Компания": "HighLoad++",
+      "Сайт": "https://highload.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "marketing@ontico.team",
+        "org@ontico.ru",
+        "partners@ontico.ru",
+        "speakers@ontico.ru",
+        "support@ontico.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "win2win.ru",
+      "Компания": "Win2Win",
+      "Сайт": "https://win2win.ru/",
+      "contacts_count": 4,
+      "emails": [
+        "ekaterina.tomulyanis@win2win.ru",
+        "hr@win2win.ru",
+        "info@win2win.ru",
+        "ivan.menshenin@win2win.ru"
+      ],
+      "segment": "communications",
+      "priority": "A"
+    },
+    {
+      "company_key": "media-trast.ru",
+      "Компания": "Media Trast",
+      "Сайт": "https://media-trast.ru",
+      "contacts_count": 4,
+      "emails": [
+        "office39@media-trast.ru",
+        "office72@media-trast.ru",
+        "promo12@media-trast.ru",
+        "promo71@media-trast.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "maergroup.ru",
+      "Компания": "Maergroup",
+      "Сайт": "https://maergroup.ru/",
+      "contacts_count": 4,
+      "emails": [
+        "hello@maergroup.ru",
+        "info@maergroup.ru",
+        "pr@maergroup.ru",
+        "stopcorruption@maergroup.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "mirbis.ru",
+      "Компания": "Executive MBA МИРБИС",
+      "Сайт": "https://mirbis.ru/",
+      "contacts_count": 4,
+      "emails": [
+        "demos@mirbis.ru",
+        "info@mirbis.ru",
+        "mba@mirbis.ru",
+        "press@mirbis.ru"
+      ],
+      "segment": "education",
+      "priority": "A"
+    },
+    {
+      "company_key": "productsense.io",
+      "Компания": "ProductSense",
+      "Сайт": "https://productsense.io/",
+      "contacts_count": 4,
+      "emails": [
+        "account@productsense.io",
+        "ageev@productsense.io",
+        "support@productsense.io",
+        "talks@productsense.io"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "scorconf.ru",
+      "Компания": "Scoring Day",
+      "Сайт": "https://scorconf.ru/",
+      "contacts_count": 3,
+      "emails": [
+        "guminskaya@reglament.net",
+        "melnik@reglament.net",
+        "pr@reglament.net"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "atlanty.ru",
+      "Компания": "Атланты",
+      "Сайт": "https://atlanty.ru/",
+      "contacts_count": 3,
+      "emails": [
+        "club@atlanty.ru",
+        "dom@atlanty.ru",
+        "ptm@atlanty.ru"
+      ],
+      "segment": "community",
+      "priority": "A"
+    },
+    {
+      "company_key": "yakov.partners",
+      "Компания": "Yakov and Partners",
+      "Сайт": "https://yakov.partners/",
+      "contacts_count": 3,
+      "emails": [
+        "apply@yakovpartners.ru",
+        "info@yakovpartners.ru",
+        "media@yakovpartners.ru"
+      ],
+      "segment": "consulting",
+      "priority": "A"
+    },
+    {
+      "company_key": "rim-pn.ru",
+      "Компания": "Р.И.М. Porter Novelli",
+      "Сайт": "https://www.rim-pn.ru/",
+      "contacts_count": 3,
+      "emails": [
+        "hr@rim-pn.ru",
+        "pr@rim-pn.ru",
+        "sales@rim-pn.ru"
+      ],
+      "segment": "communications",
+      "priority": "A"
+    },
+    {
+      "company_key": "betweenx.ru",
+      "Компания": "Betweenx",
+      "Сайт": "https://betweenx.ru/",
+      "contacts_count": 3,
+      "emails": [
+        "buying@betweenx.com",
+        "info@betweenx.com",
+        "pr@betweenx.com"
+      ],
+      "segment": "digital",
+      "priority": "B"
+    },
+    {
+      "company_key": "tvin-imc.ru",
+      "Компания": "Tvin Imc",
+      "Сайт": "https://tvin-imc.ru/",
+      "contacts_count": 3,
+      "emails": [
+        "e.podgornaya@tvin-imc.ru",
+        "job@tvin-imc.ru",
+        "v.kostriukov@tvin-imc.ru"
+      ],
+      "segment": "communications",
+      "priority": "A"
+    },
+    {
+      "company_key": "codefest.ru",
+      "Компания": "CodeFest",
+      "Сайт": "https://codefest.ru/",
+      "contacts_count": 3,
+      "emails": [
+        "org@codefest.ru",
+        "partner@codefest.ru",
+        "program@codefest.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "innoprom.com",
+      "Компания": "Иннопром",
+      "Сайт": "https://innoprom.com/",
+      "contacts_count": 3,
+      "emails": [
+        "boryak@innoprom.com",
+        "info@innoprom.com",
+        "savin@innoprom.com"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "spncomms.com",
+      "Компания": "Spncomms",
+      "Сайт": "https://spncomms.com/",
+      "contacts_count": 3,
+      "emails": [
+        "careerstart@spncomms.com",
+        "info.kz@spncomms.com",
+        "info@spncomms.com"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "productconf.ru",
+      "Компания": "ProductConf",
+      "Сайт": "https://productconf.ru/",
+      "contacts_count": 3,
+      "emails": [
+        "event@scrumtrek.ru",
+        "productconf@scrumtrek.ru",
+        "productconf_pk@scrumtrek.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "techweek.moscow",
+      "Компания": "Tech Week",
+      "Сайт": "https://techweek.moscow/",
+      "contacts_count": 3,
+      "emails": [
+        "b2b@technokrat.moscow",
+        "info@technokrat.moscow",
+        "partners@technokrat.moscow"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "mediadirectiongroup.ru",
+      "Компания": "Mediadirectiongroup",
+      "Сайт": "https://mediadirectiongroup.ru/agency/omd-media-direction/",
+      "contacts_count": 3,
+      "emails": [
+        "hr@mediadirectiongroup.ru",
+        "igor.kosmarskiy@mediadirectiongroup.ru",
+        "pr@mediadirectiongroup.ru"
+      ],
+      "segment": "communications",
+      "priority": "A"
+    }
+  ]
+}

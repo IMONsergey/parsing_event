@@ -1,0 +1,95 @@
+{
+  "checked_at": "2026-05-12T18:58:28.329092+00:00",
+  "sources_total": 406,
+  "sources_active": 405,
+  "sources_inactive": 1,
+  "sources_by_segment": {
+    "event": 107,
+    "branding": 82,
+    "communications": 62,
+    "marketing": 45,
+    "community": 33,
+    "digital": 23,
+    "pr": 20,
+    "consulting": 14,
+    "education": 13,
+    "production": 4,
+    "hr": 3
+  },
+  "sources_by_priority": {
+    "A": 243,
+    "B": 93,
+    "C": 70
+  },
+  "sources_by_country": {
+    "Россия": 394,
+    "Казахстан": 5,
+    "ОАЭ": 2,
+    "Беларусь": 1,
+    "Узбекистан": 1,
+    "Армения": 1,
+    "Грузия": 1,
+    "International": 1
+  },
+  "sources_by_source_type": {
+    "Сайт агентства": 200,
+    "Каталог агентств": 70,
+    "Организатор мероприятия": 41,
+    "Бизнес-сообщество": 33,
+    "Сайт мероприятия": 22,
+    "Консалтинг": 14,
+    "Страница контактов": 13,
+    "Образовательный проект": 13
+  },
+  "duplicate_source_urls": [],
+  "duplicate_domains": [
+    {
+      "domain": "brandbrothers.ru",
+      "count": 2
+    },
+    {
+      "domain": "compassbrand.ru",
+      "count": 2
+    },
+    {
+      "domain": "ddvb.ru",
+      "count": 2
+    },
+    {
+      "domain": "depotwpf.ru",
+      "count": 2
+    },
+    {
+      "domain": "redkeds.com",
+      "count": 2
+    },
+    {
+      "domain": "repinabranding.ru",
+      "count": 2
+    },
+    {
+      "domain": "bbdo-group.ru",
+      "count": 2
+    },
+    {
+      "domain": "ecopsy.ru",
+      "count": 2
+    },
+    {
+      "domain": "iidf.ru",
+      "count": 2
+    },
+    {
+      "domain": "hse.ru",
+      "count": 2
+    },
+    {
+      "domain": "leader-id.ru",
+      "count": 2
+    }
+  ],
+  "empty_company_count": 0,
+  "empty_website_count": 0,
+  "empty_source_url_count": 0,
+  "suspicious_sources": []
+}

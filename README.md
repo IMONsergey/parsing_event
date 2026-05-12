@@ -38,6 +38,9 @@ GitHub используется как source of truth. Google Sheets испол
 - `data/contacts_ru.csv` — итоговая таблица на русском языке.
 - `data/contacts_ru.json` — JSON-версия итоговой таблицы.
 - `data/run_report.json` — отчёт последнего запуска.
+- `data/email_quality_report.json` — отчёт качества email.
+- `data/company_quality_report.json` — отчёт по уникальным компаниям и нескольким контактам.
+- `data/source_quality_report.json` — отчёт качества источников.
 - `src/leads_pipeline.py` — основной скрипт.
 - `.github/workflows/collect-leads.yml` — ежедневный запуск через GitHub Actions.
 
@@ -74,7 +77,10 @@ python src/leads_pipeline.py
 
 - `data/contacts_ru.csv`;
 - `data/contacts_ru.json`;
-- `data/run_report.json`.
+- `data/run_report.json`;
+- `data/email_quality_report.json`;
+- `data/company_quality_report.json`;
+- `data/source_quality_report.json`.
 
 Можно указать нестандартные пути:
 
@@ -102,7 +108,7 @@ Workflow:
 2. устанавливает Python 3.11;
 3. устанавливает зависимости из `requirements.txt`;
 4. запускает `python src/leads_pipeline.py`;
-5. коммитит изменения в `data/contacts_ru.csv`, `data/contacts_ru.json`, `data/run_report.json`, если они появились.
+5. коммитит изменения в `data/contacts_ru.csv`, `data/contacts_ru.json`, `data/run_report.json`, `data/email_quality_report.json`, `data/company_quality_report.json`, `data/source_quality_report.json`, если они появились.
 
 Если изменений нет, workflow выводит `No changes`.
 
@@ -154,7 +160,11 @@ https://raw.githubusercontent.com/IMONsergey/parsing_event/main/data/contacts_ru
 `data/contacts_ru.csv` всегда содержит русские заголовки:
 
 ```text
-ID,Статус,Приоритет,Сегмент,Тип компании,Компания,Имя,Должность,Email,Тип email,Телефон,Сайт,LinkedIn,Telegram,Страна,Город,Отрасль,Источник,URL источника,Потенциальный интерес,Дата добавления,Дата обновления,Уверенность,Комментарий
+ID,ID компании,Ключ компании,Повтор компании,Кол-во контактов компании,№ контакта в компании,Статус,Приоритет,Сегмент,Тип компании,Компания,Имя,Должность,Email,Тип email,Телефон,Сайт,LinkedIn,Telegram,Страна,Город,Отрасль,Источник,URL источника,Потенциальный интерес,Дата добавления,Дата обновления,Уверенность,Комментарий
 ```
 
 Каждый контакт сохраняет источник и конкретный URL, откуда взяты данные. Это важно для дальнейшей ручной проверки и ручной рассылки.
+
+Одна компания может встречаться в итоговой таблице несколько раз, если у неё найдено несколько разных валидных email. Это сделано специально, чтобы не терять разные точки входа: общий адрес, адрес продаж, партнёрский адрес или корпоративный контакт сохраняются отдельными строками.
+
+Такие строки помечаются колонками `ID компании`, `Ключ компании`, `Повтор компании`, `Кол-во контактов компании` и `№ контакта в компании`. Одинаковые email строго удаляются, но разные email одной компании сохраняются. Google Sheets через `IMPORTDATA` подтянет новые колонки автоматически из raw CSV.

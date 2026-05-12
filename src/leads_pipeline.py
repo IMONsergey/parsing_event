@@ -55,6 +55,11 @@ KEYWORDS_COLUMNS = ["Сегмент", "Ключевые слова", "Минус
 
 OUTPUT_COLUMNS = [
     "ID",
+    "ID компании",
+    "Ключ компании",
+    "Повтор компании",
+    "Кол-во контактов компании",
+    "№ контакта в компании",
     "Статус",
     "Приоритет",
     "Сегмент",
@@ -138,6 +143,12 @@ EMAIL_RE = re.compile(r"(?<![\w.+-])[\w.+-]+@[\w.-]+\.[A-Za-zА-Яа-я]{2,}(?![
 PHONE_RE = re.compile(r"(?:\+?\d[\d\s().-]{7,}\d)")
 YEAR_RANGE_RE = re.compile(r"^(?:19|20)\d{2}\s*[-–]\s*(?:19|20)\d{2}$")
 DATE_RE = re.compile(r"^\d{1,2}[./-]\d{1,2}[./-](?:19|20)\d{2}$")
+INN_RE = re.compile(r"^(?:\d{10}|\d{12})$")
+FORBIDDEN_SOURCE_CONTEXT_RE = re.compile(
+    r"aviation|aircraft|mro|jeddah|kaizen|maintenance|landing\s+gear|"
+    r"aircraft\s+maintenance|aviation\s+hub",
+    re.I,
+)
 PLACEHOLDER_DOMAINS = {
     "example.com",
     "example.org",
@@ -182,6 +193,11 @@ ASSET_EXTENSIONS = (
     ".eot",
 )
 EMAIL_FORBIDDEN_CHARS_RE = re.compile(r"[\s\"'()<>,;/\\?#]")
+LEGAL_FORMS_RE = re.compile(
+    r"\b(ооо|ао|пао|ип|llc|ltd|ltd\.|agency|group|studio|bureau|"
+    r"агентство|студия|группа|бюро)\b",
+    re.I,
+)
 
 
 def read_csv(path: Path, columns: list[str]) -> pd.DataFrame:
@@ -238,6 +254,30 @@ def registered_domain(value: str) -> str:
     if not ext.domain or not ext.suffix:
         return value.lower()
     return f"{ext.domain}.{ext.suffix}".lower()
+
+
+def normalize_company_name(value: str) -> str:
+    value = clean_text(value).lower()
+    value = re.sub(r"[\"'«»“”„`]", "", value)
+    value = LEGAL_FORMS_RE.sub(" ", value)
+    value = re.sub(r"[^0-9a-zа-яё&+ -]+", " ", value, flags=re.I)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def company_key_for(row: dict[str, Any] | pd.Series) -> str:
+    website = clean_text(row.get("Сайт", ""))
+    if website:
+        domain = registered_domain(urlparse(normalize_url(website)).netloc or website)
+        if domain:
+            return domain
+
+    company = normalize_company_name(row.get("Компания", ""))
+    if company:
+        country = clean_text(row.get("Страна", "")).lower()
+        city = clean_text(row.get("Город", "")).lower()
+        return f"{company}|{country}|{city}"
+
+    return f"unknown|{clean_text(row.get('ID', ''))}"
 
 
 def is_allowed_email(email: str) -> bool:
@@ -334,11 +374,13 @@ def normalize_phone(value: str) -> str:
     value = clean_text(value)
     if not value:
         return ""
-    if YEAR_RANGE_RE.match(value) or DATE_RE.match(value):
+    if "%" in value or YEAR_RANGE_RE.match(value) or DATE_RE.match(value):
         return ""
     value = re.sub(r"[^\d+(). -]", "", value)
     value = re.sub(r"\s+", " ", value).strip()
     digits = re.sub(r"\D", "", value)
+    if INN_RE.match(digits):
+        return ""
     if len(digits) < 10 or len(digits) > 15:
         return ""
     compact = value.replace(" ", "")
@@ -682,6 +724,23 @@ def dedupe(df: pd.DataFrame) -> pd.DataFrame:
     return result.reindex(columns=OUTPUT_COLUMNS)
 
 
+def mark_company_groups(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty:
+        return pd.DataFrame(columns=OUTPUT_COLUMNS)
+
+    result = df.copy()
+    keys = result.apply(lambda row: company_key_for(row), axis=1)
+    result["Ключ компании"] = keys
+    result["ID компании"] = keys.apply(
+        lambda key: hashlib.sha256(clean_text(key).encode("utf-8")).hexdigest()[:12]
+    )
+    counts = keys.map(keys.value_counts())
+    result["Кол-во контактов компании"] = counts.astype(int).astype(str)
+    result["Повтор компании"] = counts.apply(lambda count: "Да" if int(count) > 1 else "Нет")
+    result["№ контакта в компании"] = result.groupby(keys, sort=False).cumcount().add(1).astype(str)
+    return result.reindex(columns=OUTPUT_COLUMNS)
+
+
 def load_existing_dates(output_path: Path) -> dict[str, str]:
     if not output_path.exists():
         return {}
@@ -769,6 +828,158 @@ def build_email_quality_report(df: pd.DataFrame) -> dict[str, Any]:
     }
 
 
+def value_counts_dict(series: pd.Series) -> dict[str, int]:
+    cleaned = series.fillna("").map(clean_text)
+    return {str(key): int(value) for key, value in cleaned.value_counts().items() if key}
+
+
+def best_status(statuses: list[str]) -> str:
+    order = {"Готово": 4, "Проверить": 3, "Новый": 2, "Исключить": 1}
+    return max((clean_text(status) for status in statuses), key=lambda status: order.get(status, 0), default="")
+
+
+def build_company_quality_report(df: pd.DataFrame) -> dict[str, Any]:
+    checked_at = datetime.now(timezone.utc).isoformat()
+    if df.empty:
+        return {
+            "checked_at": checked_at,
+            "total_contact_rows": 0,
+            "unique_companies": 0,
+            "companies_with_email": 0,
+            "companies_without_email": 0,
+            "companies_with_website": 0,
+            "companies_without_website": 0,
+            "companies_with_multiple_contacts": 0,
+            "max_contacts_per_company": 0,
+            "average_contacts_per_company": 0,
+            "companies_by_segment": {},
+            "companies_by_priority": {},
+            "companies_by_country": {},
+            "companies_by_status_best": {},
+            "duplicate_company_candidates": [],
+            "top_domains_with_multiple_companies": [],
+            "top_companies_by_contacts": [],
+        }
+
+    grouped = df.groupby("Ключ компании", dropna=False, sort=False)
+    company_rows = []
+    for key, group in grouped:
+        emails = [email for email in group["Email"].map(clean_text).tolist() if email]
+        company_rows.append(
+            {
+                "company_key": clean_text(key),
+                "Компания": clean_text(group["Компания"].iloc[0]),
+                "Сайт": clean_text(group["Сайт"].iloc[0]),
+                "contacts_count": int(len(group)),
+                "emails": sorted(set(emails)),
+                "segment": clean_text(group["Сегмент"].iloc[0]),
+                "priority": clean_text(group["Приоритет"].iloc[0]),
+                "country": clean_text(group["Страна"].iloc[0]),
+                "status_best": best_status(group["Статус"].tolist()),
+            }
+        )
+
+    companies = pd.DataFrame(company_rows)
+    contact_counts = companies["contacts_count"] if not companies.empty else pd.Series(dtype=int)
+    duplicate_candidates = companies[
+        companies["company_key"].str.startswith("unknown|", na=False) | companies["Компания"].eq("")
+    ].head(30)
+    domain_counts = (
+        companies[companies["Сайт"].ne("")]
+        .assign(domain=lambda frame: frame["Сайт"].map(lambda site: registered_domain(urlparse(normalize_url(site)).netloc or site)))
+        .groupby("domain", dropna=False)
+        .size()
+        .reset_index(name="companies_count")
+    )
+    top_domains = domain_counts[domain_counts["companies_count"] > 1].sort_values(
+        "companies_count", ascending=False
+    ).head(30)
+
+    return {
+        "checked_at": checked_at,
+        "total_contact_rows": int(len(df)),
+        "unique_companies": int(len(companies)),
+        "companies_with_email": int(companies["emails"].map(bool).sum()),
+        "companies_without_email": int((~companies["emails"].map(bool)).sum()),
+        "companies_with_website": int(companies["Сайт"].map(bool).sum()),
+        "companies_without_website": int((~companies["Сайт"].map(bool)).sum()),
+        "companies_with_multiple_contacts": int((contact_counts > 1).sum()),
+        "max_contacts_per_company": int(contact_counts.max()) if not contact_counts.empty else 0,
+        "average_contacts_per_company": round(float(contact_counts.mean()), 2) if not contact_counts.empty else 0,
+        "companies_by_segment": value_counts_dict(companies["segment"]),
+        "companies_by_priority": value_counts_dict(companies["priority"]),
+        "companies_by_country": value_counts_dict(companies["country"]),
+        "companies_by_status_best": value_counts_dict(companies["status_best"]),
+        "duplicate_company_candidates": duplicate_candidates[
+            ["company_key", "Компания", "Сайт", "contacts_count", "segment", "priority"]
+        ].to_dict(orient="records"),
+        "top_domains_with_multiple_companies": top_domains.to_dict(orient="records"),
+        "top_companies_by_contacts": companies.sort_values("contacts_count", ascending=False)
+        .head(30)[["company_key", "Компания", "Сайт", "contacts_count", "emails", "segment", "priority"]]
+        .to_dict(orient="records"),
+    }
+
+
+def build_source_quality_report(sources: pd.DataFrame) -> dict[str, Any]:
+    checked_at = datetime.now(timezone.utc).isoformat()
+    sources = sources.copy()
+    active = sources["Активен"].str.strip().str.lower().eq("да") if "Активен" in sources else pd.Series(dtype=bool)
+    source_urls = sources["URL источника"].map(lambda value: normalize_url(value).lower())
+    websites = sources["Сайт"].map(lambda value: normalize_url(value).lower())
+    domains = websites.map(lambda value: registered_domain(urlparse(value).netloc or value) if value else "")
+
+    duplicate_source_urls = [
+        {"url": url, "count": int(count)}
+        for url, count in source_urls[source_urls.ne("")].value_counts().items()
+        if count > 1
+    ]
+    duplicate_domains = [
+        {"domain": domain, "count": int(count)}
+        for domain, count in domains[domains.ne("")].value_counts().items()
+        if count > 1
+    ]
+
+    suspicious_sources = []
+    for idx, row in sources.iterrows():
+        text = " ".join(clean_text(row.get(column, "")) for column in SOURCES_COLUMNS)
+        reasons = []
+        if FORBIDDEN_SOURCE_CONTEXT_RE.search(text):
+            reasons.append("forbidden_aviation_context")
+        if clean_text(row.get("Сегмент", "")).lower() not in TARGET_SEGMENTS:
+            reasons.append("unknown_segment")
+        if not clean_text(row.get("Компания", "")):
+            reasons.append("empty_company")
+        if not clean_text(row.get("URL источника", "")):
+            reasons.append("empty_source_url")
+        if reasons and len(suspicious_sources) < 50:
+            suspicious_sources.append(
+                {
+                    "row": int(idx + 2),
+                    "Компания": clean_text(row.get("Компания", "")),
+                    "Сайт": clean_text(row.get("Сайт", "")),
+                    "URL источника": clean_text(row.get("URL источника", "")),
+                    "reasons": reasons,
+                }
+            )
+
+    return {
+        "checked_at": checked_at,
+        "sources_total": int(len(sources)),
+        "sources_active": int(active.sum()) if len(active) else 0,
+        "sources_inactive": int(len(sources) - active.sum()) if len(active) else int(len(sources)),
+        "sources_by_segment": value_counts_dict(sources["Сегмент"].str.lower()),
+        "sources_by_priority": value_counts_dict(sources["Приоритет"].str.upper()),
+        "sources_by_country": value_counts_dict(sources["Страна"]),
+        "sources_by_source_type": value_counts_dict(sources["Тип источника"]),
+        "duplicate_source_urls": duplicate_source_urls[:50],
+        "duplicate_domains": duplicate_domains[:50],
+        "empty_company_count": int(sources["Компания"].map(clean_text).eq("").sum()),
+        "empty_website_count": int(sources["Сайт"].map(clean_text).eq("").sum()),
+        "empty_source_url_count": int(sources["URL источника"].map(clean_text).eq("").sum()),
+        "suspicious_sources": suspicious_sources,
+    }
+
+
 def ensure_parent(path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -826,6 +1037,7 @@ def run(args: argparse.Namespace) -> None:
         df["Дата обновления"] = today
         df["Уверенность"] = pd.to_numeric(df["Уверенность"], errors="coerce").fillna(0).astype(int)
         df = df.sort_values(["Приоритет", "Сегмент", "Компания", "Email"], kind="stable")
+        df = mark_company_groups(df)
     else:
         df = pd.DataFrame(columns=OUTPUT_COLUMNS)
 
@@ -836,10 +1048,14 @@ def run(args: argparse.Namespace) -> None:
     json_output_path = Path(args.json_output)
     report_path = Path(args.report)
     email_report_path = Path(args.email_report)
+    company_report_path = Path(args.company_report)
+    source_report_path = Path(args.source_report)
     ensure_parent(output_path)
     ensure_parent(json_output_path)
     ensure_parent(report_path)
     ensure_parent(email_report_path)
+    ensure_parent(company_report_path)
+    ensure_parent(source_report_path)
 
     df.to_csv(output_path, index=False, encoding="utf-8")
     records = df.to_dict(orient="records")
@@ -856,12 +1072,24 @@ def run(args: argparse.Namespace) -> None:
         json.dumps(email_quality_report, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+    company_quality_report = build_company_quality_report(df)
+    company_report_path.write_text(
+        json.dumps(company_quality_report, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    source_quality_report = build_source_quality_report(sources)
+    source_report_path.write_text(
+        json.dumps(source_quality_report, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
 
     print(f"Готово: контактов после дедупликации — {len(df)}")
     print(f"CSV: {output_path}")
     print(f"JSON: {json_output_path}")
     print(f"Отчёт: {report_path}")
     print(f"Email QA: {email_report_path}")
+    print(f"Company QA: {company_report_path}")
+    print(f"Source QA: {source_report_path}")
 
 
 def parse_args() -> argparse.Namespace:
@@ -874,6 +1102,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--json-output", default="data/contacts_ru.json")
     parser.add_argument("--report", default="data/run_report.json")
     parser.add_argument("--email-report", default="data/email_quality_report.json")
+    parser.add_argument("--company-report", default="data/company_quality_report.json")
+    parser.add_argument("--source-report", default="data/source_quality_report.json")
     return parser.parse_args()
 
 
