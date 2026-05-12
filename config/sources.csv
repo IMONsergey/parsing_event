@@ -1,0 +1,4 @@
+Активен,Сегмент,Тип источника,Источник,Компания,Сайт,URL источника,Страна,Город,Отрасль,Приоритет,Комментарий
+да,event,Каталог агентств,Event.ru,Example Event Agency,https://example.com,https://example.com/contacts,Россия,Москва,Event / Communications,A,Тестовый пример
+да,communications,Сайт агентства,Agency Website,Example Comms Agency,https://example.org,https://example.org/contact,Россия,Санкт-Петербург,PR / Communications,A,Тестовый пример
+нет,example,Отключённый источник,Disabled Source,Example Company,https://disabled.example,https://disabled.example/contact,Россия,Москва,Marketing,B,Отключённый пример
