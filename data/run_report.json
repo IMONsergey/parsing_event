@@ -1,21 +1,12 @@
 {
-  "started_at": "2026-05-12T14:54:47.272028+00:00",
-  "finished_at": "2026-05-12T14:54:48.713509+00:00",
-  "sources_total": 3,
-  "sources_active": 2,
-  "pages_fetched": 0,
-  "contacts_auto_found": 0,
+  "started_at": "2026-05-12T15:35:42.651369+00:00",
+  "finished_at": "2026-05-12T15:37:26.628779+00:00",
+  "sources_total": 120,
+  "sources_active": 120,
+  "pages_fetched": 120,
+  "contacts_auto_found": 186,
   "contacts_manual_loaded": 0,
-  "contacts_total_before_dedupe": 0,
-  "contacts_total_after_dedupe": 0,
-  "errors": [
-    {
-      "url": "https://example.com/contacts",
-      "error": "404 Client Error: Not Found for url: https://example.com/contacts"
-    },
-    {
-      "url": "https://example.org/contact",
-      "error": "404 Client Error: Not Found for url: https://example.org/contact"
-    }
-  ]
+  "contacts_total_before_dedupe": 186,
+  "contacts_total_after_dedupe": 147,
+  "errors": []
 }

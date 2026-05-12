@@ -172,11 +172,44 @@ def normalize_email(value: str) -> tuple[str, bool]:
     return valid.normalized.lower(), True
 
 
+def split_email_candidates(value: str) -> list[str]:
+    value = clean_text(value).replace("mailto:", "")
+    value = value.split("?")[0]
+    return [item for item in re.split(r"[,;\\s]+", value) if item]
+
+
 def registered_domain(value: str) -> str:
     ext = tldextract.extract(value)
     if not ext.domain or not ext.suffix:
         return value.lower()
     return f"{ext.domain}.{ext.suffix}".lower()
+
+
+def filter_emails_for_company_site(raw_emails: list[str], website: str) -> list[str]:
+    site_domain = registered_domain(urlparse(normalize_url(website)).netloc)
+    if not site_domain:
+        return raw_emails
+
+    preferred = []
+    for raw_email in raw_emails:
+        email, is_valid = normalize_email(raw_email)
+        if not is_valid or "@" not in email:
+            continue
+        email_domain = registered_domain(email.partition("@")[2])
+        if email_domain == site_domain:
+            preferred.append(raw_email)
+
+    return list(dict.fromkeys(preferred)) if preferred else raw_emails
+
+
+def filter_catalog_owner_emails(raw_emails: list[str], source_url: str, source_name: str) -> list[str]:
+    if "russianbranding.ru" not in source_url and "АБКР" not in source_name:
+        return raw_emails
+    return [
+        email
+        for email in raw_emails
+        if "russianbranding" not in email.lower() and "abcr@" not in email.lower()
+    ]
 
 
 def classify_email(email: str, is_valid: bool, excluded_domains: set[str]) -> str:
@@ -226,7 +259,10 @@ def extract_page_data(html: str, base_url: str) -> dict[str, Any]:
 
     text = soup.get_text(" ", strip=True)
     hrefs = [clean_text(a.get("href")) for a in soup.find_all("a", href=True)]
-    mailto_emails = [href for href in hrefs if href.lower().startswith("mailto:")]
+    mailto_emails = []
+    for href in hrefs:
+        if href.lower().startswith("mailto:"):
+            mailto_emails.extend(split_email_candidates(href))
     raw_emails = EMAIL_RE.findall(" ".join([text, " ".join(hrefs), meta_description]))
     phones = [normalize_phone(phone) for phone in PHONE_RE.findall(text)]
 
@@ -396,7 +432,8 @@ def source_to_rows(
     }
 
     rows = []
-    emails = data["emails"] or [""]
+    raw_emails = filter_catalog_owner_emails(data["emails"], final_url, base["Источник"])
+    emails = filter_emails_for_company_site(raw_emails, website) or [""]
     for raw_email in emails:
         email, email_valid = normalize_email(raw_email)
         email_type = classify_email(email, email_valid, excluded_domains)
