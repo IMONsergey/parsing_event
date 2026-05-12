@@ -1,12 +1,12 @@
 {
-  "started_at": "2026-05-12T15:35:42.651369+00:00",
-  "finished_at": "2026-05-12T15:37:26.628779+00:00",
-  "sources_total": 120,
-  "sources_active": 120,
-  "pages_fetched": 120,
-  "contacts_auto_found": 186,
+  "started_at": "2026-05-12T16:02:05.487244+00:00",
+  "finished_at": "2026-05-12T16:06:00.735867+00:00",
+  "sources_total": 289,
+  "sources_active": 288,
+  "pages_fetched": 288,
+  "contacts_auto_found": 510,
   "contacts_manual_loaded": 0,
-  "contacts_total_before_dedupe": 186,
-  "contacts_total_after_dedupe": 147,
+  "contacts_total_before_dedupe": 510,
+  "contacts_total_after_dedupe": 460,
   "errors": []
 }

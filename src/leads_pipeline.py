@@ -129,6 +129,8 @@ SEGMENT_TYPE = {
 
 EMAIL_RE = re.compile(r"(?<![\w.+-])[\w.+-]+@[\w.-]+\.[A-Za-zА-Яа-я]{2,}(?![\w.-])")
 PHONE_RE = re.compile(r"(?:\+?\d[\d\s().-]{7,}\d)")
+YEAR_RANGE_RE = re.compile(r"^(?:19|20)\d{2}\s*[-–]\s*(?:19|20)\d{2}$")
+DATE_RE = re.compile(r"^\d{1,2}[./-]\d{1,2}[./-](?:19|20)\d{2}$")
 
 
 def read_csv(path: Path, columns: list[str]) -> pd.DataFrame:
@@ -228,8 +230,24 @@ def normalize_phone(value: str) -> str:
     value = clean_text(value)
     if not value:
         return ""
+    if YEAR_RANGE_RE.match(value) or DATE_RE.match(value):
+        return ""
     value = re.sub(r"[^\d+(). -]", "", value)
     value = re.sub(r"\s+", " ", value).strip()
+    digits = re.sub(r"\D", "", value)
+    if len(digits) < 10 or len(digits) > 15:
+        return ""
+    compact = value.replace(" ", "")
+    if YEAR_RANGE_RE.match(compact) or DATE_RE.match(compact):
+        return ""
+    is_ru_phone = compact.startswith(("+7", "7", "8")) and len(digits) == 11
+    is_regional_phone = (
+        compact.startswith(("+375", "375", "+380", "380", "+971", "971"))
+        and len(digits) == 12
+    )
+    is_other_international = compact.startswith("+") and 10 <= len(digits) <= 15
+    if not (is_ru_phone or is_regional_phone or is_other_international):
+        return ""
     return value
 
 
