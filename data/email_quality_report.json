@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-05-12T16:43:55.983902+00:00",
+  "total_rows": 571,
+  "rows_with_email": 483,
+  "rows_without_email": 88,
+  "invalid_email_count": 0,
+  "disallowed_email_count": 0,
+  "placeholder_email_count": 0,
+  "noreply_email_count": 0,
+  "duplicate_email_count": 0,
+  "suspicious_examples": []
+}

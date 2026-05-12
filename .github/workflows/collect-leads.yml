@@ -33,7 +33,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/contacts_ru.csv data/contacts_ru.json data/run_report.json
+          git add data/contacts_ru.csv data/contacts_ru.json data/run_report.json data/email_quality_report.json
 
           if git diff --cached --quiet; then
             echo "No changes"

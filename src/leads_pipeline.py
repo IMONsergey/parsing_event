@@ -7,7 +7,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import urljoin, urlparse
+from urllib.parse import unquote, urljoin, urlparse
 
 import pandas as pd
 import requests
@@ -108,6 +108,13 @@ GENERAL_EMAIL_PREFIXES = {
     "agency",
     "pr",
     "event",
+    "brief",
+    "request",
+    "newbusiness",
+    "business",
+    "partners",
+    "partnership",
+    "marketing",
 }
 
 SEGMENT_TYPE = {
@@ -131,6 +138,50 @@ EMAIL_RE = re.compile(r"(?<![\w.+-])[\w.+-]+@[\w.-]+\.[A-Za-zА-Яа-я]{2,}(?![
 PHONE_RE = re.compile(r"(?:\+?\d[\d\s().-]{7,}\d)")
 YEAR_RANGE_RE = re.compile(r"^(?:19|20)\d{2}\s*[-–]\s*(?:19|20)\d{2}$")
 DATE_RE = re.compile(r"^\d{1,2}[./-]\d{1,2}[./-](?:19|20)\d{2}$")
+PLACEHOLDER_DOMAINS = {
+    "example.com",
+    "example.org",
+    "example.net",
+    "test.com",
+    "localhost",
+    "domain.com",
+    "yourdomain.com",
+    "email.com",
+}
+PLACEHOLDER_LOCAL_PARTS = {
+    "example",
+    "test",
+    "email",
+    "mail",
+    "name",
+    "yourname",
+    "username",
+}
+TECHNICAL_EMAIL_PREFIXES = {
+    "noreply",
+    "no-reply",
+    "donotreply",
+    "do-not-reply",
+    "privacy",
+    "abuse",
+    "postmaster",
+    "webmaster",
+}
+ASSET_EXTENSIONS = (
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".svg",
+    ".webp",
+    ".gif",
+    ".css",
+    ".js",
+    ".woff",
+    ".woff2",
+    ".ttf",
+    ".eot",
+)
+EMAIL_FORBIDDEN_CHARS_RE = re.compile(r"[\s\"'()<>,;/\\?#]")
 
 
 def read_csv(path: Path, columns: list[str]) -> pd.DataFrame:
@@ -164,20 +215,22 @@ def normalize_url(value: str) -> str:
 
 def normalize_email(value: str) -> tuple[str, bool]:
     email = clean_text(value).lower().replace("mailto:", "")
-    email = email.split("?")[0].strip(" .,;:<>\"'")
+    email = unquote(email).split("?")[0]
+    email = re.sub(r"\s+", "", email).strip(" .,;:<>\"'")
     if not email:
         return "", False
     try:
         valid = validate_email(email, check_deliverability=False)
     except EmailNotValidError:
-        return email, False
+        return "", False
     return valid.normalized.lower(), True
 
 
 def split_email_candidates(value: str) -> list[str]:
     value = clean_text(value).replace("mailto:", "")
+    value = unquote(value)
     value = value.split("?")[0]
-    return [item for item in re.split(r"[,;\\s]+", value) if item]
+    return [item for item in re.split(r"[,;\s]+", value) if item]
 
 
 def registered_domain(value: str) -> str:
@@ -185,6 +238,55 @@ def registered_domain(value: str) -> str:
     if not ext.domain or not ext.suffix:
         return value.lower()
     return f"{ext.domain}.{ext.suffix}".lower()
+
+
+def is_allowed_email(email: str) -> bool:
+    email = clean_text(email).lower()
+    if not email or email.count("@") != 1:
+        return False
+    if "://" in email or email.startswith("www."):
+        return False
+    if EMAIL_FORBIDDEN_CHARS_RE.search(email):
+        return False
+    if any(ext in email for ext in ASSET_EXTENSIONS):
+        return False
+
+    local, _, domain = email.partition("@")
+    if not local or not domain or len(local) > 64:
+        return False
+    if len(local) < 2 or local in PLACEHOLDER_LOCAL_PARTS:
+        return False
+    if local.split("+", 1)[0] in TECHNICAL_EMAIL_PREFIXES:
+        return False
+
+    domain = domain.rstrip(".")
+    ext = tldextract.extract(domain)
+    registered = registered_domain(domain)
+    if not ext.domain or not ext.suffix or not registered:
+        return False
+    if registered in PLACEHOLDER_DOMAINS or domain in PLACEHOLDER_DOMAINS:
+        return False
+    if any(token in registered for token in ("example", "localhost", "draft")):
+        return False
+
+    try:
+        validate_email(email, check_deliverability=False)
+    except EmailNotValidError:
+        return False
+    return True
+
+
+def normalize_allowed_emails(raw_emails: list[str]) -> tuple[list[str], int]:
+    emails = []
+    discarded = 0
+    for raw_email in raw_emails:
+        email, is_valid = normalize_email(raw_email)
+        if is_valid and is_allowed_email(email):
+            if email not in emails:
+                emails.append(email)
+        elif clean_text(raw_email):
+            discarded += 1
+    return emails, discarded
 
 
 def filter_emails_for_company_site(raw_emails: list[str], website: str) -> list[str]:
@@ -215,7 +317,9 @@ def filter_catalog_owner_emails(raw_emails: list[str], source_url: str, source_n
 
 
 def classify_email(email: str, is_valid: bool, excluded_domains: set[str]) -> str:
-    if not email or not is_valid:
+    if not email:
+        return "Неизвестно"
+    if not is_valid or not is_allowed_email(email):
         return "Неизвестно"
     local, _, domain = email.partition("@")
     domain = registered_domain(domain)
@@ -274,6 +378,9 @@ def extract_page_data(html: str, base_url: str) -> dict[str, Any]:
     meta = soup.find("meta", attrs={"name": re.compile("^description$", re.I)})
     if meta and meta.get("content"):
         meta_description = clean_text(meta.get("content"))
+
+    for tag in soup(["script", "style", "noscript", "svg", "canvas"]):
+        tag.decompose()
 
     text = soup.get_text(" ", strip=True)
     hrefs = [clean_text(a.get("href")) for a in soup.find_all("a", href=True)]
@@ -384,7 +491,7 @@ def status_for(row: dict[str, Any]) -> str:
     email_type = row.get("Тип email", "")
     if email_type == "Корпоративный" and confidence >= 70:
         return "Готово"
-    if email_type == "Общий" and confidence >= 60:
+    if email_type == "Общий":
         return "Проверить"
     if email_type == "Личный":
         return "Проверить"
@@ -451,15 +558,19 @@ def source_to_rows(
 
     rows = []
     raw_emails = filter_catalog_owner_emails(data["emails"], final_url, base["Источник"])
-    emails = filter_emails_for_company_site(raw_emails, website) or [""]
-    for raw_email in emails:
-        email, email_valid = normalize_email(raw_email)
+    raw_emails = filter_emails_for_company_site(raw_emails, website)
+    emails, discarded_email_count = normalize_allowed_emails(raw_emails)
+    if discarded_email_count:
+        report["email_candidates_discarded"] += discarded_email_count
+        base["Комментарий"] = join_unique(
+            [base["Комментарий"], "Некорректные email-кандидаты отброшены автоматически."]
+        )
+    for email in emails or [""]:
+        email_valid = bool(email)
         email_type = classify_email(email, email_valid, excluded_domains)
         row = dict(base)
         row["Email"] = email
         row["Тип email"] = email_type
-        if raw_email and not email_valid:
-            row["Комментарий"] = join_unique([row["Комментарий"], "Email требует ручной проверки"])
         row["Уверенность"] = confidence_score(row, email_valid, relevant_keywords, active_source=True)
         row["Статус"] = status_for(row)
         row["ID"] = stable_id(row)
@@ -481,6 +592,14 @@ def manual_to_rows(
         if segment not in TARGET_SEGMENTS:
             segment = "other"
         email, email_valid = normalize_email(item.get("Email", ""))
+        manual_comment = clean_text(item.get("Комментарий", ""))
+        if not email_valid or not is_allowed_email(email):
+            if clean_text(item.get("Email", "")):
+                manual_comment = join_unique(
+                    [manual_comment, "Email из ручного ввода не прошёл проверку и был очищен."]
+                )
+            email = ""
+            email_valid = False
         email_type = classify_email(email, email_valid, excluded_domains)
         source_text = " ".join(clean_text(item.get(column, "")) for column in MANUAL_COLUMNS)
         row = {
@@ -502,7 +621,7 @@ def manual_to_rows(
             "Источник": clean_text(item.get("Источник", "")) or "Ручное добавление",
             "URL источника": normalize_url(item.get("URL источника", "")),
             "Потенциальный интерес": potential_interest(segment),
-            "Комментарий": clean_text(item.get("Комментарий", "")),
+            "Комментарий": manual_comment,
         }
         relevant_keywords = has_keywords(segment, source_text, keywords)
         row["Уверенность"] = confidence_score(row, email_valid, relevant_keywords, active_source=True)
@@ -589,6 +708,67 @@ def load_keywords(path: Path) -> dict[str, dict[str, list[str]]]:
     return result
 
 
+def build_email_quality_report(df: pd.DataFrame) -> dict[str, Any]:
+    checked_at = datetime.now(timezone.utc).isoformat()
+    emails = [clean_text(email).lower() for email in df.get("Email", pd.Series(dtype=str)).tolist()]
+    filled_emails = [email for email in emails if email]
+    suspicious_examples = []
+    invalid_count = 0
+    disallowed_count = 0
+    placeholder_count = 0
+    noreply_count = 0
+
+    for idx, email in enumerate(emails):
+        if not email:
+            continue
+
+        normalized, is_valid = normalize_email(email)
+        local = normalized.partition("@")[0] if normalized else email.partition("@")[0]
+        domain = normalized.partition("@")[2] if normalized else email.partition("@")[2]
+        registered = registered_domain(domain) if domain else ""
+        is_placeholder = (
+            registered in PLACEHOLDER_DOMAINS
+            or domain in PLACEHOLDER_DOMAINS
+            or local in PLACEHOLDER_LOCAL_PARTS
+            or any(token in registered for token in ("example", "localhost", "draft"))
+        )
+        is_noreply = local.split("+", 1)[0] in TECHNICAL_EMAIL_PREFIXES
+        is_disallowed = not is_allowed_email(normalized)
+
+        if not is_valid:
+            invalid_count += 1
+        if is_disallowed:
+            disallowed_count += 1
+        if is_placeholder:
+            placeholder_count += 1
+        if is_noreply:
+            noreply_count += 1
+        if (not is_valid or is_disallowed or is_placeholder or is_noreply) and len(suspicious_examples) < 20:
+            row = df.iloc[idx]
+            suspicious_examples.append(
+                {
+                    "row": int(idx + 2),
+                    "Компания": clean_text(row.get("Компания", "")),
+                    "Email": email,
+                    "URL источника": clean_text(row.get("URL источника", "")),
+                }
+            )
+
+    duplicate_count = pd.Series(filled_emails).duplicated().sum() if filled_emails else 0
+    return {
+        "checked_at": checked_at,
+        "total_rows": int(len(df)),
+        "rows_with_email": int(len(filled_emails)),
+        "rows_without_email": int(len(df) - len(filled_emails)),
+        "invalid_email_count": int(invalid_count),
+        "disallowed_email_count": int(disallowed_count),
+        "placeholder_email_count": int(placeholder_count),
+        "noreply_email_count": int(noreply_count),
+        "duplicate_email_count": int(duplicate_count),
+        "suspicious_examples": suspicious_examples,
+    }
+
+
 def ensure_parent(path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -606,6 +786,7 @@ def run(args: argparse.Namespace) -> None:
         "contacts_manual_loaded": 0,
         "contacts_total_before_dedupe": 0,
         "contacts_total_after_dedupe": 0,
+        "email_candidates_discarded": 0,
         "errors": [],
     }
 
@@ -654,9 +835,11 @@ def run(args: argparse.Namespace) -> None:
     output_path = Path(args.output)
     json_output_path = Path(args.json_output)
     report_path = Path(args.report)
+    email_report_path = Path(args.email_report)
     ensure_parent(output_path)
     ensure_parent(json_output_path)
     ensure_parent(report_path)
+    ensure_parent(email_report_path)
 
     df.to_csv(output_path, index=False, encoding="utf-8")
     records = df.to_dict(orient="records")
@@ -668,11 +851,17 @@ def run(args: argparse.Namespace) -> None:
         json.dumps(report, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+    email_quality_report = build_email_quality_report(df)
+    email_report_path.write_text(
+        json.dumps(email_quality_report, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
 
     print(f"Готово: контактов после дедупликации — {len(df)}")
     print(f"CSV: {output_path}")
     print(f"JSON: {json_output_path}")
     print(f"Отчёт: {report_path}")
+    print(f"Email QA: {email_report_path}")
 
 
 def parse_args() -> argparse.Namespace:
@@ -684,6 +873,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output", default="data/contacts_ru.csv")
     parser.add_argument("--json-output", default="data/contacts_ru.json")
     parser.add_argument("--report", default="data/run_report.json")
+    parser.add_argument("--email-report", default="data/email_quality_report.json")
     return parser.parse_args()
 
 
