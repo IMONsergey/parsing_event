@@ -1,13 +1,22 @@
 {
-  "started_at": "2026-05-12T18:52:35.461839+00:00",
-  "finished_at": "2026-05-12T18:58:27.972437+00:00",
-  "sources_total": 406,
-  "sources_active": 405,
-  "pages_fetched": 405,
-  "contacts_auto_found": 588,
+  "started_at": "2026-05-12T20:04:59.098211+00:00",
+  "finished_at": "2026-05-12T20:22:10.642059+00:00",
+  "sources_total": 1030,
+  "sources_active": 1029,
+  "pages_fetched": 1027,
+  "contacts_auto_found": 2030,
   "contacts_manual_loaded": 0,
-  "contacts_total_before_dedupe": 588,
-  "contacts_total_after_dedupe": 571,
-  "email_candidates_discarded": 12,
-  "errors": []
+  "contacts_total_before_dedupe": 2030,
+  "contacts_total_after_dedupe": 1210,
+  "email_candidates_discarded": 36,
+  "errors": [
+    {
+      "url": "https://rspp.ru/contacts/",
+      "error": "HTTPSConnectionPool(host='rspp.ru', port=443): Read timed out. (read timeout=15)"
+    },
+    {
+      "url": "https://uprav.ru/contacts/",
+      "error": "HTTPSConnectionPool(host='uprav.ru', port=443): Read timed out. (read timeout=15)"
+    }
+  ]
 }
