@@ -86,6 +86,36 @@ OUTPUT_COLUMNS = [
     "Комментарий",
 ]
 
+SHEETS_OUTPUT_COLUMNS = [
+    "ID",
+    "ID компании",
+    "Ключ компании",
+    "Повтор компании",
+    "Кол-во контактов компании",
+    "№ контакта в компании",
+    "Статус",
+    "Приоритет",
+    "Сегмент",
+    "Тип компании",
+    "Компания",
+    "Имя",
+    "Должность",
+    "Email",
+    "Тип email",
+    "Телефон",
+    "Сайт",
+    "LinkedIn",
+    "Telegram",
+    "Страна",
+    "Город",
+    "Отрасль",
+    "Источник",
+    "URL источника",
+    "Дата добавления",
+    "Дата обновления",
+    "Уверенность",
+]
+
 TARGET_SEGMENTS = {
     "event",
     "communications",
@@ -1096,19 +1126,22 @@ def run(args: argparse.Namespace) -> None:
     report["finished_at"] = datetime.now(timezone.utc).isoformat()
 
     output_path = Path(args.output)
+    full_csv_output_path = Path(args.full_csv_output)
     json_output_path = Path(args.json_output)
     report_path = Path(args.report)
     email_report_path = Path(args.email_report)
     company_report_path = Path(args.company_report)
     source_report_path = Path(args.source_report)
     ensure_parent(output_path)
+    ensure_parent(full_csv_output_path)
     ensure_parent(json_output_path)
     ensure_parent(report_path)
     ensure_parent(email_report_path)
     ensure_parent(company_report_path)
     ensure_parent(source_report_path)
 
-    df.to_csv(output_path, index=False, encoding="utf-8")
+    df.to_csv(full_csv_output_path, index=False, encoding="utf-8")
+    df.reindex(columns=SHEETS_OUTPUT_COLUMNS).to_csv(output_path, index=False, encoding="utf-8")
     records = df.to_dict(orient="records")
     json_output_path.write_text(
         json.dumps(records, ensure_ascii=False, indent=2),
@@ -1135,7 +1168,8 @@ def run(args: argparse.Namespace) -> None:
     )
 
     print(f"Готово: контактов после дедупликации — {len(df)}")
-    print(f"CSV: {output_path}")
+    print(f"CSV (Google Sheets friendly): {output_path}")
+    print(f"CSV (full archive): {full_csv_output_path}")
     print(f"JSON: {json_output_path}")
     print(f"Отчёт: {report_path}")
     print(f"Email QA: {email_report_path}")
@@ -1150,6 +1184,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--exclude-domains", default="config/exclude_domains.csv")
     parser.add_argument("--keywords", default="config/keywords.csv")
     parser.add_argument("--output", default="data/contacts_ru.csv")
+    parser.add_argument("--full-csv-output", default="data/contacts_ru_full.csv")
     parser.add_argument("--json-output", default="data/contacts_ru.json")
     parser.add_argument("--report", default="data/run_report.json")
     parser.add_argument("--email-report", default="data/email_quality_report.json")
