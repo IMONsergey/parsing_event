@@ -1,38 +1,250 @@
 {
-  "started_at": "2026-05-13T07:01:35.581138+00:00",
-  "finished_at": "2026-05-13T07:18:39.387280+00:00",
+  "started_at": "2026-05-13T08:29:08.676632+00:00",
+  "finished_at": "2026-05-13T09:09:17.947063+00:00",
   "sources_total": 1029,
   "sources_active": 1028,
-  "pages_fetched": 1022,
-  "contacts_auto_found": 1360,
+  "pages_fetched": 969,
+  "contacts_auto_found": 1277,
   "contacts_manual_loaded": 0,
-  "contacts_total_before_dedupe": 1360,
-  "contacts_total_after_dedupe": 1342,
+  "contacts_total_before_dedupe": 1277,
+  "contacts_total_after_dedupe": 1261,
   "email_candidates_discarded": 25,
   "errors": [
     {
+      "url": "https://sgmarketing.ru/",
+      "error": "HTTPSConnectionPool(host='sgmarketing.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='sgmarketing.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://ospr.ru/contacts/",
+      "error": "HTTPSConnectionPool(host='ospr.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by NewConnectionError(\"HTTPSConnection(host='ospr.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://betweenx.ru/",
+      "error": "503 Server Error: Service Temporarily Unavailable for url: https://betweenx.ru/"
+    },
+    {
+      "url": "https://www.grandms.ru/contacts/",
+      "error": "HTTPSConnectionPool(host='www.grandms.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by NewConnectionError(\"HTTPSConnection(host='www.grandms.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://in-tention.ru/",
+      "error": "HTTPSConnectionPool(host='in-tention.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='in-tention.ru', port=443) at 0x7fd041cb6650>, 'Connection to in-tention.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://kinemotor.pro/kontaktyi/",
+      "error": "HTTPSConnectionPool(host='kinemotor.pro', port=443): Max retries exceeded with url: /kontaktyi/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='kinemotor.pro', port=443) at 0x7fd042aa35d0>, 'Connection to kinemotor.pro timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://media-trast.ru/",
+      "error": "HTTPSConnectionPool(host='media-trast.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='media-trast.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://www.media-ppl.ru/",
+      "error": "HTTPSConnectionPool(host='www.media-ppl.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.media-ppl.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
       "url": "https://projectwave.ru/",
-      "error": "HTTPSConnectionPool(host='projectwave.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x120d03610>, 'Connection to projectwave.ru timed out. (connect timeout=15)'))"
+      "error": "HTTPSConnectionPool(host='projectwave.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='projectwave.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://totalview.ru/",
+      "error": "HTTPSConnectionPool(host='totalview.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='totalview.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://wellermedia.ru/",
+      "error": "HTTPSConnectionPool(host='wellermedia.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='wellermedia.ru', port=443) at 0x7fd041a071d0>, 'Connection to wellermedia.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://rg-arifmetika.ru/",
+      "error": "HTTPSConnectionPool(host='rg-arifmetika.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='rg-arifmetika.ru', port=443) at 0x7fd042774d50>, 'Connection to rg-arifmetika.ru timed out. (connect timeout=15)'))"
     },
     {
       "url": "https://scorconf.ru/",
-      "error": "HTTPSConnectionPool(host='scorconf.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x11fc4b390>: Failed to establish a new connection: [Errno 61] Connection refused'))"
+      "error": "HTTPSConnectionPool(host='scorconf.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='scorconf.ru', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     {
-      "url": "https://uprav.ru/contacts/",
-      "error": "HTTPSConnectionPool(host='uprav.ru', port=443): Read timed out. (read timeout=15)"
+      "url": "https://sbs-consulting.ru/",
+      "error": "HTTPSConnectionPool(host='sbs-consulting.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sbs-consulting.ru', port=443) at 0x7fd0428e6090>, 'Connection to sbs-consulting.ru timed out. (connect timeout=15)'))"
     },
     {
-      "url": "https://kazandigitalweek.com/contacts",
-      "error": "HTTPSConnectionPool(host='kazandigitalweek.com', port=443): Read timed out. (read timeout=15)"
+      "url": "https://scrumtrek.ru/contacts/",
+      "error": "403 Client Error: Forbidden for url: https://scrumtrek.ru/contacts/"
     },
     {
-      "url": "https://xn--80accdk6agnk2akb1m.xn--p1ai/",
-      "error": "HTTPSConnectionPool(host='xn--80accdk6agnk2akb1m.xn--p1ai', port=443): Read timed out. (read timeout=15)"
+      "url": "https://event-live.ru/",
+      "error": "HTTPSConnectionPool(host='event-live.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='event-live.ru', port=443) at 0x7fd041d08990>, 'Connection to event-live.ru timed out. (connect timeout=15)'))"
     },
     {
-      "url": "https://ipos.digital/",
-      "error": "HTTPSConnectionPool(host='ipos.digital', port=443): Read timed out. (read timeout=15)"
+      "url": "https://innopolis.com/ru",
+      "error": "HTTPSConnectionPool(host='innopolis.com', port=443): Max retries exceeded with url: /ru (Caused by ConnectTimeoutError(<HTTPSConnection(host='innopolis.com', port=443) at 0x7fd042801f90>, 'Connection to innopolis.com timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://prpartner.ru/contacts/",
+      "error": "HTTPSConnectionPool(host='prpartner.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by NewConnectionError(\"HTTPSConnection(host='prpartner.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://pbn-hkstrategies.com/",
+      "error": "HTTPSConnectionPool(host='pbn-hkstrategies.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pbn-hkstrategies.com', port=443) at 0x7fd04215d350>, 'Connection to pbn-hkstrategies.com timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://vincipr.com/",
+      "error": "HTTPSConnectionPool(host='vincipr.com', port=443): Read timed out. (read timeout=15)"
+    },
+    {
+      "url": "https://vh448.timeweb.ru/noactive/?ref=midexpo.ru",
+      "error": "HTTPSConnectionPool(host='vh448.timeweb.ru', port=443): Max retries exceeded with url: /noactive/?ref=midexpo.ru (Caused by NewConnectionError(\"HTTPSConnection(host='vh448.timeweb.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://hrexpo.pro/",
+      "error": "HTTPSConnectionPool(host='hrexpo.pro', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='hrexpo.pro', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://leader-id.ru/",
+      "error": "HTTPSConnectionPool(host='leader-id.ru', port=443): Read timed out. (read timeout=15)"
+    },
+    {
+      "url": "https://laba.ua/",
+      "error": "403 Client Error: Forbidden for url: https://laba.ua/"
+    },
+    {
+      "url": "https://eventvmeste.com/",
+      "error": "HTTPSConnectionPool(host='eventvmeste.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='eventvmeste.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://4dru.com/",
+      "error": "HTTPSConnectionPool(host='4dru.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='4dru.com', port=443) at 0x7fd041ea7990>, 'Connection to 4dru.com timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://gcav.ru/",
+      "error": "HTTPSConnectionPool(host='gcav.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='gcav.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://www.press-papier.ru/",
+      "error": "HTTPSConnectionPool(host='www.press-papier.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.press-papier.ru', port=443) at 0x7fd041808090>, 'Connection to www.press-papier.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://2l-pr.ru/",
+      "error": "HTTPSConnectionPool(host='2l-pr.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='2l-pr.ru', port=443) at 0x7fd04121a8d0>, 'Connection to 2l-pr.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://sf.ru/",
+      "error": "HTTPSConnectionPool(host='sf.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sf.ru', port=443) at 0x7fd0417a5750>, 'Connection to sf.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://agelar.ru/",
+      "error": "HTTPSConnectionPool(host='agelar.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='agelar.ru', port=443) at 0x7fd041b8c5d0>, 'Connection to agelar.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://deasign.ru/contacts/",
+      "error": "HTTPSConnectionPool(host='deasign.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by NewConnectionError(\"HTTPSConnection(host='deasign.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://www.fprspb.ru/",
+      "error": "HTTPSConnectionPool(host='www.fprspb.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fprspb.ru', port=443) at 0x7fd042c3cd50>, 'Connection to www.fprspb.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://promo.mtp.company/",
+      "error": "HTTPSConnectionPool(host='promo.mtp.company', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='promo.mtp.company', port=443) at 0x7fd041c67890>, 'Connection to promo.mtp.company timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://blackline-pr.ru/",
+      "error": "403 Client Error: Forbidden for url: https://blackline-pr.ru/"
+    },
+    {
+      "url": "https://ishmish.ru/",
+      "error": "HTTPSConnectionPool(host='ishmish.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ishmish.ru', port=443) at 0x7fd04289c750>, 'Connection to ishmish.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://gladkov.company/",
+      "error": "HTTPSConnectionPool(host='gladkov.company', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='gladkov.company', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://teller.media/",
+      "error": "HTTPSConnectionPool(host='teller.media', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='teller.media', port=443) at 0x7fd0410ce0d0>, 'Connection to teller.media timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://digital-lab.ru/",
+      "error": "HTTPSConnectionPool(host='digital-lab.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='digital-lab.ru', port=443) at 0x7fd042c8da10>, 'Connection to digital-lab.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://bf360.ru/contacts/",
+      "error": "HTTPSConnectionPool(host='bf360.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='bf360.ru', port=443) at 0x7fd0423db650>, 'Connection to bf360.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://renart.ru/",
+      "error": "HTTPSConnectionPool(host='renart.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='renart.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://bestweb.ru/",
+      "error": "HTTPSConnectionPool(host='bestweb.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='bestweb.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://digitalstrategy.ru/",
+      "error": "HTTPSConnectionPool(host='digitalstrategy.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='digitalstrategy.ru', port=443) at 0x7fd0425633d0>, 'Connection to digitalstrategy.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://www.purrweb.com/ru/",
+      "error": "HTTPSConnectionPool(host='www.purrweb.com', port=443): Read timed out. (read timeout=15)"
+    },
+    {
+      "url": "https://nologostudio.ru/",
+      "error": "HTTPSConnectionPool(host='nologostudio.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nologostudio.ru', port=443) at 0x7fd042ef0410>, 'Connection to nologostudio.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://www.top-7.ru/",
+      "error": "HTTPSConnectionPool(host='www.top-7.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.top-7.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://sumteh.ru/",
+      "error": "HTTPSConnectionPool(host='sumteh.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sumteh.ru', port=443) at 0x7fd042b61210>, 'Connection to sumteh.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://pandadigital.ru/",
+      "error": "HTTPSConnectionPool(host='pandadigital.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='pandadigital.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    },
+    {
+      "url": "https://promoexpert.pro/",
+      "error": "HTTPSConnectionPool(host='promoexpert.pro', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='promoexpert.pro', port=443) at 0x7fd042e40b50>, 'Connection to promoexpert.pro timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://empirics.ru/",
+      "error": "HTTPSConnectionPool(host='empirics.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='empirics.ru', port=443) at 0x7fd04184a5d0>, 'Connection to empirics.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://siteactiv.ru/contacts/",
+      "error": "HTTPSConnectionPool(host='siteactiv.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='siteactiv.ru', port=443) at 0x7fd0428c4110>, 'Connection to siteactiv.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://artena.ru/",
+      "error": "HTTPSConnectionPool(host='artena.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='artena.ru', port=443) at 0x7fd041f0e390>, 'Connection to artena.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://www.bondsoft.ru/",
+      "error": "HTTPSConnectionPool(host='www.bondsoft.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.bondsoft.ru', port=443) at 0x7fd042a3ec50>, 'Connection to www.bondsoft.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://www.reaspekt.ru/",
+      "error": "HTTPSConnectionPool(host='www.reaspekt.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.reaspekt.ru', port=443) at 0x7fd0413c8510>, 'Connection to www.reaspekt.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://sells.company/",
+      "error": "HTTPSConnectionPool(host='sells.company', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sells.company', port=443) at 0x7fd041597d50>, 'Connection to sells.company timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://stilt-itil.com/",
+      "error": "HTTPSConnectionPool(host='stilt-itil.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='stilt-itil.com', port=443) at 0x7fd041e74550>, 'Connection to stilt-itil.com timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://domovoy.pro/",
+      "error": "HTTPSConnectionPool(host='domovoy.pro', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='domovoy.pro', port=443) at 0x7fd041273e90>, 'Connection to domovoy.pro timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://itconstruct.ru/",
+      "error": "HTTPSConnectionPool(host='itconstruct.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='itconstruct.ru', port=443) at 0x7fd0418aec50>, 'Connection to itconstruct.ru timed out. (connect timeout=15)'))"
+    },
+    {
+      "url": "https://akam.ru/",
+      "error": "HTTPSConnectionPool(host='akam.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='akam.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     }
   ]
 }
