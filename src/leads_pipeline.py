@@ -118,6 +118,7 @@ SHEETS_OUTPUT_COLUMNS = [
 
 TARGET_SEGMENTS = {
     "event",
+    "presentations",
     "communications",
     "pr",
     "marketing",
@@ -155,6 +156,7 @@ GENERAL_EMAIL_PREFIXES = {
 
 SEGMENT_TYPE = {
     "event": "event agency",
+    "presentations": "presentation agency / presentation design studio",
     "communications": "communications agency",
     "pr": "PR agency",
     "marketing": "marketing agency",
@@ -238,6 +240,44 @@ TECHNICAL_EMAIL_PREFIXES = {
     "postmaster",
     "webmaster",
 }
+OUTREACH_UNSAFE_LOCAL_PARTS = {
+    "mailer-daemon",
+    "postmaster",
+    "abuse",
+    "webmaster",
+    "security",
+    "securityhotline",
+    "privacy",
+    "legal",
+    "dpo",
+    "dataprotection",
+}
+TECHNICAL_EMAIL_DOMAINS = {
+    "sentry.io",
+    "sentry.wixpress.com",
+    "sentry-next.wixpress.com",
+    "amazonses.com",
+    "mailgun.org",
+    "sendgrid.net",
+    "mandrillapp.com",
+    "mailchimp.com",
+    "hubspotemail.net",
+    "intercom-mail.com",
+}
+TECHNICAL_EMAIL_DOMAIN_TOKENS = {
+    "sentry.",
+    ".sentry.",
+    ".wixpress.com",
+}
+RELAY_EMAIL_DOMAIN_TOKENS = {
+    "amazonses.com",
+    "mailgun.org",
+    "sendgrid.net",
+    "mandrillapp.com",
+    "mailchimp.com",
+    "hubspotemail.net",
+    "intercom-mail.com",
+}
 ASSET_EXTENSIONS = (
     ".png",
     ".jpg",
@@ -253,6 +293,17 @@ ASSET_EXTENSIONS = (
     ".eot",
 )
 EMAIL_FORBIDDEN_CHARS_RE = re.compile(r"[\s\"'()<>,;/\\?#]")
+HEX_LIKE_LOCAL_RE = re.compile(r"^[0-9a-f]{16,}$", re.I)
+UUID_LIKE_LOCAL_RE = re.compile(
+    r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+    re.I,
+)
+LONG_RANDOM_LOCAL_RE = re.compile(r"^[a-z0-9._-]{24,}$", re.I)
+BUSINESS_WORD_RE = re.compile(
+    r"info|sales|team|hello|contact|office|event|design|studio|press|pr|mail|support|"
+    r"partners|career|hr|marketing|business|admin|deck|slide|present|investor|proposal",
+    re.I,
+)
 LEGAL_FORMS_RE = re.compile(
     r"\b(ооо|ао|пао|ип|llc|ltd|ltd\.|agency|group|studio|bureau|"
     r"агентство|студия|группа|бюро)\b",
@@ -340,6 +391,61 @@ def company_key_for(row: dict[str, Any] | pd.Series) -> str:
     return f"unknown|{clean_text(row.get('ID', ''))}"
 
 
+def is_hash_like_local_part(local: str) -> bool:
+    base = clean_text(local).lower().split("+", 1)[0]
+    if not base:
+        return False
+    if HEX_LIKE_LOCAL_RE.match(base) or UUID_LIKE_LOCAL_RE.match(base):
+        return True
+    if LONG_RANDOM_LOCAL_RE.match(base) and not BUSINESS_WORD_RE.search(base):
+        vowels = sum(1 for ch in base if ch in "aeiou")
+        letters = sum(1 for ch in base if ch.isalpha())
+        if vowels <= 2 or (letters >= 16 and vowels / max(letters, 1) < 0.18):
+            return True
+    return False
+
+
+def is_technical_email(email: str) -> bool:
+    email = clean_text(email).lower()
+    if not email or "@" not in email:
+        return False
+    local, _, domain = email.partition("@")
+    domain = domain.rstrip(".")
+    registered = registered_domain(domain)
+    base_local = local.split("+", 1)[0]
+    if base_local in TECHNICAL_EMAIL_PREFIXES or base_local in OUTREACH_UNSAFE_LOCAL_PARTS:
+        return True
+    if registered in TECHNICAL_EMAIL_DOMAINS or domain in TECHNICAL_EMAIL_DOMAINS:
+        return True
+    if any(token in domain for token in TECHNICAL_EMAIL_DOMAIN_TOKENS):
+        return True
+    if is_hash_like_local_part(base_local) and (
+        "sentry" in domain or "wixpress.com" in domain or registered in TECHNICAL_EMAIL_DOMAINS
+    ):
+        return True
+    return False
+
+
+def is_relay_email(email: str) -> bool:
+    email = clean_text(email).lower()
+    if not email or "@" not in email:
+        return False
+    domain = email.partition("@")[2].rstrip(".")
+    registered = registered_domain(domain)
+    return registered in RELAY_EMAIL_DOMAIN_TOKENS or any(token in domain for token in RELAY_EMAIL_DOMAIN_TOKENS)
+
+
+def is_business_usable_email(email: str) -> bool:
+    normalized, is_valid = normalize_email(email)
+    if not is_valid or not normalized:
+        return False
+    if not is_allowed_email(normalized):
+        return False
+    if is_technical_email(normalized) or is_relay_email(normalized) or is_hash_like_local_part(normalized.partition("@")[0]):
+        return False
+    return True
+
+
 def is_allowed_email(email: str) -> bool:
     email = clean_text(email).lower()
     if not email or email.count("@") != 1:
@@ -358,6 +464,8 @@ def is_allowed_email(email: str) -> bool:
         return False
     if local.split("+", 1)[0] in TECHNICAL_EMAIL_PREFIXES:
         return False
+    if local.split("+", 1)[0] in OUTREACH_UNSAFE_LOCAL_PARTS:
+        return False
 
     domain = domain.rstrip(".")
     ext = tldextract.extract(domain)
@@ -369,6 +477,8 @@ def is_allowed_email(email: str) -> bool:
     if registered in DISALLOWED_EMAIL_DOMAINS or domain in DISALLOWED_EMAIL_DOMAINS:
         return False
     if any(token in registered for token in ("example", "localhost", "draft")):
+        return False
+    if is_technical_email(email) or is_relay_email(email) or is_hash_like_local_part(local):
         return False
 
     try:
@@ -571,9 +681,10 @@ def contact_candidate_urls(page_data: dict[str, Any], website: str) -> list[str]
         full = href.lower()
         if CONTACT_URL_HINT_RE.search(full):
             candidates.append(href)
-    base = f"{urlparse(website).scheme}://{urlparse(website).netloc}"
-    for path in FALLBACK_PATHS:
-        candidates.append(urljoin(base, path))
+    if not candidates:
+        base = f"{urlparse(website).scheme}://{urlparse(website).netloc}"
+        fallback_path = "/contacts" if site_domain.endswith(".ru") or ".ru" in urlparse(website).netloc else "/contact"
+        candidates.append(urljoin(base, fallback_path))
 
     def score(url: str) -> tuple[int, int, str]:
         lower = url.lower()
@@ -584,6 +695,8 @@ def contact_candidate_urls(page_data: dict[str, Any], website: str) -> list[str]
             points += 1
         return (-points, len(url), url)
 
+    # Prefer real in-site links from the markup. If none are exposed, allow only
+    # one conservative fallback contact URL instead of probing many guessed paths.
     return list(dict.fromkeys(sorted(candidates, key=score)))
 
 
@@ -644,6 +757,11 @@ def potential_interest(segment: str) -> str:
             "Может быть партнёром или клиентом BAEV: агентству регулярно нужны "
             "презентации для тендеров, питчей, клиентов и мероприятий."
         )
+    if segment == "presentations":
+        return (
+            "Прямо релевантно BAEV: компания специализируется на презентациях, pitch decks, "
+            "sales decks, investor decks или proposal materials."
+        )
     if segment in {"communications", "pr"}:
         return (
             "Релевантно для BAEV: коммуникационным командам часто нужны презентации, "
@@ -669,7 +787,7 @@ def priority_for(segment: str, value: str) -> str:
     value = clean_text(value).upper()
     if value in {"A", "B", "C"}:
         return value
-    if segment in {"event", "communications", "pr", "corporate", "consulting"}:
+    if segment in {"event", "presentations", "communications", "pr", "corporate", "consulting"}:
         return "A"
     if segment in {"marketing", "branding", "digital", "production", "education"}:
         return "B"
@@ -989,6 +1107,9 @@ def build_email_quality_report(df: pd.DataFrame) -> dict[str, Any]:
     disallowed_count = 0
     placeholder_count = 0
     noreply_count = 0
+    technical_count = 0
+    relay_count = 0
+    hash_like_count = 0
 
     for idx, email in enumerate(emails):
         if not email:
@@ -1005,6 +1126,9 @@ def build_email_quality_report(df: pd.DataFrame) -> dict[str, Any]:
             or any(token in registered for token in ("example", "localhost", "draft"))
         )
         is_noreply = local.split("+", 1)[0] in TECHNICAL_EMAIL_PREFIXES
+        is_technical = is_technical_email(normalized or email)
+        is_relay = is_relay_email(normalized or email)
+        is_hash_like = is_hash_like_local_part(local)
         is_disallowed = not is_allowed_email(normalized)
 
         if not is_valid:
@@ -1015,7 +1139,21 @@ def build_email_quality_report(df: pd.DataFrame) -> dict[str, Any]:
             placeholder_count += 1
         if is_noreply:
             noreply_count += 1
-        if (not is_valid or is_disallowed or is_placeholder or is_noreply) and len(suspicious_examples) < 20:
+        if is_technical:
+            technical_count += 1
+        if is_relay:
+            relay_count += 1
+        if is_hash_like:
+            hash_like_count += 1
+        if (
+            not is_valid
+            or is_disallowed
+            or is_placeholder
+            or is_noreply
+            or is_technical
+            or is_relay
+            or is_hash_like
+        ) and len(suspicious_examples) < 20:
             row = df.iloc[idx]
             suspicious_examples.append(
                 {
@@ -1037,6 +1175,10 @@ def build_email_quality_report(df: pd.DataFrame) -> dict[str, Any]:
         "placeholder_email_count": int(placeholder_count),
         "noreply_email_count": int(noreply_count),
         "duplicate_email_count": int(duplicate_count),
+        "technical_email_count": int(technical_count),
+        "relay_email_count": int(relay_count),
+        "hash_like_email_count": int(hash_like_count),
+        "business_usable_email_count": int(sum(1 for email in filled_emails if is_business_usable_email(email))),
         "suspicious_examples": suspicious_examples,
     }
 

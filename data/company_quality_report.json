@@ -1,22 +1,23 @@
 {
-  "checked_at": "2026-05-13T17:26:37.825561+00:00",
-  "total_contact_rows": 2021,
-  "unique_companies": 1607,
-  "companies_with_email": 1012,
-  "companies_without_email": 595,
-  "companies_with_website": 1607,
+  "checked_at": "2026-05-13T18:29:45.095922+00:00",
+  "total_contact_rows": 2070,
+  "unique_companies": 1647,
+  "companies_with_email": 1050,
+  "companies_without_email": 597,
+  "companies_with_website": 1647,
   "companies_without_website": 0,
-  "companies_with_multiple_contacts": 193,
+  "companies_with_multiple_contacts": 206,
   "max_contacts_per_company": 18,
   "average_contacts_per_company": 1.26,
   "companies_by_segment": {
-    "event": 577,
+    "event": 578,
     "pr": 361,
     "marketing": 247,
     "communications": 145,
     "digital": 79,
     "branding": 75,
-    "community": 33,
+    "presentations": 38,
+    "community": 34,
     "consulting": 31,
     "production": 25,
     "sales": 20,
@@ -24,23 +25,25 @@
     "hr": 2
   },
   "companies_by_priority": {
-    "A": 959,
-    "B": 584,
+    "A": 995,
+    "B": 588,
     "C": 64
   },
   "companies_by_country": {
-    "Россия": 1589,
+    "Россия": 1601,
+    "International": 23,
     "ОАЭ": 8,
-    "Казахстан": 5,
+    "Казахстан": 6,
+    "США": 3,
+    "UK": 2,
     "Беларусь": 1,
-    "International": 1,
     "Армения": 1,
     "Грузия": 1,
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 1171,
-    "Готово": 436
+    "Проверить": 1197,
+    "Готово": 450
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
@@ -71,32 +74,6 @@
         "t_chugunova@mbschool.ru"
       ],
       "segment": "education",
-      "priority": "B"
-    },
-    {
-      "company_key": "vilkaservice.com",
-      "Компания": "VILKA",
-      "Сайт": "https://www.vilkaservice.com/",
-      "contacts_count": 16,
-      "emails": [
-        "18d2f96d279149989b95faf0a4b41882@sentry-next.wixpress.com",
-        "1eeb89147c984dc6bc3ffafd9e6cd089@sentry.wixpress.com",
-        "2062d0a4929b45348643784b5cb39c36@sentry.wixpress.com",
-        "271e9fa3230b4eec94b02bf95780f5f2@sentry.wixpress.com",
-        "460ff4620fa44cba8df530afde949785@sentry.wixpress.com",
-        "5d1795a2db124a268f1e1bd88f503500@sentry.wixpress.com",
-        "79baaa8e09c746d2b7401643b99792e0@sentry.wixpress.com",
-        "8c30b2581acc426badc414e8a5dc04ef@sentry.wixpress.com",
-        "8c4075d5481d476e945486754f783364@sentry.io",
-        "8eb368c655b84e029ed79ad7a5c1718e@sentry.wixpress.com",
-        "9a65e97ebe8141fca0c4fd686f70996b@sentry.wixpress.com",
-        "bfb679c754744c58a7374ee6e25cfc13@sentry.wixpress.com",
-        "ed436f5053144538958ad06a5005e99a@sentry.wixpress.com",
-        "info@vilka.pro",
-        "partners@vilka.pro",
-        "sales@vilka.pro"
-      ],
-      "segment": "communications",
       "priority": "B"
     },
     {
@@ -178,21 +155,21 @@
       "priority": "A"
     },
     {
-      "company_key": "iidf.ru",
-      "Компания": "Акселератор Спринт",
-      "Сайт": "https://sprint.iidf.ru/",
+      "company_key": "mvk.ru",
+      "Компания": "MVK",
+      "Сайт": "https://mvk.ru/",
       "contacts_count": 8,
       "emails": [
-        "aalekseeva@iidf.ru",
-        "accelerator@iidf.ru",
-        "info@iidf.ru",
-        "partners@iidf.ru",
-        "pr@iidf.ru",
-        "securityhotline@iidf.ru",
-        "sprint@iidf.ru",
-        "support@iidf.ru"
+        "hr.krd@mvk.ru",
+        "hr.msk@mvk.ru",
+        "hr.spb@mvk.ru",
+        "hr.ural@mvk.ru",
+        "info@mvk.ru",
+        "krasnodar@mvk.ru",
+        "spb@mvk.ru",
+        "ural@mvk.ru"
       ],
-      "segment": "community",
+      "segment": "event",
       "priority": "A"
     },
     {
@@ -212,6 +189,23 @@
       ],
       "segment": "community",
       "priority": "A"
+    },
+    {
+      "company_key": "medianet.ru",
+      "Компания": "Medianet",
+      "Сайт": "http://www.medianet.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "infoekaterinburg@medianet.ru",
+        "infokrasnodar@medianet.ru",
+        "infomoscow@medianet.ru",
+        "infonovosibirsk@medianet.ru",
+        "infosamara@medianet.ru",
+        "infospb@medianet.ru",
+        "infovladivostok@medianet.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
     },
     {
       "company_key": "interforums.ru",
@@ -265,21 +259,21 @@
       "priority": "A"
     },
     {
-      "company_key": "medianet.ru",
-      "Компания": "Medianet",
-      "Сайт": "http://www.medianet.ru/",
+      "company_key": "iidf.ru",
+      "Компания": "Акселератор Спринт",
+      "Сайт": "https://sprint.iidf.ru/",
       "contacts_count": 7,
       "emails": [
-        "infoekaterinburg@medianet.ru",
-        "infokrasnodar@medianet.ru",
-        "infomoscow@medianet.ru",
-        "infonovosibirsk@medianet.ru",
-        "infosamara@medianet.ru",
-        "infospb@medianet.ru",
-        "infovladivostok@medianet.ru"
+        "aalekseeva@iidf.ru",
+        "accelerator@iidf.ru",
+        "info@iidf.ru",
+        "partners@iidf.ru",
+        "pr@iidf.ru",
+        "sprint@iidf.ru",
+        "support@iidf.ru"
       ],
-      "segment": "marketing",
-      "priority": "B"
+      "segment": "community",
+      "priority": "A"
     },
     {
       "company_key": "dpgrussia.com",
@@ -441,21 +435,6 @@
       "priority": "B"
     },
     {
-      "company_key": "artwell.ru",
-      "Компания": "АРТВЕЛЛ",
-      "Сайт": "http://www.artwell.ru/",
-      "contacts_count": 5,
-      "emails": [
-        "clients@artwell.ru",
-        "karaganda@artwell.ru",
-        "komi@artwell.ru",
-        "spb@artwell.ru",
-        "support@artwell.ru"
-      ],
-      "segment": "marketing",
-      "priority": "B"
-    },
-    {
       "company_key": "mice-excellence.ru",
       "Компания": "MICE Excellence",
       "Сайт": "https://www.mice-excellence.ru/",
@@ -469,21 +448,6 @@
       ],
       "segment": "event",
       "priority": "A"
-    },
-    {
-      "company_key": "cityads.com",
-      "Компания": "Cityads",
-      "Сайт": "https://cityads.com/main",
-      "contacts_count": 5,
-      "emails": [
-        "dpo@cityads.com",
-        "europe@cityads.com",
-        "international@cityads.com",
-        "latam@cityads.com",
-        "vietnam@cityads.com"
-      ],
-      "segment": "marketing",
-      "priority": "B"
     },
     {
       "company_key": "highload.ru",
@@ -557,6 +521,34 @@
         "request@codeinside.ru"
       ],
       "segment": "digital",
+      "priority": "B"
+    },
+    {
+      "company_key": "artics.ru",
+      "Компания": "Artics",
+      "Сайт": "https://www.artics.ru/",
+      "contacts_count": 4,
+      "emails": [
+        "hr@artics.ru",
+        "msk@artics.ru",
+        "pr@artics.ru",
+        "spb@artics.ru"
+      ],
+      "segment": "digital",
+      "priority": "B"
+    },
+    {
+      "company_key": "itb-company.com",
+      "Компания": "itb",
+      "Сайт": "https://itb-company.com/",
+      "contacts_count": 4,
+      "emails": [
+        "info@itb-company.com",
+        "msk@itb-company.com",
+        "nsk@itb-company.com",
+        "spb@itb-company.com"
+      ],
+      "segment": "communications",
       "priority": "B"
     }
   ]

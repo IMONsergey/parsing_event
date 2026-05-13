@@ -11,6 +11,7 @@ GitHub используется как source of truth. Google Sheets испол
 Проект ориентирован на сегменты, которым регулярно нужны презентации, питчи, коммерческие материалы, публичные выступления и визуальная упаковка смыслов:
 
 - event-агентства;
+- presentation design studios и pitch deck agencies;
 - коммуникационные агентства;
 - PR-агентства;
 - маркетинговые агентства;
@@ -27,7 +28,7 @@ GitHub используется как source of truth. Google Sheets испол
 
 Допустимые значения поля `Сегмент`:
 
-`event`, `communications`, `pr`, `marketing`, `branding`, `digital`, `production`, `corporate`, `consulting`, `education`, `sales`, `hr`, `community`, `other`.
+`event`, `presentations`, `communications`, `pr`, `marketing`, `branding`, `digital`, `production`, `corporate`, `consulting`, `education`, `sales`, `hr`, `community`, `other`.
 
 ## Структура проекта
 

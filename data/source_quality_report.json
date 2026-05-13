@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-05-13T17:26:38.694099+00:00",
-  "sources_total": 1658,
-  "sources_active": 1657,
+  "checked_at": "2026-05-13T18:29:46.335278+00:00",
+  "sources_total": 1697,
+  "sources_active": 1696,
   "sources_inactive": 1,
   "sources_by_segment": {
     "event": 581,
@@ -10,6 +10,7 @@
     "communications": 147,
     "digital": 81,
     "branding": 76,
+    "presentations": 39,
     "community": 34,
     "consulting": 31,
     "production": 25,
@@ -18,22 +19,24 @@
     "hr": 2
   },
   "sources_by_priority": {
-    "A": 1006,
-    "B": 588,
+    "A": 1042,
+    "B": 591,
     "C": 64
   },
   "sources_by_country": {
-    "Россия": 1640,
+    "Россия": 1650,
+    "International": 24,
     "ОАЭ": 8,
-    "Казахстан": 5,
+    "Казахстан": 6,
+    "США": 3,
+    "UK": 2,
     "Беларусь": 1,
     "Узбекистан": 1,
     "Армения": 1,
-    "Грузия": 1,
-    "International": 1
+    "Грузия": 1
   },
   "sources_by_source_type": {
-    "Сайт агентства": 834,
+    "Сайт агентства": 873,
     "Рейтинг агентств": 471,
     "Каталог агентств": 216,
     "Организатор мероприятия": 41,

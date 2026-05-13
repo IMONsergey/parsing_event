@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-05-13T18:30:33.962854+00:00",
+  "stage": "presentation_specific_research",
+  "existing_sources_before": 1657,
+  "existing_unique_companies_before": 1607,
+  "candidate_sources_reviewed": 69,
+  "candidates_rejected_as_duplicates": 0,
+  "candidates_rejected_low_relevance": 18,
+  "candidates_rejected_no_public_contact": 12,
+  "new_sources_added": 39,
+  "new_sources_with_email_expected": 33,
+  "new_sources_by_country": {
+    "International": 23,
+    "Россия": 10,
+    "UK": 2,
+    "США": 3,
+    "Казахстан": 1
+  },
+  "new_sources_by_city": {
+    "International": 37,
+    "Астана": 1,
+    "Москва": 1
+  },
+  "new_sources_by_segment": {
+    "presentations": 39
+  },
+  "new_sources_by_priority": {
+    "A": 36,
+    "B": 3
+  },
+  "presentation_service_types": {
+    "presentation_design": 16,
+    "pitch_deck": 11,
+    "investor_deck": 0,
+    "sales_deck": 1,
+    "powerpoint_keynote": 7,
+    "proposal_design": 1,
+    "tender_presentation": 0,
+    "executive_presentation": 3
+  },
+  "notes": [
+    "Added a dedicated presentations segment without changing the overall CSV schema.",
+    "Technical sentry/wixpress emails were filtered out; only outreach-safe emails remain in final outputs.",
+    "Contact-page fallback was reduced from many guessed URLs to a single conservative fallback to lower 404/403 noise.",
+    "Business Presentations agencies were folded into the presentation_design bucket in service-type stats.",
+    "Deckez was added as a source but did not yield a final contact row in the latest pipeline run."
+  ]
+}
