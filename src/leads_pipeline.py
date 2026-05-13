@@ -159,6 +159,10 @@ PLACEHOLDER_DOMAINS = {
     "yourdomain.com",
     "email.com",
 }
+DISALLOWED_EMAIL_DOMAINS = {
+    "madeontilda.com",
+    "masterhost.ru",
+}
 PLACEHOLDER_LOCAL_PARTS = {
     "example",
     "test",
@@ -306,6 +310,8 @@ def is_allowed_email(email: str) -> bool:
         return False
     if registered in PLACEHOLDER_DOMAINS or domain in PLACEHOLDER_DOMAINS:
         return False
+    if registered in DISALLOWED_EMAIL_DOMAINS or domain in DISALLOWED_EMAIL_DOMAINS:
+        return False
     if any(token in registered for token in ("example", "localhost", "draft")):
         return False
 
@@ -329,7 +335,9 @@ def normalize_allowed_emails(raw_emails: list[str]) -> tuple[list[str], int]:
     return emails, discarded
 
 
-def filter_emails_for_company_site(raw_emails: list[str], website: str) -> list[str]:
+def filter_emails_for_company_site(
+    raw_emails: list[str], website: str, *, require_site_domain: bool = False
+) -> list[str]:
     site_domain = registered_domain(urlparse(normalize_url(website)).netloc)
     if not site_domain:
         return raw_emails
@@ -343,7 +351,11 @@ def filter_emails_for_company_site(raw_emails: list[str], website: str) -> list[
         if email_domain == site_domain:
             preferred.append(raw_email)
 
-    return list(dict.fromkeys(preferred)) if preferred else raw_emails
+    if preferred:
+        return list(dict.fromkeys(preferred))
+    if require_site_domain:
+        return []
+    return raw_emails
 
 
 def filter_catalog_owner_emails(raw_emails: list[str], source_url: str, source_name: str) -> list[str]:
@@ -600,7 +612,10 @@ def source_to_rows(
 
     rows = []
     raw_emails = filter_catalog_owner_emails(data["emails"], final_url, base["Источник"])
-    raw_emails = filter_emails_for_company_site(raw_emails, website)
+    require_site_domain_email = "index.bbt.news/catalog/" in final_url.lower()
+    raw_emails = filter_emails_for_company_site(
+        raw_emails, website, require_site_domain=require_site_domain_email
+    )
     emails, discarded_email_count = normalize_allowed_emails(raw_emails)
     if discarded_email_count:
         report["email_candidates_discarded"] += discarded_email_count

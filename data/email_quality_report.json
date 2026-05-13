@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-05-12T20:22:10.730764+00:00",
-  "total_rows": 1210,
-  "rows_with_email": 567,
-  "rows_without_email": 643,
+  "checked_at": "2026-05-13T07:18:39.485973+00:00",
+  "total_rows": 1342,
+  "rows_with_email": 1161,
+  "rows_without_email": 181,
   "invalid_email_count": 0,
   "disallowed_email_count": 0,
   "placeholder_email_count": 0,

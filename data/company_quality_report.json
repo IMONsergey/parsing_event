@@ -1,22 +1,22 @@
 {
-  "checked_at": "2026-05-12T20:22:10.862887+00:00",
-  "total_contact_rows": 1210,
-  "unique_companies": 953,
-  "companies_with_email": 313,
-  "companies_without_email": 640,
-  "companies_with_website": 953,
+  "checked_at": "2026-05-13T07:18:39.757406+00:00",
+  "total_contact_rows": 1342,
+  "unique_companies": 1008,
+  "companies_with_email": 828,
+  "companies_without_email": 180,
+  "companies_with_website": 1008,
   "companies_without_website": 0,
-  "companies_with_multiple_contacts": 82,
-  "max_contacts_per_company": 58,
-  "average_contacts_per_company": 1.27,
+  "companies_with_multiple_contacts": 161,
+  "max_contacts_per_company": 18,
+  "average_contacts_per_company": 1.33,
   "companies_by_segment": {
-    "marketing": 247,
+    "marketing": 246,
+    "event": 196,
     "pr": 147,
-    "communications": 145,
-    "event": 139,
-    "digital": 81,
+    "communications": 144,
+    "digital": 80,
     "branding": 76,
-    "community": 30,
+    "community": 31,
     "consulting": 30,
     "production": 25,
     "sales": 20,
@@ -24,12 +24,12 @@
     "hr": 2
   },
   "companies_by_priority": {
-    "B": 510,
-    "A": 378,
+    "B": 520,
+    "A": 423,
     "C": 65
   },
   "companies_by_country": {
-    "Россия": 941,
+    "Россия": 996,
     "Казахстан": 5,
     "ОАЭ": 2,
     "Беларусь": 1,
@@ -39,113 +39,12 @@
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 794,
-    "Готово": 159
+    "Проверить": 629,
+    "Готово": 379
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
   "top_companies_by_contacts": [
-    {
-      "company_key": "mlservices.ru",
-      "Компания": "Mellennium Group",
-      "Сайт": "https://www.mlservices.ru",
-      "contacts_count": 58,
-      "emails": [
-        "a.maltsev@zcts.ru",
-        "a.osadchiy@osdy.ru",
-        "alina@miceversa.com",
-        "bd@leteam.moscow",
-        "darya.rudova@aeroclub-tour.ru",
-        "demidovich@d-mice.ru",
-        "dmitry.shangin@rcs-mice.ru",
-        "e.danilova@starliner.ru",
-        "e.sakharova@kmp.ru",
-        "eharoutunian@pepxpress.ru",
-        "ekaterina.gayday@ru.fcm.travel",
-        "enemtsova@unifest.ru",
-        "go@navolne.agency",
-        "i.tulskaya@turne-trans.ru",
-        "info@beinevent.ru",
-        "info@corpus-agency.com",
-        "info@gurman-travel.ru",
-        "info@mice-time.ru",
-        "info@miceway.ru",
-        "info@nktrans-group.ru",
-        "infund@mail.ru",
-        "irina.karnaukhova@demlinkatlas.ru",
-        "iulia.tarasova@anextour.com",
-        "kirill@mice.capital",
-        "l.fakhrutdinova@upjet.com",
-        "lobanova@omniagroup.pro",
-        "lozgachevami@intouraero.ru",
-        "m.orlova@avantage-event.com",
-        "marketing2@mltravel.ru",
-        "mice@dan-appy.ru",
-        "mice@pac.ru",
-        "mice@people.moscow",
-        "mice@vipservice.ru",
-        "miceandevents@yandex.ru",
-        "micerequest@continent.ru",
-        "mikhail@globalrussia.com",
-        "msd@millennium-dream.ru",
-        "n.plohih@smartway.today",
-        "na@lccspb.ru",
-        "nglebova@future-tmc.ru",
-        "nikolay@art-diaghilev.com",
-        "o.belyaeva@d-mice.ru",
-        "o.stepanenko@ibc.ru",
-        "olga-spb@rusmice.com",
-        "potapov_ae@micemarket.ru",
-        "request@katanaevent.ru",
-        "sale2@reinfo-sochi.ru",
-        "sales@corptravel.ru",
-        "sales@utstravel.ru",
-        "salescorp@norilsk-tavs.ru",
-        "t.altgauzen@aeroglobus.ru",
-        "t.komarova@victorscompany.com",
-        "tragulina@crpap.ru",
-        "ushakov@aerotone.ru",
-        "v.pavlin@pavlin-travel.ru",
-        "vvasilieva@ath.ru",
-        "z.shalaeva@bsigroup.ru",
-        "zakharov@creativemarket.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "corteos.ru",
-      "Компания": "Кортеос",
-      "Сайт": "https://corteos.ru/",
-      "contacts_count": 23,
-      "emails": [
-        "agent@myagent.online",
-        "anna.p@bnovo.ru",
-        "ar@travelmart.ru",
-        "artiomin@gmail.com",
-        "bulat.sabitov@gridnine.com",
-        "corp@bookingroup.ru",
-        "corporate@onetwotrip.com",
-        "d.krivosheev@raketa.travel",
-        "d.melnikov@turne-trans.ru",
-        "dgalkin@marketing-logic.ru",
-        "evgeniy.pashkov@pjcom.ru",
-        "hamiltonapps@vipservice.ru",
-        "hello@worksolutions.ru",
-        "index@bbt.news",
-        "info@bbt-ru.ru",
-        "info@bbt.news",
-        "natalya.poroshina@pprcard.ru",
-        "o.kryltsova@bizontrip.com",
-        "oleg.kryuchkov@eventplatform.ru",
-        "polivanov@corteos.travel",
-        "sales@quantum-ts.ru",
-        "sd@ruvents.com",
-        "sergey@a5000.ru"
-      ],
-      "segment": "event",
-      "priority": "B"
-    },
     {
       "company_key": "mbschool.ru",
       "Компания": "Moscow Business School",
@@ -196,6 +95,62 @@
       "priority": "A"
     },
     {
+      "company_key": "seovolga.ru",
+      "Компания": "SEOVOLGA",
+      "Сайт": "https://seovolga.ru/",
+      "contacts_count": 10,
+      "emails": [
+        "dmitry.s@seovolga.ru",
+        "grjulia@seovolga.ru",
+        "info@seovolga.ru",
+        "ivan.romanov@seovolga.ru",
+        "kupr@seovolga.ru",
+        "sambro@seovolga.ru",
+        "seo@seovolga.ru",
+        "timur.s@seovolga.ru",
+        "vladimir.v@seovolga.ru",
+        "vladislava.m@seovolga.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
+      "company_key": "startupvillage.ru",
+      "Компания": "Startup Village",
+      "Сайт": "https://startupvillage.ru/",
+      "contacts_count": 8,
+      "emails": [
+        "aglazunova@sk.ru",
+        "ebauer@sk.ru",
+        "evkonovalova@sk.ru",
+        "kparamonova@sk.ru",
+        "mkuzmina@sk.ru",
+        "partners_support@sk.ru",
+        "pfedorova@sk.ru",
+        "speaker@sk.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "siteactiv.ru",
+      "Компания": "СайтАктив",
+      "Сайт": "https://siteactiv.ru/",
+      "contacts_count": 8,
+      "emails": [
+        "info@siteactiv.ru",
+        "job@siteactiv.ru",
+        "kazan@siteactiv.ru",
+        "krasnodar@siteactiv.ru",
+        "moscow@siteactiv.ru",
+        "novosibirsk@siteactiv.ru",
+        "spb@siteactiv.ru",
+        "welcome@siteactiv.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
       "company_key": "iidf.ru",
       "Компания": "Акселератор Спринт",
       "Сайт": "https://sprint.iidf.ru/",
@@ -209,6 +164,24 @@
         "securityhotline@iidf.ru",
         "sprint@iidf.ru",
         "support@iidf.ru"
+      ],
+      "segment": "community",
+      "priority": "A"
+    },
+    {
+      "company_key": "hse.ru",
+      "Компания": "HSE Business Incubator",
+      "Сайт": "https://inc.hse.ru/",
+      "contacts_count": 8,
+      "emails": [
+        "admissions_gsb@hse.ru",
+        "business@hse.ru",
+        "careers@hse.ru",
+        "corporate@hse.ru",
+        "gsb@hse.ru",
+        "gsb_alumni@hse.ru",
+        "marcom-gsb@hse.ru",
+        "mba.info@hse.ru"
       ],
       "segment": "community",
       "priority": "A"
@@ -282,6 +255,70 @@
       "priority": "A"
     },
     {
+      "company_key": "dvfu.ru",
+      "Компания": "Far Eastern Federal University",
+      "Сайт": "http://www.dvfu.ru",
+      "contacts_count": 6,
+      "emails": [
+        "callcenter@dvfu.ru",
+        "disp@dvfu.ru",
+        "dkb@dvfu.ru",
+        "it-help@dvfu.ru",
+        "psiholog@dvfu.ru",
+        "rectorat@dvfu.ru"
+      ],
+      "segment": "pr",
+      "priority": "A"
+    },
+    {
+      "company_key": "racurs.agency",
+      "Компания": "#RACURS",
+      "Сайт": "https://racurs.agency/",
+      "contacts_count": 6,
+      "emails": [
+        "churikova@racurs.agency",
+        "hr@racurs.agency",
+        "katrin@racurs.agency",
+        "kornushina@racurs.agency",
+        "rudakova@racurs.agency",
+        "sales@racurs.agency"
+      ],
+      "segment": "pr",
+      "priority": "B"
+    },
+    {
+      "company_key": "makeloveagency.com",
+      "Компания": "makelove",
+      "Сайт": "https://makeloveagency.com/",
+      "contacts_count": 6,
+      "emails": [
+        "info.br@makeloveagency.com",
+        "info.ge@makeloveagency.com",
+        "info.sa@makeloveagency.com",
+        "info.uk@makeloveagency.com",
+        "info@makeloveagency.com",
+        "jobs@makeloveagency.com"
+      ],
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
+      "company_key": "astanahub.com",
+      "Компания": "Astana Hub",
+      "Сайт": "https://astanahub.com/",
+      "contacts_count": 6,
+      "emails": [
+        "ceo@astanahub.com",
+        "cv@astanahub.com",
+        "info@astanahub.com",
+        "media@astanahub.com",
+        "quality@astanahub.com",
+        "support@astanahub.com"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
       "company_key": "mgubs.ru",
       "Компания": "МГУ Бизнес-школа",
       "Сайт": "https://mgubs.ru/",
@@ -330,6 +367,21 @@
       "priority": "A"
     },
     {
+      "company_key": "proactivity.ru",
+      "Компания": "Proactivity Group",
+      "Сайт": "http://www.proactivity.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "ad@proactivity.ru",
+        "angelina@proactivity.ru",
+        "logvinova@proactivity.ru",
+        "sb@proactivity.ru",
+        "vika@proactivity.ru"
+      ],
+      "segment": "event",
+      "priority": "B"
+    },
+    {
       "company_key": "mice-excellence.ru",
       "Компания": "MICE Excellence",
       "Сайт": "https://www.mice-excellence.ru/",
@@ -360,6 +412,21 @@
       "priority": "A"
     },
     {
+      "company_key": "deasign.ru",
+      "Компания": "Deasign",
+      "Сайт": "https://deasign.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "alla@deasign.ru",
+        "axel@deasign.ru",
+        "kirill.nessin@deasign.ru",
+        "office@deasign.ru",
+        "yakov@deasign.ru"
+      ],
+      "segment": "production",
+      "priority": "B"
+    },
+    {
       "company_key": "cstb.ru",
       "Компания": "CSTB.PRO.MEDIA / Мидэкспо",
       "Сайт": "https://cstb.ru/",
@@ -373,6 +440,20 @@
       ],
       "segment": "event",
       "priority": "A"
+    },
+    {
+      "company_key": "1ps.ru",
+      "Компания": "1PS.RU",
+      "Сайт": "https://1ps.ru/",
+      "contacts_count": 4,
+      "emails": [
+        "admin@1ps.ru",
+        "hr@1ps.ru",
+        "irina@1ps.ru",
+        "partner@1ps.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
     },
     {
       "company_key": "productsense.io",
@@ -417,6 +498,20 @@
       "priority": "A"
     },
     {
+      "company_key": "fistashki.org",
+      "Компания": "Fistashki",
+      "Сайт": "https://www.fistashki.org/",
+      "contacts_count": 4,
+      "emails": [
+        "hr@fistashki.org",
+        "likee@fistashki.org",
+        "nb@fistashki.org",
+        "pr@fistashki.org"
+      ],
+      "segment": "pr",
+      "priority": "B"
+    },
+    {
       "company_key": "mirbis.ru",
       "Компания": "Executive MBA МИРБИС",
       "Сайт": "https://mirbis.ru/",
@@ -431,147 +526,17 @@
       "priority": "A"
     },
     {
-      "company_key": "win2win.ru",
-      "Компания": "Win2Win",
-      "Сайт": "https://win2win.ru/",
+      "company_key": "scrumtrek.ru",
+      "Компания": "ScrumTrek",
+      "Сайт": "https://scrumtrek.ru/",
       "contacts_count": 4,
       "emails": [
-        "ekaterina.tomulyanis@win2win.ru",
-        "hr@win2win.ru",
-        "info@win2win.ru",
-        "ivan.menshenin@win2win.ru"
-      ],
-      "segment": "communications",
-      "priority": "A"
-    },
-    {
-      "company_key": "innoprom.com",
-      "Компания": "Иннопром",
-      "Сайт": "https://innoprom.com/",
-      "contacts_count": 3,
-      "emails": [
-        "boryak@innoprom.com",
-        "info@innoprom.com",
-        "savin@innoprom.com"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "techweek.moscow",
-      "Компания": "Tech Week",
-      "Сайт": "https://techweek.moscow/",
-      "contacts_count": 3,
-      "emails": [
-        "b2b@technokrat.moscow",
-        "info@technokrat.moscow",
-        "partners@technokrat.moscow"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "spncomms.com",
-      "Компания": "Spncomms",
-      "Сайт": "https://spncomms.com/",
-      "contacts_count": 3,
-      "emails": [
-        "careerstart@spncomms.com",
-        "info.kz@spncomms.com",
-        "info@spncomms.com"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "scorconf.ru",
-      "Компания": "Scoring Day",
-      "Сайт": "https://scorconf.ru/",
-      "contacts_count": 3,
-      "emails": [
-        "guminskaya@reglament.net",
-        "melnik@reglament.net",
-        "pr@reglament.net"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "socialist.pro",
-      "Компания": "Socialist",
-      "Сайт": "https://socialist.pro/",
-      "contacts_count": 3,
-      "emails": [
-        "client@socialist.pro",
-        "hr@socialist.pro",
-        "partner@socialist.pro"
-      ],
-      "segment": "marketing",
-      "priority": "B"
-    },
-    {
-      "company_key": "productconf.ru",
-      "Компания": "ProductConf",
-      "Сайт": "https://productconf.ru/",
-      "contacts_count": 3,
-      "emails": [
-        "event@scrumtrek.ru",
-        "productconf@scrumtrek.ru",
-        "productconf_pk@scrumtrek.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "codefest.ru",
-      "Компания": "CodeFest",
-      "Сайт": "https://codefest.ru/",
-      "contacts_count": 3,
-      "emails": [
-        "org@codefest.ru",
-        "partner@codefest.ru",
-        "program@codefest.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "yakov.partners",
-      "Компания": "Yakov and Partners",
-      "Сайт": "https://yakov.partners/",
-      "contacts_count": 3,
-      "emails": [
-        "apply@yakovpartners.ru",
-        "info@yakovpartners.ru",
-        "media@yakovpartners.ru"
+        "bo@scrumtrek.ru",
+        "conf@scrumtrek.ru",
+        "corp@scrumtrek.ru",
+        "edu@scrumtrek.ru"
       ],
       "segment": "consulting",
-      "priority": "A"
-    },
-    {
-      "company_key": "atlanty.ru",
-      "Компания": "Атланты",
-      "Сайт": "https://atlanty.ru/",
-      "contacts_count": 3,
-      "emails": [
-        "club@atlanty.ru",
-        "dom@atlanty.ru",
-        "ptm@atlanty.ru"
-      ],
-      "segment": "community",
-      "priority": "A"
-    },
-    {
-      "company_key": "rim-pn.ru",
-      "Компания": "Р.И.М. Porter Novelli",
-      "Сайт": "https://www.rim-pn.ru/",
-      "contacts_count": 3,
-      "emails": [
-        "hr@rim-pn.ru",
-        "pr@rim-pn.ru",
-        "sales@rim-pn.ru"
-      ],
-      "segment": "communications",
       "priority": "A"
     }
   ]
