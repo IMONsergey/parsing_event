@@ -86,6 +86,8 @@ OUTPUT_COLUMNS = [
     "Комментарий",
 ]
 
+PRIORITY_ORDER = {"AA": 0, "A": 1, "B": 2, "C": 3}
+
 SHEETS_OUTPUT_COLUMNS = [
     "ID",
     "ID компании",
@@ -785,7 +787,7 @@ def potential_interest(segment: str) -> str:
 
 def priority_for(segment: str, value: str) -> str:
     value = clean_text(value).upper()
-    if value in {"A", "B", "C"}:
+    if value in PRIORITY_ORDER:
         return value
     if segment in {"event", "presentations", "communications", "pr", "corporate", "consulting"}:
         return "A"
@@ -1399,7 +1401,9 @@ def run(args: argparse.Namespace) -> None:
         df["Дата добавления"] = df["ID"].map(old_dates).fillna(today)
         df["Дата обновления"] = today
         df["Уверенность"] = pd.to_numeric(df["Уверенность"], errors="coerce").fillna(0).astype(int)
-        df = df.sort_values(["Приоритет", "Сегмент", "Компания", "Email"], kind="stable")
+        df["_priority_rank"] = df["Приоритет"].map(PRIORITY_ORDER).fillna(99).astype(int)
+        df = df.sort_values(["_priority_rank", "Приоритет", "Сегмент", "Компания", "Email"], kind="stable")
+        df = df.drop(columns=["_priority_rank"])
         df = mark_company_groups(df)
     else:
         df = pd.DataFrame(columns=OUTPUT_COLUMNS)

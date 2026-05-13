@@ -1,20 +1,20 @@
 {
-  "checked_at": "2026-05-13T18:29:45.095922+00:00",
-  "total_contact_rows": 2070,
-  "unique_companies": 1647,
-  "companies_with_email": 1050,
-  "companies_without_email": 597,
-  "companies_with_website": 1647,
+  "checked_at": "2026-05-13T19:01:45.292173+00:00",
+  "total_contact_rows": 2082,
+  "unique_companies": 1655,
+  "companies_with_email": 1049,
+  "companies_without_email": 606,
+  "companies_with_website": 1655,
   "companies_without_website": 0,
-  "companies_with_multiple_contacts": 206,
+  "companies_with_multiple_contacts": 208,
   "max_contacts_per_company": 18,
   "average_contacts_per_company": 1.26,
   "companies_by_segment": {
-    "event": 578,
+    "event": 585,
     "pr": 361,
     "marketing": 247,
     "communications": 145,
-    "digital": 79,
+    "digital": 80,
     "branding": 75,
     "presentations": 38,
     "community": 34,
@@ -26,14 +26,15 @@
   },
   "companies_by_priority": {
     "A": 995,
-    "B": 588,
-    "C": 64
+    "B": 589,
+    "C": 64,
+    "AA": 7
   },
   "companies_by_country": {
-    "Россия": 1601,
+    "Россия": 1608,
     "International": 23,
     "ОАЭ": 8,
-    "Казахстан": 6,
+    "Казахстан": 7,
     "США": 3,
     "UK": 2,
     "Беларусь": 1,
@@ -42,8 +43,8 @@
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 1197,
-    "Готово": 450
+    "Проверить": 1202,
+    "Готово": 453
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
@@ -276,22 +277,6 @@
       "priority": "A"
     },
     {
-      "company_key": "dpgrussia.com",
-      "Компания": "DPG Russia",
-      "Сайт": "https://dpgrussia.com/",
-      "contacts_count": 6,
-      "emails": [
-        "agency@dpgrussia.com",
-        "kremer@dpgrussia.com",
-        "mikheikina@dpgrussia.com",
-        "miller@dpgrussia.com",
-        "saviniukhova@dpgrussia.com",
-        "shvedova@dpgrussia.com"
-      ],
-      "segment": "communications",
-      "priority": "A"
-    },
-    {
       "company_key": "beaversbrothers.ru",
       "Компания": "Beavers Brothers",
       "Сайт": "https://beaversbrothers.ru/",
@@ -404,6 +389,22 @@
       "priority": "A"
     },
     {
+      "company_key": "dpgrussia.com",
+      "Компания": "DPG Russia",
+      "Сайт": "https://dpgrussia.com/",
+      "contacts_count": 6,
+      "emails": [
+        "agency@dpgrussia.com",
+        "kremer@dpgrussia.com",
+        "mikheikina@dpgrussia.com",
+        "miller@dpgrussia.com",
+        "saviniukhova@dpgrussia.com",
+        "shvedova@dpgrussia.com"
+      ],
+      "segment": "communications",
+      "priority": "A"
+    },
+    {
       "company_key": "dvfu.ru",
       "Компания": "Far Eastern Federal University",
       "Сайт": "http://www.dvfu.ru",
@@ -432,6 +433,21 @@
         "yakov@deasign.ru"
       ],
       "segment": "production",
+      "priority": "B"
+    },
+    {
+      "company_key": "artwell.ru",
+      "Компания": "АРТВЕЛЛ",
+      "Сайт": "http://www.artwell.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "clients@artwell.ru",
+        "karaganda@artwell.ru",
+        "komi@artwell.ru",
+        "spb@artwell.ru",
+        "support@artwell.ru"
+      ],
+      "segment": "marketing",
       "priority": "B"
     },
     {
@@ -535,20 +551,6 @@
         "spb@artics.ru"
       ],
       "segment": "digital",
-      "priority": "B"
-    },
-    {
-      "company_key": "itb-company.com",
-      "Компания": "itb",
-      "Сайт": "https://itb-company.com/",
-      "contacts_count": 4,
-      "emails": [
-        "info@itb-company.com",
-        "msk@itb-company.com",
-        "nsk@itb-company.com",
-        "spb@itb-company.com"
-      ],
-      "segment": "communications",
       "priority": "B"
     }
   ]
