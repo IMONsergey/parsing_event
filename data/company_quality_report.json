@@ -1,22 +1,22 @@
 {
-  "checked_at": "2026-05-13T12:29:57.801018+00:00",
-  "total_contact_rows": 1985,
-  "unique_companies": 1648,
-  "companies_with_email": 838,
-  "companies_without_email": 810,
-  "companies_with_website": 1648,
+  "checked_at": "2026-05-13T17:26:37.825561+00:00",
+  "total_contact_rows": 2021,
+  "unique_companies": 1607,
+  "companies_with_email": 1012,
+  "companies_without_email": 595,
+  "companies_with_website": 1607,
   "companies_without_website": 0,
-  "companies_with_multiple_contacts": 164,
+  "companies_with_multiple_contacts": 193,
   "max_contacts_per_company": 18,
-  "average_contacts_per_company": 1.2,
+  "average_contacts_per_company": 1.26,
   "companies_by_segment": {
     "event": 577,
-    "pr": 402,
-    "marketing": 246,
-    "communications": 143,
-    "digital": 80,
-    "branding": 76,
-    "community": 34,
+    "pr": 361,
+    "marketing": 247,
+    "communications": 145,
+    "digital": 79,
+    "branding": 75,
+    "community": 33,
     "consulting": 31,
     "production": 25,
     "sales": 20,
@@ -24,22 +24,23 @@
     "hr": 2
   },
   "companies_by_priority": {
-    "A": 999,
+    "A": 959,
     "B": 584,
-    "C": 65
+    "C": 64
   },
   "companies_by_country": {
-    "Россия": 1631,
+    "Россия": 1589,
     "ОАЭ": 8,
     "Казахстан": 5,
     "Беларусь": 1,
     "International": 1,
     "Армения": 1,
+    "Грузия": 1,
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 1266,
-    "Готово": 382
+    "Проверить": 1171,
+    "Готово": 436
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
@@ -70,6 +71,32 @@
         "t_chugunova@mbschool.ru"
       ],
       "segment": "education",
+      "priority": "B"
+    },
+    {
+      "company_key": "vilkaservice.com",
+      "Компания": "VILKA",
+      "Сайт": "https://www.vilkaservice.com/",
+      "contacts_count": 16,
+      "emails": [
+        "18d2f96d279149989b95faf0a4b41882@sentry-next.wixpress.com",
+        "1eeb89147c984dc6bc3ffafd9e6cd089@sentry.wixpress.com",
+        "2062d0a4929b45348643784b5cb39c36@sentry.wixpress.com",
+        "271e9fa3230b4eec94b02bf95780f5f2@sentry.wixpress.com",
+        "460ff4620fa44cba8df530afde949785@sentry.wixpress.com",
+        "5d1795a2db124a268f1e1bd88f503500@sentry.wixpress.com",
+        "79baaa8e09c746d2b7401643b99792e0@sentry.wixpress.com",
+        "8c30b2581acc426badc414e8a5dc04ef@sentry.wixpress.com",
+        "8c4075d5481d476e945486754f783364@sentry.io",
+        "8eb368c655b84e029ed79ad7a5c1718e@sentry.wixpress.com",
+        "9a65e97ebe8141fca0c4fd686f70996b@sentry.wixpress.com",
+        "bfb679c754744c58a7374ee6e25cfc13@sentry.wixpress.com",
+        "ed436f5053144538958ad06a5005e99a@sentry.wixpress.com",
+        "info@vilka.pro",
+        "partners@vilka.pro",
+        "sales@vilka.pro"
+      ],
+      "segment": "communications",
       "priority": "B"
     },
     {
@@ -114,6 +141,25 @@
       "priority": "B"
     },
     {
+      "company_key": "siteactiv.ru",
+      "Компания": "СайтАктив",
+      "Сайт": "https://siteactiv.ru/",
+      "contacts_count": 9,
+      "emails": [
+        "info@siteactiv.ru",
+        "job@siteactiv.ru",
+        "kazan@siteactiv.ru",
+        "krasnodar@siteactiv.ru",
+        "moscow@siteactiv.ru",
+        "novosibirsk@siteactiv.ru",
+        "spb@siteactiv.ru",
+        "welcome+1459043@siteactiv.ru",
+        "welcome@siteactiv.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
       "company_key": "startupvillage.ru",
       "Компания": "Startup Village",
       "Сайт": "https://startupvillage.ru/",
@@ -130,24 +176,6 @@
       ],
       "segment": "event",
       "priority": "A"
-    },
-    {
-      "company_key": "siteactiv.ru",
-      "Компания": "СайтАктив",
-      "Сайт": "https://siteactiv.ru/",
-      "contacts_count": 8,
-      "emails": [
-        "info@siteactiv.ru",
-        "job@siteactiv.ru",
-        "kazan@siteactiv.ru",
-        "krasnodar@siteactiv.ru",
-        "moscow@siteactiv.ru",
-        "novosibirsk@siteactiv.ru",
-        "spb@siteactiv.ru",
-        "welcome@siteactiv.ru"
-      ],
-      "segment": "marketing",
-      "priority": "B"
     },
     {
       "company_key": "iidf.ru",
@@ -254,6 +282,54 @@
       "priority": "B"
     },
     {
+      "company_key": "dpgrussia.com",
+      "Компания": "DPG Russia",
+      "Сайт": "https://dpgrussia.com/",
+      "contacts_count": 6,
+      "emails": [
+        "agency@dpgrussia.com",
+        "kremer@dpgrussia.com",
+        "mikheikina@dpgrussia.com",
+        "miller@dpgrussia.com",
+        "saviniukhova@dpgrussia.com",
+        "shvedova@dpgrussia.com"
+      ],
+      "segment": "communications",
+      "priority": "A"
+    },
+    {
+      "company_key": "beaversbrothers.ru",
+      "Компания": "Beavers Brothers",
+      "Сайт": "https://beaversbrothers.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "avi@beaversbrothers.uz",
+        "avi@dabb.pro",
+        "avi@dabb.ru",
+        "hello@beaversbrothers.uz",
+        "hello@dabb.pro",
+        "hello@dabb.ru"
+      ],
+      "segment": "production",
+      "priority": "B"
+    },
+    {
+      "company_key": "apanshin.ru",
+      "Компания": "Паньшин Групп",
+      "Сайт": "https://apanshin.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "control@apanshin.ru",
+        "director@apanshin.ru",
+        "hr@apanshin.ru",
+        "manager@apanshin.ru",
+        "office@apanshin.ru",
+        "sales@apanshin.ru"
+      ],
+      "segment": "pr",
+      "priority": "B"
+    },
+    {
       "company_key": "racurs.agency",
       "Компания": "#RACURS",
       "Сайт": "https://racurs.agency/",
@@ -334,22 +410,6 @@
       "priority": "A"
     },
     {
-      "company_key": "dpgrussia.com",
-      "Компания": "DPG Russia",
-      "Сайт": "https://dpgrussia.com/",
-      "contacts_count": 6,
-      "emails": [
-        "agency@dpgrussia.com",
-        "kremer@dpgrussia.com",
-        "mikheikina@dpgrussia.com",
-        "miller@dpgrussia.com",
-        "saviniukhova@dpgrussia.com",
-        "shvedova@dpgrussia.com"
-      ],
-      "segment": "communications",
-      "priority": "A"
-    },
-    {
       "company_key": "dvfu.ru",
       "Компания": "Far Eastern Federal University",
       "Сайт": "http://www.dvfu.ru",
@@ -381,6 +441,21 @@
       "priority": "B"
     },
     {
+      "company_key": "artwell.ru",
+      "Компания": "АРТВЕЛЛ",
+      "Сайт": "http://www.artwell.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "clients@artwell.ru",
+        "karaganda@artwell.ru",
+        "komi@artwell.ru",
+        "spb@artwell.ru",
+        "support@artwell.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
       "company_key": "mice-excellence.ru",
       "Компания": "MICE Excellence",
       "Сайт": "https://www.mice-excellence.ru/",
@@ -394,6 +469,21 @@
       ],
       "segment": "event",
       "priority": "A"
+    },
+    {
+      "company_key": "cityads.com",
+      "Компания": "Cityads",
+      "Сайт": "https://cityads.com/main",
+      "contacts_count": 5,
+      "emails": [
+        "dpo@cityads.com",
+        "europe@cityads.com",
+        "international@cityads.com",
+        "latam@cityads.com",
+        "vietnam@cityads.com"
+      ],
+      "segment": "marketing",
+      "priority": "B"
     },
     {
       "company_key": "highload.ru",
@@ -426,6 +516,21 @@
       "priority": "A"
     },
     {
+      "company_key": "gefestevent.ru",
+      "Компания": "Гефест Event Новосибирск",
+      "Сайт": "https://www.gefestevent.ru",
+      "contacts_count": 5,
+      "emails": [
+        "event54@gefestcapital.ru",
+        "event77@gefestcapital.ru",
+        "info@gefestcapital.ru",
+        "kazan@gefestkzn.com",
+        "sochi@gefestcapital.ru"
+      ],
+      "segment": "event",
+      "priority": "B"
+    },
+    {
       "company_key": "proactivity.ru",
       "Компания": "Proactivity Group",
       "Сайт": "http://www.proactivity.ru/",
@@ -452,90 +557,6 @@
         "request@codeinside.ru"
       ],
       "segment": "digital",
-      "priority": "B"
-    },
-    {
-      "company_key": "itb-company.com",
-      "Компания": "itb",
-      "Сайт": "https://itb-company.com/",
-      "contacts_count": 4,
-      "emails": [
-        "info@itb-company.com",
-        "msk@itb-company.com",
-        "nsk@itb-company.com",
-        "spb@itb-company.com"
-      ],
-      "segment": "communications",
-      "priority": "B"
-    },
-    {
-      "company_key": "productsense.io",
-      "Компания": "ProductSense",
-      "Сайт": "https://productsense.io/",
-      "contacts_count": 4,
-      "emails": [
-        "account@productsense.io",
-        "ageev@productsense.io",
-        "support@productsense.io",
-        "talks@productsense.io"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "fistashki.org",
-      "Компания": "Fistashki",
-      "Сайт": "https://www.fistashki.org/",
-      "contacts_count": 4,
-      "emails": [
-        "hr@fistashki.org",
-        "likee@fistashki.org",
-        "nb@fistashki.org",
-        "pr@fistashki.org"
-      ],
-      "segment": "pr",
-      "priority": "B"
-    },
-    {
-      "company_key": "media-trast.ru",
-      "Компания": "Media Trast",
-      "Сайт": "https://media-trast.ru",
-      "contacts_count": 4,
-      "emails": [
-        "office39@media-trast.ru",
-        "office72@media-trast.ru",
-        "promo12@media-trast.ru",
-        "promo71@media-trast.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "maergroup.ru",
-      "Компания": "Maergroup",
-      "Сайт": "https://maergroup.ru/",
-      "contacts_count": 4,
-      "emails": [
-        "hello@maergroup.ru",
-        "info@maergroup.ru",
-        "pr@maergroup.ru",
-        "stopcorruption@maergroup.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "1ps.ru",
-      "Компания": "1PS.RU",
-      "Сайт": "https://1ps.ru/",
-      "contacts_count": 4,
-      "emails": [
-        "admin@1ps.ru",
-        "hr@1ps.ru",
-        "irina@1ps.ru",
-        "partner@1ps.ru"
-      ],
-      "segment": "marketing",
       "priority": "B"
     }
   ]

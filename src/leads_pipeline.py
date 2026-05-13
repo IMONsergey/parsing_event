@@ -178,6 +178,28 @@ INN_RE = re.compile(r"^(?:\d{10}|\d{12})$")
 CONNECT_TIMEOUT_SECONDS = 2
 READ_TIMEOUT_SECONDS = 3
 MAX_FETCH_WORKERS = 12
+WEBSITE_FALLBACK_MAX_PAGES = 4
+CONTACT_URL_HINT_RE = re.compile(
+    r"contact|contacts|contact-us|contactus|kontak|kontakt|kontakty|about|team|svyaz|feedback|"
+    r"o-kompanii|o_nas|ob-agentstve|agency",
+    re.I,
+)
+FALLBACK_PATHS = [
+    "/contacts",
+    "/contacts/",
+    "/contact",
+    "/contact/",
+    "/contact-us",
+    "/contact-us/",
+    "/kontakty",
+    "/kontakty/",
+    "/kontakt",
+    "/kontakt/",
+    "/about",
+    "/about/",
+    "/about/contacts",
+    "/about/contacts/",
+]
 FORBIDDEN_SOURCE_CONTEXT_RE = re.compile(
     r"aviation|aircraft|mro|jeddah|kaizen|maintenance|landing\s+gear|"
     r"aircraft\s+maintenance|aviation\s+hub",
@@ -466,6 +488,11 @@ def extract_page_data(html: str, base_url: str) -> dict[str, Any]:
     meta = soup.find("meta", attrs={"name": re.compile("^description$", re.I)})
     if meta and meta.get("content"):
         meta_description = clean_text(meta.get("content"))
+    script_text = " ".join(
+        clean_text(tag.get_text(" ", strip=True))
+        for tag in soup.find_all("script")
+        if "json" in clean_text(tag.get("type", "")).lower()
+    )
 
     for tag in soup(["script", "style", "noscript", "svg", "canvas"]):
         tag.decompose()
@@ -476,14 +503,16 @@ def extract_page_data(html: str, base_url: str) -> dict[str, Any]:
     for href in hrefs:
         if href.lower().startswith("mailto:"):
             mailto_emails.extend(split_email_candidates(href))
-    raw_emails = EMAIL_RE.findall(" ".join([text, " ".join(hrefs), meta_description]))
+    raw_emails = EMAIL_RE.findall(" ".join([text, " ".join(hrefs), meta_description, script_text]))
     phones = [normalize_phone(phone) for phone in PHONE_RE.findall(text)]
 
     linkedin = []
     telegram = []
+    absolute_hrefs = []
     for href in hrefs:
         absolute = urljoin(base_url, href)
         lower = absolute.lower()
+        absolute_hrefs.append(absolute)
         if "linkedin.com/" in lower:
             linkedin.append(absolute)
         if "t.me/" in lower or "telegram.me/" in lower:
@@ -497,7 +526,116 @@ def extract_page_data(html: str, base_url: str) -> dict[str, Any]:
         "phones": list(dict.fromkeys([phone for phone in phones if phone])),
         "linkedin": list(dict.fromkeys(linkedin)),
         "telegram": list(dict.fromkeys(telegram)),
+        "hrefs": list(dict.fromkeys(absolute_hrefs)),
     }
+
+
+def merge_page_data(*items: dict[str, Any]) -> dict[str, Any]:
+    merged = {
+        "title": "",
+        "meta_description": "",
+        "text": "",
+        "emails": [],
+        "phones": [],
+        "linkedin": [],
+        "telegram": [],
+        "hrefs": [],
+    }
+    for item in items:
+        if not item:
+            continue
+        for key in ["title", "meta_description", "text"]:
+            merged[key] = join_unique([merged[key], clean_text(item.get(key, ""))])
+        for key in ["emails", "phones", "linkedin", "telegram", "hrefs"]:
+            merged[key] = list(
+                dict.fromkeys(merged[key] + [clean_text(value) for value in item.get(key, []) if value])
+            )
+    return merged
+
+
+def same_registered_domain(url: str, website: str) -> bool:
+    return bool(url and website and registered_domain(urlparse(url).netloc) == registered_domain(urlparse(website).netloc))
+
+
+def contact_candidate_urls(page_data: dict[str, Any], website: str) -> list[str]:
+    site_domain = registered_domain(urlparse(website).netloc)
+    if not site_domain:
+        return []
+    candidates: list[str] = []
+    for href in page_data.get("hrefs", []):
+        parsed = urlparse(href)
+        if parsed.scheme not in {"http", "https"}:
+            continue
+        if registered_domain(parsed.netloc) != site_domain:
+            continue
+        full = href.lower()
+        if CONTACT_URL_HINT_RE.search(full):
+            candidates.append(href)
+    base = f"{urlparse(website).scheme}://{urlparse(website).netloc}"
+    for path in FALLBACK_PATHS:
+        candidates.append(urljoin(base, path))
+
+    def score(url: str) -> tuple[int, int, str]:
+        lower = url.lower()
+        points = 0
+        if any(token in lower for token in ["contacts", "contact", "kontakty", "kontakt"]):
+            points += 3
+        if any(token in lower for token in ["about", "team", "o-kompanii", "agency"]):
+            points += 1
+        return (-points, len(url), url)
+
+    return list(dict.fromkeys(sorted(candidates, key=score)))
+
+
+def enrich_from_company_website(
+    website: str,
+    source_url: str,
+    page_data: dict[str, Any],
+    report: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    website = normalize_url(website)
+    if not website:
+        return page_data
+
+    metrics = {
+        "pages_fetched": 0,
+        "errors": [],
+    }
+    visited = {normalize_url(source_url).lower()}
+    merged = merge_page_data(page_data)
+    queue: list[str] = []
+    attempts = 0
+
+    if not same_registered_domain(source_url, website):
+        queue.append(website)
+    queue.extend(contact_candidate_urls(page_data, website))
+
+    for url in queue:
+        if attempts >= WEBSITE_FALLBACK_MAX_PAGES:
+            break
+        normalized = normalize_url(url).lower()
+        if not normalized or normalized in visited:
+            continue
+        visited.add(normalized)
+        attempts += 1
+        try:
+            html, final_url = fetch_page(url)
+            metrics["pages_fetched"] += 1
+            extra = extract_page_data(html, final_url)
+            merged = merge_page_data(merged, extra)
+            if merged["emails"]:
+                break
+            if len(visited) <= 2:
+                for candidate in contact_candidate_urls(extra, website):
+                    if normalize_url(candidate).lower() not in visited:
+                        queue.append(candidate)
+        except Exception as exc:
+            metrics["errors"].append({"url": url, "error": str(exc)})
+
+    if report is not None:
+        report["pages_fetched"] += metrics["pages_fetched"]
+        report["errors"].extend(metrics["errors"])
+    return merged
 
 
 def potential_interest(segment: str) -> str:
@@ -628,6 +766,8 @@ def source_to_rows(
         segment = "other"
     company = clean_text(source.get("Компания", "")) or data["title"]
     website = normalize_url(source.get("Сайт", "")) or f"{urlparse(final_url).scheme}://{urlparse(final_url).netloc}"
+    if not data["emails"] and website:
+        data = enrich_from_company_website(website, final_url, data, metrics)
     relevant_keywords = has_keywords(segment, data["text"], keywords)
     base = {
         "Приоритет": priority_for(segment, source.get("Приоритет", "")),
