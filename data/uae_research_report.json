@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-05-13T11:48:23.984195+00:00",
+  "stage": "uae_russian_speaking_research",
+  "existing_sources_before": 1029,
+  "existing_unique_companies_before": 1008,
+  "candidate_sources_reviewed": 11,
+  "candidates_rejected_as_duplicates": 1,
+  "candidates_rejected_no_russian_signal": 2,
+  "candidates_rejected_low_relevance": 2,
+  "new_sources_added": 6,
+  "new_sources_by_country": {
+    "ОАЭ": 6
+  },
+  "new_sources_by_city": {
+    "Дубай": 6
+  },
+  "new_sources_by_segment": {
+    "community": 3,
+    "pr": 2,
+    "consulting": 1
+  },
+  "new_sources_by_priority": {
+    "A": 4,
+    "B": 2
+  },
+  "russian_signal_types": {
+    "russian_site_or_branding": 5,
+    "russian_cis_business_community_signal": 3,
+    "russian_language_services_on_official_site": 3,
+    "dubai_uae_contact_page_signal": 4
+  },
+  "notes": [
+    "В UAE-пуле приоритет отдан официальным сайтам с явным Russian / CIS сигналом и понятной event, PR или community-релевантностью.",
+    "Один кандидат был исключён на этапе финального дедупа по уже существующему домену frc-pr.com.",
+    "Плотность качественных публичных UAE-источников с русскоязычной связью оказалась существенно ниже, чем по региональной России."
+  ]
+}

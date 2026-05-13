@@ -1,31 +1,31 @@
 {
-  "checked_at": "2026-05-13T07:18:40.807535+00:00",
-  "sources_total": 1029,
-  "sources_active": 1028,
+  "checked_at": "2026-05-13T12:29:58.995760+00:00",
+  "sources_total": 1658,
+  "sources_active": 1657,
   "sources_inactive": 1,
   "sources_by_segment": {
+    "event": 581,
+    "pr": 402,
     "marketing": 247,
-    "event": 200,
-    "communications": 148,
-    "pr": 147,
-    "branding": 82,
+    "communications": 147,
     "digital": 81,
-    "community": 33,
-    "consulting": 30,
+    "branding": 76,
+    "community": 34,
+    "consulting": 31,
     "production": 25,
     "sales": 20,
-    "education": 13,
-    "hr": 3
+    "education": 12,
+    "hr": 2
   },
   "sources_by_priority": {
-    "B": 525,
-    "A": 434,
-    "C": 70
+    "A": 1006,
+    "B": 588,
+    "C": 64
   },
   "sources_by_country": {
-    "Россия": 1017,
+    "Россия": 1640,
+    "ОАЭ": 8,
     "Казахстан": 5,
-    "ОАЭ": 2,
     "Беларусь": 1,
     "Узбекистан": 1,
     "Армения": 1,
@@ -33,63 +33,18 @@
     "International": 1
   },
   "sources_by_source_type": {
+    "Сайт агентства": 834,
     "Рейтинг агентств": 471,
-    "Каталог агентств": 222,
-    "Сайт агентства": 200,
+    "Каталог агентств": 216,
     "Организатор мероприятия": 41,
-    "Бизнес-сообщество": 33,
+    "Бизнес-сообщество": 34,
     "Сайт мероприятия": 22,
-    "Консалтинг": 14,
+    "Консалтинг": 15,
     "Страница контактов": 13,
-    "Образовательный проект": 13
+    "Образовательный проект": 12
   },
   "duplicate_source_urls": [],
-  "duplicate_domains": [
-    {
-      "domain": "brandbrothers.ru",
-      "count": 2
-    },
-    {
-      "domain": "compassbrand.ru",
-      "count": 2
-    },
-    {
-      "domain": "ddvb.ru",
-      "count": 2
-    },
-    {
-      "domain": "depotwpf.ru",
-      "count": 2
-    },
-    {
-      "domain": "redkeds.com",
-      "count": 2
-    },
-    {
-      "domain": "repinabranding.ru",
-      "count": 2
-    },
-    {
-      "domain": "bbdo-group.ru",
-      "count": 2
-    },
-    {
-      "domain": "ecopsy.ru",
-      "count": 2
-    },
-    {
-      "domain": "iidf.ru",
-      "count": 2
-    },
-    {
-      "domain": "hse.ru",
-      "count": 2
-    },
-    {
-      "domain": "leader-id.ru",
-      "count": 2
-    }
-  ],
+  "duplicate_domains": [],
   "empty_company_count": 0,
   "empty_website_count": 0,
   "empty_source_url_count": 0,

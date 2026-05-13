@@ -1,46 +1,45 @@
 {
-  "checked_at": "2026-05-13T07:18:39.757406+00:00",
-  "total_contact_rows": 1342,
-  "unique_companies": 1008,
-  "companies_with_email": 828,
-  "companies_without_email": 180,
-  "companies_with_website": 1008,
+  "checked_at": "2026-05-13T12:29:57.801018+00:00",
+  "total_contact_rows": 1985,
+  "unique_companies": 1648,
+  "companies_with_email": 838,
+  "companies_without_email": 810,
+  "companies_with_website": 1648,
   "companies_without_website": 0,
-  "companies_with_multiple_contacts": 161,
+  "companies_with_multiple_contacts": 164,
   "max_contacts_per_company": 18,
-  "average_contacts_per_company": 1.33,
+  "average_contacts_per_company": 1.2,
   "companies_by_segment": {
+    "event": 577,
+    "pr": 402,
     "marketing": 246,
-    "event": 196,
-    "pr": 147,
-    "communications": 144,
+    "communications": 143,
     "digital": 80,
     "branding": 76,
-    "community": 31,
-    "consulting": 30,
+    "community": 34,
+    "consulting": 31,
     "production": 25,
     "sales": 20,
-    "education": 11,
+    "education": 12,
     "hr": 2
   },
   "companies_by_priority": {
-    "B": 520,
-    "A": 423,
+    "A": 999,
+    "B": 584,
     "C": 65
   },
   "companies_by_country": {
-    "Россия": 996,
+    "Россия": 1631,
+    "ОАЭ": 8,
     "Казахстан": 5,
-    "ОАЭ": 2,
     "Беларусь": 1,
     "International": 1,
     "Армения": 1,
-    "Грузия": 1,
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 629,
-    "Готово": 379
+    "Проверить": 1266,
+    "Готово": 382
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
@@ -187,23 +186,6 @@
       "priority": "A"
     },
     {
-      "company_key": "medianet.ru",
-      "Компания": "Medianet",
-      "Сайт": "http://www.medianet.ru/",
-      "contacts_count": 7,
-      "emails": [
-        "infoekaterinburg@medianet.ru",
-        "infokrasnodar@medianet.ru",
-        "infomoscow@medianet.ru",
-        "infonovosibirsk@medianet.ru",
-        "infosamara@medianet.ru",
-        "infospb@medianet.ru",
-        "infovladivostok@medianet.ru"
-      ],
-      "segment": "marketing",
-      "priority": "B"
-    },
-    {
       "company_key": "interforums.ru",
       "Компания": "InterForum",
       "Сайт": "https://interforums.ru/",
@@ -255,20 +237,21 @@
       "priority": "A"
     },
     {
-      "company_key": "dvfu.ru",
-      "Компания": "Far Eastern Federal University",
-      "Сайт": "http://www.dvfu.ru",
-      "contacts_count": 6,
+      "company_key": "medianet.ru",
+      "Компания": "Medianet",
+      "Сайт": "http://www.medianet.ru/",
+      "contacts_count": 7,
       "emails": [
-        "callcenter@dvfu.ru",
-        "disp@dvfu.ru",
-        "dkb@dvfu.ru",
-        "it-help@dvfu.ru",
-        "psiholog@dvfu.ru",
-        "rectorat@dvfu.ru"
+        "infoekaterinburg@medianet.ru",
+        "infokrasnodar@medianet.ru",
+        "infomoscow@medianet.ru",
+        "infonovosibirsk@medianet.ru",
+        "infosamara@medianet.ru",
+        "infospb@medianet.ru",
+        "infovladivostok@medianet.ru"
       ],
-      "segment": "pr",
-      "priority": "A"
+      "segment": "marketing",
+      "priority": "B"
     },
     {
       "company_key": "racurs.agency",
@@ -367,18 +350,34 @@
       "priority": "A"
     },
     {
-      "company_key": "proactivity.ru",
-      "Компания": "Proactivity Group",
-      "Сайт": "http://www.proactivity.ru/",
+      "company_key": "dvfu.ru",
+      "Компания": "Far Eastern Federal University",
+      "Сайт": "http://www.dvfu.ru",
+      "contacts_count": 6,
+      "emails": [
+        "callcenter@dvfu.ru",
+        "disp@dvfu.ru",
+        "dkb@dvfu.ru",
+        "it-help@dvfu.ru",
+        "psiholog@dvfu.ru",
+        "rectorat@dvfu.ru"
+      ],
+      "segment": "pr",
+      "priority": "A"
+    },
+    {
+      "company_key": "deasign.ru",
+      "Компания": "Deasign",
+      "Сайт": "https://deasign.ru/",
       "contacts_count": 5,
       "emails": [
-        "ad@proactivity.ru",
-        "angelina@proactivity.ru",
-        "logvinova@proactivity.ru",
-        "sb@proactivity.ru",
-        "vika@proactivity.ru"
+        "alla@deasign.ru",
+        "axel@deasign.ru",
+        "kirill.nessin@deasign.ru",
+        "office@deasign.ru",
+        "yakov@deasign.ru"
       ],
-      "segment": "event",
+      "segment": "production",
       "priority": "B"
     },
     {
@@ -412,21 +411,6 @@
       "priority": "A"
     },
     {
-      "company_key": "deasign.ru",
-      "Компания": "Deasign",
-      "Сайт": "https://deasign.ru/",
-      "contacts_count": 5,
-      "emails": [
-        "alla@deasign.ru",
-        "axel@deasign.ru",
-        "kirill.nessin@deasign.ru",
-        "office@deasign.ru",
-        "yakov@deasign.ru"
-      ],
-      "segment": "production",
-      "priority": "B"
-    },
-    {
       "company_key": "cstb.ru",
       "Компания": "CSTB.PRO.MEDIA / Мидэкспо",
       "Сайт": "https://cstb.ru/",
@@ -442,17 +426,46 @@
       "priority": "A"
     },
     {
-      "company_key": "1ps.ru",
-      "Компания": "1PS.RU",
-      "Сайт": "https://1ps.ru/",
+      "company_key": "proactivity.ru",
+      "Компания": "Proactivity Group",
+      "Сайт": "http://www.proactivity.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "ad@proactivity.ru",
+        "angelina@proactivity.ru",
+        "logvinova@proactivity.ru",
+        "sb@proactivity.ru",
+        "vika@proactivity.ru"
+      ],
+      "segment": "event",
+      "priority": "B"
+    },
+    {
+      "company_key": "codeinside.ru",
+      "Компания": "CodeInside",
+      "Сайт": "https://codeinside.ru/",
       "contacts_count": 4,
       "emails": [
-        "admin@1ps.ru",
-        "hr@1ps.ru",
-        "irina@1ps.ru",
-        "partner@1ps.ru"
+        "am@codeinside.ru",
+        "job@codeinside.ru",
+        "office@codeinside.ru",
+        "request@codeinside.ru"
       ],
-      "segment": "marketing",
+      "segment": "digital",
+      "priority": "B"
+    },
+    {
+      "company_key": "itb-company.com",
+      "Компания": "itb",
+      "Сайт": "https://itb-company.com/",
+      "contacts_count": 4,
+      "emails": [
+        "info@itb-company.com",
+        "msk@itb-company.com",
+        "nsk@itb-company.com",
+        "spb@itb-company.com"
+      ],
+      "segment": "communications",
       "priority": "B"
     },
     {
@@ -468,6 +481,20 @@
       ],
       "segment": "event",
       "priority": "A"
+    },
+    {
+      "company_key": "fistashki.org",
+      "Компания": "Fistashki",
+      "Сайт": "https://www.fistashki.org/",
+      "contacts_count": 4,
+      "emails": [
+        "hr@fistashki.org",
+        "likee@fistashki.org",
+        "nb@fistashki.org",
+        "pr@fistashki.org"
+      ],
+      "segment": "pr",
+      "priority": "B"
     },
     {
       "company_key": "media-trast.ru",
@@ -498,46 +525,18 @@
       "priority": "A"
     },
     {
-      "company_key": "fistashki.org",
-      "Компания": "Fistashki",
-      "Сайт": "https://www.fistashki.org/",
+      "company_key": "1ps.ru",
+      "Компания": "1PS.RU",
+      "Сайт": "https://1ps.ru/",
       "contacts_count": 4,
       "emails": [
-        "hr@fistashki.org",
-        "likee@fistashki.org",
-        "nb@fistashki.org",
-        "pr@fistashki.org"
+        "admin@1ps.ru",
+        "hr@1ps.ru",
+        "irina@1ps.ru",
+        "partner@1ps.ru"
       ],
-      "segment": "pr",
+      "segment": "marketing",
       "priority": "B"
-    },
-    {
-      "company_key": "mirbis.ru",
-      "Компания": "Executive MBA МИРБИС",
-      "Сайт": "https://mirbis.ru/",
-      "contacts_count": 4,
-      "emails": [
-        "demos@mirbis.ru",
-        "info@mirbis.ru",
-        "mba@mirbis.ru",
-        "press@mirbis.ru"
-      ],
-      "segment": "education",
-      "priority": "A"
-    },
-    {
-      "company_key": "scrumtrek.ru",
-      "Компания": "ScrumTrek",
-      "Сайт": "https://scrumtrek.ru/",
-      "contacts_count": 4,
-      "emails": [
-        "bo@scrumtrek.ru",
-        "conf@scrumtrek.ru",
-        "corp@scrumtrek.ru",
-        "edu@scrumtrek.ru"
-      ],
-      "segment": "consulting",
-      "priority": "A"
     }
   ]
 }

@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import re
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -144,6 +145,9 @@ PHONE_RE = re.compile(r"(?:\+?\d[\d\s().-]{7,}\d)")
 YEAR_RANGE_RE = re.compile(r"^(?:19|20)\d{2}\s*[-–]\s*(?:19|20)\d{2}$")
 DATE_RE = re.compile(r"^\d{1,2}[./-]\d{1,2}[./-](?:19|20)\d{2}$")
 INN_RE = re.compile(r"^(?:\d{10}|\d{12})$")
+CONNECT_TIMEOUT_SECONDS = 2
+READ_TIMEOUT_SECONDS = 3
+MAX_FETCH_WORKERS = 12
 FORBIDDEN_SOURCE_CONTEXT_RE = re.compile(
     r"aviation|aircraft|mro|jeddah|kaizen|maintenance|landing\s+gear|"
     r"aircraft\s+maintenance|aviation\s+hub",
@@ -419,7 +423,7 @@ def fetch_page(url: str) -> tuple[str, str]:
         headers={
             "User-Agent": "BAEV-leads-pipeline/1.0 (+https://github.com/IMONsergey/parsing_event)"
         },
-        timeout=15,
+        timeout=(CONNECT_TIMEOUT_SECONDS, READ_TIMEOUT_SECONDS),
     )
     response.raise_for_status()
     return response.text, response.url
@@ -567,21 +571,26 @@ def stable_id(row: dict[str, Any]) -> str:
 
 
 def source_to_rows(
-    source: pd.Series,
+    source: pd.Series | dict[str, Any],
     excluded_domains: set[str],
     keywords: dict[str, dict[str, list[str]]],
-    report: dict[str, Any],
-) -> list[dict[str, Any]]:
+    report: dict[str, Any] | None = None,
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    metrics = {
+        "pages_fetched": 0,
+        "email_candidates_discarded": 0,
+        "errors": [],
+    }
     source_url = normalize_url(source.get("URL источника", ""))
     if not source_url:
-        return []
+        return [], metrics
 
     try:
         html, final_url = fetch_page(source_url)
-        report["pages_fetched"] += 1
+        metrics["pages_fetched"] += 1
     except Exception as exc:
-        report["errors"].append({"url": source_url, "error": str(exc)})
-        return []
+        metrics["errors"].append({"url": source_url, "error": str(exc)})
+        return [], metrics
 
     data = extract_page_data(html, final_url)
     segment = clean_text(source.get("Сегмент", "")).lower() or "other"
@@ -618,7 +627,7 @@ def source_to_rows(
     )
     emails, discarded_email_count = normalize_allowed_emails(raw_emails)
     if discarded_email_count:
-        report["email_candidates_discarded"] += discarded_email_count
+        metrics["email_candidates_discarded"] += discarded_email_count
         base["Комментарий"] = join_unique(
             [base["Комментарий"], "Некорректные email-кандидаты отброшены автоматически."]
         )
@@ -633,7 +642,11 @@ def source_to_rows(
         row["ID"] = stable_id(row)
         rows.append(row)
 
-    return rows
+    if report is not None:
+        report["pages_fetched"] += metrics["pages_fetched"]
+        report["email_candidates_discarded"] += metrics["email_candidates_discarded"]
+        report["errors"].extend(metrics["errors"])
+    return rows, metrics
 
 
 def manual_to_rows(
@@ -736,6 +749,21 @@ def dedupe(df: pd.DataFrame) -> pd.DataFrame:
         merged_rows.append(best)
 
     result = pd.DataFrame(merged_rows)
+    if not result.empty:
+        source_keys = result.apply(
+            lambda row: "|".join(
+                [
+                    clean_text(row.get("Компания", "")).lower(),
+                    clean_text(row.get("Сайт", "")).lower(),
+                    clean_text(row.get("URL источника", "")).lower(),
+                ]
+            ),
+            axis=1,
+        )
+        has_email = result["Email"].map(clean_text).ne("")
+        keys_with_email = set(source_keys[has_email].tolist())
+        keep_mask = has_email | ~source_keys.isin(keys_with_email)
+        result = result.loc[keep_mask].copy()
     return result.reindex(columns=OUTPUT_COLUMNS)
 
 
@@ -1027,8 +1055,16 @@ def run(args: argparse.Namespace) -> None:
     report["sources_active"] = int(len(active_sources))
 
     rows: list[dict[str, Any]] = []
-    for _, source in active_sources.iterrows():
-        rows.extend(source_to_rows(source, excluded, keywords, report))
+    source_records = active_sources.to_dict(orient="records")
+    with ThreadPoolExecutor(max_workers=MAX_FETCH_WORKERS) as executor:
+        for source_rows, metrics in executor.map(
+            lambda source: source_to_rows(source, excluded, keywords),
+            source_records,
+        ):
+            rows.extend(source_rows)
+            report["pages_fetched"] += metrics["pages_fetched"]
+            report["email_candidates_discarded"] += metrics["email_candidates_discarded"]
+            report["errors"].extend(metrics["errors"])
 
     report["contacts_auto_found"] = int(len(rows))
     manual_rows = manual_to_rows(manual, excluded, keywords)
