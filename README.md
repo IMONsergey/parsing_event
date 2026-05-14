@@ -31,7 +31,7 @@ GitHub используется как source of truth. Google Sheets испол
 `event`, `presentations`, `communications`, `pr`, `marketing`, `branding`, `digital`, `production`, `corporate`, `consulting`, `education`, `sales`, `hr`, `community`, `other`.
 
 Приоритеты источников:
-`AA` — публично открыт intake подрядчиков / вендоров / экспонентов / партнёров.
+`AA` — компания из релевантной BAEV-сферы публично ищет партнёров / внешние команды / субподрядчиков и прямо описывает передачу проектов, лидов или загрузки партнёрам.
 `A`, `B`, `C` — стандартная шкала приоритетов.
 
 ## Структура проекта
