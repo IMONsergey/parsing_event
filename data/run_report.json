@@ -1,18 +1,18 @@
 {
-  "started_at": "2026-05-24T08:13:21.647514+00:00",
-  "finished_at": "2026-05-24T08:18:29.399454+00:00",
+  "started_at": "2026-05-25T09:43:37.605544+00:00",
+  "finished_at": "2026-05-25T09:50:13.588658+00:00",
   "sources_total": 1702,
   "sources_active": 1701,
-  "pages_fetched": 1600,
-  "contacts_auto_found": 1667,
+  "pages_fetched": 1782,
+  "contacts_auto_found": 1775,
   "contacts_manual_loaded": 1882,
-  "contacts_total_before_dedupe": 3549,
-  "contacts_total_after_dedupe": 2072,
-  "email_candidates_discarded": 65,
+  "contacts_total_before_dedupe": 3657,
+  "contacts_total_after_dedupe": 2082,
+  "email_candidates_discarded": 73,
   "errors": [
     {
-      "url": "https://www.acgcity.ru/digital",
-      "error": "403 Client Error: Forbidden for url: https://www.acgcity.ru/digital"
+      "url": "https://www.mediaguru.ru/",
+      "error": "HTTPSConnectionPool(host='www.mediaguru.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://www.marvelous.ru/contacts",
@@ -23,16 +23,8 @@
       "error": "HTTPSConnectionPool(host='stepmedia.pro', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://sgmarketing.ru/",
-      "error": "HTTPSConnectionPool(host='sgmarketing.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='sgmarketing.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://ospr.ru/contacts/",
-      "error": "HTTPSConnectionPool(host='ospr.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by NewConnectionError(\"HTTPSConnection(host='ospr.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://19agency84.ru/contacts/",
-      "error": "456 Client Error: Unrecoverable Error for url: https://19agency84.ru/contacts/"
+      "url": "https://avmmedia.ru/kontakty/",
+      "error": "503 Server Error: Service Unavailable for url: https://avmmedia.ru/kontakty/"
     },
     {
       "url": "https://betweenx.ru/",
@@ -40,163 +32,79 @@
     },
     {
       "url": "https://boson.group/",
-      "error": "HTTPSConnectionPool(host='boson.group', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='boson.group', port=443) at 0x7f7b084864d0>, 'Connection to boson.group timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='boson.group', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='boson.group', port=443) at 0x7fd8c853aed0>, 'Connection to boson.group timed out. (connect timeout=2)'))"
+    },
+    {
+      "url": "http://www.csdgroup.ru/",
+      "error": "503 Server Error: Service Unavailable for url: http://www.csdgroup.ru/"
     },
     {
       "url": "https://dadacreative.com/contact",
       "error": "404 Client Error: Not Found for url: https://dada.llc/contact"
     },
     {
-      "url": "https://www.grandms.ru/contacts/",
-      "error": "HTTPSConnectionPool(host='www.grandms.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by NewConnectionError(\"HTTPSConnection(host='www.grandms.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://in-tention.ru/",
-      "error": "HTTPSConnectionPool(host='in-tention.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='in-tention.ru', port=443) at 0x7f7aecb55850>, 'Connection to in-tention.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://media-trast.ru/",
-      "error": "HTTPSConnectionPool(host='media-trast.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='media-trast.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://www.mediaaudit.ru/",
-      "error": "403 Client Error: Forbidden for url: https://www.mediaaudit.ru/"
-    },
-    {
-      "url": "https://rragency.ru/",
-      "error": "403 Client Error: Forbidden for url: https://rragency.ru/"
-    },
-    {
-      "url": "https://www.media-ppl.ru/",
-      "error": "HTTPSConnectionPool(host='www.media-ppl.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.media-ppl.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://projectwave.ru/",
-      "error": "HTTPSConnectionPool(host='projectwave.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='projectwave.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "url": "https://one-touch.ru/",
+      "error": "HTTPSConnectionPool(host='one-touch.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "http://www.rain-group.ru/contacts",
       "error": "404 Client Error: Not Found for url: http://www.rain-group.ru/contacts"
     },
     {
-      "url": "https://redday.events/",
-      "error": "403 Client Error: Forbidden for url: https://redday.events/"
-    },
-    {
-      "url": "https://rta-moscow.com/",
-      "error": "403 Client Error: Forbidden for url: https://rta-moscow.com/"
-    },
-    {
-      "url": "https://so-bytie.ru/contacts/",
-      "error": "403 Client Error: Forbidden for url: https://so-bytie.ru/contacts/"
-    },
-    {
       "url": "https://tmglab.ru/contacts",
       "error": "404 Client Error: Not Found for url: https://tmglab.ru/contacts"
-    },
-    {
-      "url": "https://totalview.ru/",
-      "error": "HTTPSConnectionPool(host='totalview.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='totalview.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     {
       "url": "https://www.umww.com/contact",
       "error": "404 Client Error: Not Found for url: https://www.umww.com/contact"
     },
     {
-      "url": "https://voskhod.agency/",
-      "error": "HTTPSConnectionPool(host='voskhod.agency', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='voskhod.agency', port=443) at 0x7f7aec1be610>, 'Connection to voskhod.agency timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://wellermedia.ru/",
-      "error": "HTTPSConnectionPool(host='wellermedia.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='wellermedia.ru', port=443) at 0x7f7aec1f8c10>, 'Connection to wellermedia.ru timed out. (connect timeout=2)'))"
-    },
-    {
       "url": "https://rg-arifmetika.ru/",
-      "error": "HTTPSConnectionPool(host='rg-arifmetika.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='rg-arifmetika.ru', port=443) at 0x7f7aec25c350>, 'Connection to rg-arifmetika.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='rg-arifmetika.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='rg-arifmetika.ru', port=443) at 0x7fd8c093d090>, 'Connection to rg-arifmetika.ru timed out. (connect timeout=2)'))"
     },
     {
-      "url": "https://openair-inc.ru/",
-      "error": "456 Client Error: Unrecoverable Error for url: https://openair-inc.ru/"
+      "url": "https://www.allintopconf.ru/contact/",
+      "error": "503 Server Error: Service Unavailable for url: https://www.allintopconf.ru/contact/"
     },
     {
-      "url": "https://productcamp.ru/about#afisha",
-      "error": "403 Client Error: Forbidden for url: https://productcamp.ru/about#afisha"
-    },
-    {
-      "url": "https://www.pr-agentstvo.moscow/contact/",
-      "error": "403 Client Error: Forbidden for url: https://www.pr-agentstvo.moscow/contact/"
+      "url": "https://avtoritet.agency/",
+      "error": "HTTPSConnectionPool(host='avtoritet.agency', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://www.mpr.ru/",
-      "error": "HTTPSConnectionPool(host='www.mpr.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mpr.ru', port=443) at 0x7f7b00b4abd0>, 'Connection to www.mpr.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://sbs-consulting.ru/",
-      "error": "HTTPSConnectionPool(host='sbs-consulting.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sbs-consulting.ru', port=443) at 0x7f7aecb54e10>, 'Connection to sbs-consulting.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://tedo.ru/tedo-team-award-the-best-financial-consultant",
-      "error": "403 Client Error: Forbidden for url: https://tedo.ru/tedo-team-award-the-best-financial-consultant"
+      "error": "HTTPSConnectionPool(host='www.mpr.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)')))"
     },
     {
       "url": "https://equium.club/contact",
-      "error": "403 Client Error: Forbidden for url: https://equium.community/contact"
+      "error": "404 Client Error: Not Found for url: https://equium.community/contact"
     },
     {
-      "url": "https://event-live.ru/",
-      "error": "HTTPSConnectionPool(host='event-live.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='event-live.ru', port=443) at 0x7f7aeca49490>, 'Connection to event-live.ru timed out. (connect timeout=2)'))"
+      "url": "https://more-agency.ru/kontakty/",
+      "error": "HTTPSConnectionPool(host='more-agency.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://b2b-event.ru/contacts",
       "error": "403 Client Error: Forbidden for url: https://b2b-event.ru/contacts"
     },
     {
-      "url": "https://sk.ru/",
-      "error": "502 Server Error: Bad Gateway for url: https://sk.ru/"
-    },
-    {
-      "url": "https://innopolis.com/ru",
-      "error": "HTTPSConnectionPool(host='innopolis.com', port=443): Max retries exceeded with url: /ru (Caused by ConnectTimeoutError(<HTTPSConnection(host='innopolis.com', port=443) at 0x7f7b08607290>, 'Connection to innopolis.com timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://prpartner.ru/contacts/",
-      "error": "HTTPSConnectionPool(host='prpartner.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by NewConnectionError(\"HTTPSConnection(host='prpartner.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
       "url": "https://pbn-hkstrategies.com/",
-      "error": "HTTPSConnectionPool(host='pbn-hkstrategies.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pbn-hkstrategies.com', port=443) at 0x7f7b00cab890>, 'Connection to pbn-hkstrategies.com timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='pbn-hkstrategies.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pbn-hkstrategies.com', port=443) at 0x7fd8b08ec710>, 'Connection to pbn-hkstrategies.com timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://vincipr.com/",
       "error": "HTTPSConnectionPool(host='vincipr.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)')))"
     },
     {
-      "url": "https://www.rim-pn.ru/",
-      "error": "403 Client Error: Forbidden for url: https://www.rim-pn.ru/"
+      "url": "https://contentbureau.ru/contacts",
+      "error": "404 Client Error: Not Found for url: https://contentbureau.ru/contacts"
     },
     {
-      "url": "https://raso.ru/contacts/",
-      "error": "403 Client Error: Forbidden for url: https://raso.ru/contacts/"
-    },
-    {
-      "url": "https://contentbureau.ru/",
-      "error": "HTTPSConnectionPool(host='contentbureau.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='contentbureau.ru', port=443) at 0x7f7aecfad550>, 'Connection to contentbureau.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://vh448.timeweb.ru/noactive/?ref=midexpo.ru",
-      "error": "HTTPSConnectionPool(host='vh448.timeweb.ru', port=443): Max retries exceeded with url: /noactive/?ref=midexpo.ru (Caused by NewConnectionError(\"HTTPSConnection(host='vh448.timeweb.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "url": "https://expo-fusion.ru/#contactus",
+      "error": "502 Server Error: Bad Gateway for url: https://expo-fusion.ru/#contactus"
     },
     {
       "url": "https://startup.gov.ge/contact",
       "error": "404 Client Error: Not Found for url: https://startup.gov.ge/contact"
-    },
-    {
-      "url": "https://eventvmeste.com/",
-      "error": "HTTPSConnectionPool(host='eventvmeste.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='eventvmeste.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://interpro.pro",
-      "error": "HTTPSConnectionPool(host='interpro.pro', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "http://www.nestline.ru",
@@ -207,52 +115,16 @@
       "error": "403 Client Error: Forbidden for url: http://www.nestline.ru/contacts"
     },
     {
-      "url": "http://www.maximice.ru/contacts",
-      "error": "HTTPConnectionPool(host='www.maximice.ru', port=80): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPConnection(host='www.maximice.ru', port=80) at 0x7f7aeca1e650>, 'Connection to www.maximice.ru timed out. (connect timeout=2)'))"
-    },
-    {
       "url": "https://island-adventure.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://island-adventure.ru/contacts"
+      "error": "404 Client Error: Not Found for url: https://island-adventure.ru/contacts"
     },
     {
-      "url": "https://4dru.com/",
-      "error": "HTTPSConnectionPool(host='4dru.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='4dru.com', port=443) at 0x7f7b00f43210>, 'Connection to 4dru.com timed out. (connect timeout=2)'))"
+      "url": "https://www.dvfu.ru:443/",
+      "error": "HTTPSConnectionPool(host='www.dvfu.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://gcav.ru/",
-      "error": "HTTPSConnectionPool(host='gcav.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='gcav.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://www.grechkamedia.com/contacts/",
-      "error": "403 Client Error: Forbidden for url: https://www.grechkamedia.com/contacts/"
-    },
-    {
-      "url": "http://www.maslov.agency/",
-      "error": "403 Client Error: Forbidden for url: http://www.maslov.agency/"
-    },
-    {
-      "url": "https://www.press-papier.ru/",
-      "error": "HTTPSConnectionPool(host='www.press-papier.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.press-papier.ru', port=443) at 0x7f7b00b9dc90>, 'Connection to www.press-papier.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://www.lampa.team/",
-      "error": "403 Client Error: Forbidden for url: https://www.lampa.team/"
-    },
-    {
-      "url": "https://www.likepr.art/",
-      "error": "403 Client Error: Forbidden for url: https://www.likepr.art/"
-    },
-    {
-      "url": "https://why.esprezo.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://why.esprezo.ru/contacts"
-    },
-    {
-      "url": "https://www.insiders.ru/",
-      "error": "403 Client Error: Forbidden for url: https://www.insiders.ru/"
-    },
-    {
-      "url": "https://denero.ru:443/",
-      "error": "HTTPSConnectionPool(host='denero.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='denero.ru', port=443) at 0x7f7aec8c92d0>, 'Connection to denero.ru timed out. (connect timeout=2)'))"
+      "url": "https://redmadrobot.ru/",
+      "error": "HTTPSConnectionPool(host='redmadrobot.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://gen-marketing.ru/",
@@ -263,72 +135,32 @@
       "error": "403 Client Error: Forbidden for url: https://kam03.ru/gen-marketing-ru/"
     },
     {
-      "url": "https://www.digital-info.agency/",
-      "error": "HTTPSConnectionPool(host='www.digital-info.agency', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.digital-info.agency', port=443) at 0x7f7b00e497d0>, 'Connection to www.digital-info.agency timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://sf.ru/",
-      "error": "HTTPSConnectionPool(host='sf.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sf.ru', port=443) at 0x7f7aec68a390>, 'Connection to sf.ru timed out. (connect timeout=2)'))"
-    },
-    {
       "url": "http://aberix.ru/contacts",
       "error": "404 Client Error: Not Found for url: https://aberix.ru/contacts"
-    },
-    {
-      "url": "https://agelar.ru/",
-      "error": "HTTPSConnectionPool(host='agelar.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='agelar.ru', port=443) at 0x7f7b0075f390>, 'Connection to agelar.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://avastudio.ru/",
       "error": "HTTPSConnectionPool(host='avastudio.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://obscura.pro/contacts/",
-      "error": "403 Client Error: Forbidden for url: https://obscura.pro/contacts/"
-    },
-    {
       "url": "https://шоураннеры.рф/contact",
       "error": "404 Client Error: Not Found for url: https://xn--80akxacmes7bzb.xn--p1ai/contact"
     },
     {
-      "url": "https://deasign.ru/contacts/",
-      "error": "HTTPSConnectionPool(host='deasign.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by NewConnectionError(\"HTTPSConnection(host='deasign.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://sanindelaetvideo.com/",
-      "error": "HTTPSConnectionPool(host='sanindelaetvideo.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='sanindelaetvideo.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://sanindelaetvideo.com/contact",
-      "error": "HTTPSConnectionPool(host='sanindelaetvideo.com', port=443): Max retries exceeded with url: /contact (Caused by NewConnectionError(\"HTTPSConnection(host='sanindelaetvideo.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://www.fprspb.ru/",
-      "error": "HTTPSConnectionPool(host='www.fprspb.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fprspb.ru', port=443) at 0x7f7aec6aaf50>, 'Connection to www.fprspb.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://kirpichagency.com/",
-      "error": "456 Client Error: Unrecoverable Error for url: https://kirpichagency.com/"
-    },
-    {
       "url": "https://www.ink-agency.ru/",
-      "error": "403 Client Error: Forbidden for url: https://www.ink-agency.ru/"
+      "error": "402 Client Error: Payment Required for url: https://www.ink-agency.ru/"
     },
     {
       "url": "https://promo.mtp.company/",
-      "error": "HTTPSConnectionPool(host='promo.mtp.company', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='promo.mtp.company', port=443) at 0x7f7b005c7fd0>, 'Connection to promo.mtp.company timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "http://grompr.ru/",
-      "error": "456 Client Error: Unrecoverable Error for url: http://grompr.ru/"
+      "error": "HTTPSConnectionPool(host='promo.mtp.company', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='promo.mtp.company', port=443) at 0x7fd8c8184a90>, 'Connection to promo.mtp.company timed out. (connect timeout=2)'))"
     },
     {
       "url": "http://grompr.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: http://grompr.ru/contacts"
+      "error": "404 Client Error: Not Found for url: https://grompr.ru/contacts"
     },
     {
       "url": "http://lesopilka.online/contact",
-      "error": "403 Client Error: Forbidden for url: http://lesopilka.online/contact"
+      "error": "404 Client Error: Not Found for url: http://lesopilka.online/contact"
     },
     {
       "url": "https://medialovesyou.ru/",
@@ -337,10 +169,6 @@
     {
       "url": "https://medialovesyou.ru/contacts",
       "error": "HTTPSConnectionPool(host='medialovesyou.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))"
-    },
-    {
-      "url": "https://sisters.team/contacts/",
-      "error": "403 Client Error: Forbidden for url: https://sisters.team/contacts/"
     },
     {
       "url": "https://www.oblik.agency/",
@@ -355,6 +183,10 @@
       "error": "404 Client Error: Not Found for url: https://apanshin.ru/contacts"
     },
     {
+      "url": "https://ingate.ru/",
+      "error": "HTTPSConnectionPool(host='ingate.ru', port=443): Read timed out. (read timeout=3)"
+    },
+    {
       "url": "http://www.whattheysay.ru/",
       "error": "HTTPConnectionPool(host='www.whattheysay.ru', port=80): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPConnection(host='www.whattheysay.ru', port=80): Failed to resolve 'www.whattheysay.ru' ([Errno -2] Name or service not known)\"))"
     },
@@ -363,32 +195,20 @@
       "error": "HTTPConnectionPool(host='www.whattheysay.ru', port=80): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPConnection(host='www.whattheysay.ru', port=80): Failed to resolve 'www.whattheysay.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://it-gradient.ru/",
-      "error": "403 Client Error: Forbidden for url: https://it-gradient.ru/"
-    },
-    {
       "url": "https://izhproduction.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://izhproduction.ru/contacts"
+      "error": "404 Client Error: Not Found for url: https://izhproduction.ru/contacts"
     },
     {
       "url": "https://ishmish.ru/",
-      "error": "HTTPSConnectionPool(host='ishmish.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ishmish.ru', port=443) at 0x7f7b00d6ddd0>, 'Connection to ishmish.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='ishmish.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ishmish.ru', port=443) at 0x7fd8c0d9f010>, 'Connection to ishmish.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.adwise.ru/contacts",
       "error": "404 Client Error: Not Found for url: https://www.adwise.ru/contacts"
     },
     {
-      "url": "https://tmg-agency.ru/",
-      "error": "403 Client Error: Forbidden for url: https://tmg-agency.ru/"
-    },
-    {
-      "url": "https://gladkov.company/",
-      "error": "HTTPSConnectionPool(host='gladkov.company', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='gladkov.company', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://ryba.team/contacts/",
-      "error": "403 Client Error: Forbidden for url: https://ryba.team/contacts/"
+      "url": "https://promotroll.ru/",
+      "error": "403 Client Error: Forbidden for url: https://promotroll.ru/"
     },
     {
       "url": "https://promotroll.ru/contacts",
@@ -396,35 +216,15 @@
     },
     {
       "url": "https://teller.media/",
-      "error": "HTTPSConnectionPool(host='teller.media', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='teller.media', port=443) at 0x7f7aec662150>, 'Connection to teller.media timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='teller.media', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='teller.media', port=443) at 0x7fd8b0808b10>, 'Connection to teller.media timed out. (connect timeout=2)'))"
     },
     {
       "url": "http://umbrellait.ru/contacts",
       "error": "404 Client Error: Not Found for url: https://umbrellait.com/contacts"
     },
     {
-      "url": "https://tbtbo.agency/",
-      "error": "HTTPSConnectionPool(host='tbtbo.agency', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tbtbo.agency', port=443) at 0x7f7b00400390>, 'Connection to tbtbo.agency timed out. (connect timeout=2)'))"
-    },
-    {
       "url": "http://visualmethod.ru/contacts",
       "error": "404 Client Error: Not Found for url: https://visualmethod.ru/contacts"
-    },
-    {
-      "url": "https://mobiads.io/ru/",
-      "error": "403 Client Error: Forbidden for url: https://mobiads.io/ru/"
-    },
-    {
-      "url": "https://raadmix.ru/",
-      "error": "403 Client Error: Forbidden for url: https://raadmix.ru/"
-    },
-    {
-      "url": "https://picomatic.agency/",
-      "error": "456 Client Error: Unrecoverable Error for url: https://picomatic.agency/"
-    },
-    {
-      "url": "https://deltaclick.ru/contact/",
-      "error": "403 Client Error: Forbidden for url: https://deltaclick.ru/contact/"
     },
     {
       "url": "http://www.ProContext.ru/",
@@ -435,20 +235,8 @@
       "error": "404 Client Error: Not Found for url: http://www.procontext.ru/contacts"
     },
     {
-      "url": "https://bf360.ru/contacts/",
-      "error": "HTTPSConnectionPool(host='bf360.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='bf360.ru', port=443) at 0x7f7aec3719d0>, 'Connection to bf360.ru timed out. (connect timeout=2)'))"
-    },
-    {
       "url": "https://itprodigital.ru/contacts",
       "error": "404 Client Error: Not Found for url: https://itprodigital.ru/contacts"
-    },
-    {
-      "url": "http://omega-r.ru/",
-      "error": "HTTPSConnectionPool(host='omega-r.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='omega-r.com', port=443) at 0x7f7aec27fc50>, 'Connection to omega-r.com timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "http://omega-r.ru/contacts",
-      "error": "HTTPSConnectionPool(host='omega-r.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='omega-r.com', port=443) at 0x7f7b00a45150>, 'Connection to omega-r.com timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://escape-team.tech/",
@@ -457,34 +245,6 @@
     {
       "url": "https://escape-team.tech/contact",
       "error": "HTTPSConnectionPool(host='escape-team.tech', port=443): Max retries exceeded with url: /contact (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
-    },
-    {
-      "url": "https://renart.ru/",
-      "error": "HTTPSConnectionPool(host='renart.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='renart.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://fragency.ru/about/",
-      "error": "403 Client Error: Forbidden for url: https://fragency.ru/about/"
-    },
-    {
-      "url": "https://bestweb.ru/",
-      "error": "HTTPSConnectionPool(host='bestweb.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='bestweb.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://grch.digital/",
-      "error": "HTTPSConnectionPool(host='grch.digital', port=443): Read timed out. (read timeout=3)"
-    },
-    {
-      "url": "https://digitalstrategy.ru/",
-      "error": "HTTPSConnectionPool(host='digitalstrategy.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='digitalstrategy.ru', port=443) at 0x7f7b00532cd0>, 'Connection to digitalstrategy.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://nologostudio.ru/",
-      "error": "HTTPSConnectionPool(host='nologostudio.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nologostudio.ru', port=443) at 0x7f7b005baa90>, 'Connection to nologostudio.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://www.top-7.ru/",
-      "error": "HTTPSConnectionPool(host='www.top-7.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.top-7.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     {
       "url": "https://travamurava.pro/",
@@ -500,11 +260,7 @@
     },
     {
       "url": "https://sumteh.ru/",
-      "error": "HTTPSConnectionPool(host='sumteh.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sumteh.ru', port=443) at 0x7f7aec1401d0>, 'Connection to sumteh.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://pandadigital.ru/",
-      "error": "HTTPSConnectionPool(host='pandadigital.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='pandadigital.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "error": "HTTPSConnectionPool(host='sumteh.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sumteh.ru', port=443) at 0x7fd8c0e3a890>, 'Connection to sumteh.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.vedita.ru/",
@@ -520,7 +276,7 @@
     },
     {
       "url": "https://promoexpert.pro/",
-      "error": "HTTPSConnectionPool(host='promoexpert.pro', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='promoexpert.pro', port=443) at 0x7f7b08303d90>, 'Connection to promoexpert.pro timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='promoexpert.pro', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='promoexpert.pro', port=443) at 0x7fd8c0957490>, 'Connection to promoexpert.pro timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://go.nimax.ru/v8cmWM/",
@@ -531,100 +287,24 @@
       "error": "404 Client Error: Not Found for url: https://go.nimax.ru/contacts"
     },
     {
-      "url": "https://4rome.ru/",
-      "error": "HTTPSConnectionPool(host='4rome.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
-      "url": "https://5corners.ru/contacts/",
-      "error": "403 Client Error: Forbidden for url: https://5corners.ru/contacts/"
-    },
-    {
       "url": "https://www.klikklik.ru/contacts",
       "error": "404 Client Error: Not Found for url: https://www.klikklik.ru/contacts"
     },
     {
-      "url": "https://empirics.ru/",
-      "error": "HTTPSConnectionPool(host='empirics.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='empirics.ru', port=443) at 0x7f7aec44ad90>, 'Connection to empirics.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://hermongroup.ru/contacts/",
-      "error": "403 Client Error: Forbidden for url: https://hermongroup.ru/contacts/"
-    },
-    {
       "url": "https://siteactiv.ru/contacts/",
-      "error": "HTTPSConnectionPool(host='siteactiv.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='siteactiv.ru', port=443) at 0x7f7aec1cfc90>, 'Connection to siteactiv.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='siteactiv.ru', port=443): Max retries exceeded with url: /contacts/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='siteactiv.ru', port=443) at 0x7fd8c859a190>, 'Connection to siteactiv.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://artena.ru/",
-      "error": "HTTPSConnectionPool(host='artena.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='artena.ru', port=443) at 0x7f7b009e9f90>, 'Connection to artena.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://weisswater.com/",
-      "error": "456 Client Error: Unrecoverable Error for url: https://weisswater.com/"
-    },
-    {
-      "url": "https://www.bondsoft.ru/",
-      "error": "HTTPSConnectionPool(host='www.bondsoft.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.bondsoft.ru', port=443) at 0x7f7aeca0f590>, 'Connection to www.bondsoft.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "http://laykasmm.ru/",
-      "error": "HTTPConnectionPool(host='laykasmm.ru', port=80): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPConnection(host='laykasmm.ru', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "http://laykasmm.ru/contacts",
-      "error": "HTTPConnectionPool(host='laykasmm.ru', port=80): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPConnection(host='laykasmm.ru', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://sells.company/",
-      "error": "HTTPSConnectionPool(host='sells.company', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sells.company', port=443) at 0x7f7adcc38990>, 'Connection to sells.company timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "http://mellodesign.ru/",
-      "error": "HTTPConnectionPool(host='mellodesign.ru', port=80): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPConnection(host='mellodesign.ru', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "http://mellodesign.ru/contacts",
-      "error": "HTTPConnectionPool(host='mellodesign.ru', port=80): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPConnection(host='mellodesign.ru', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "error": "HTTPSConnectionPool(host='artena.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='artena.ru', port=443) at 0x7fd8c0c1f550>, 'Connection to artena.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://stilt-itil.com/",
-      "error": "HTTPSConnectionPool(host='stilt-itil.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='stilt-itil.com', port=443) at 0x7f7b00670c50>, 'Connection to stilt-itil.com timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://itfbgroup.ru/contacts/",
-      "error": "403 Client Error: Forbidden for url: https://itfbgroup.ru/contacts/"
-    },
-    {
-      "url": "https://addcode.ru/",
-      "error": "403 Client Error: Forbidden for url: https://addcode.ru/"
-    },
-    {
-      "url": "https://longcatcrm.com/",
-      "error": "HTTPSConnectionPool(host='longcatcrm.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='longcatcrm.com', port=443) at 0x7f7aecc0c610>, 'Connection to longcatcrm.com timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://domovoy.pro/",
-      "error": "HTTPSConnectionPool(host='domovoy.pro', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='domovoy.pro', port=443) at 0x7f7b00a28f10>, 'Connection to domovoy.pro timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://crmacademy.ru/contacts/",
-      "error": "456 Client Error: Unrecoverable Error for url: https://crmacademy.ru/contacts/"
-    },
-    {
-      "url": "https://itconstruct.ru/",
-      "error": "HTTPSConnectionPool(host='itconstruct.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='itconstruct.ru', port=443) at 0x7f7aecd0f410>, 'Connection to itconstruct.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://akam.ru/",
-      "error": "HTTPSConnectionPool(host='akam.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='akam.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "error": "HTTPSConnectionPool(host='stilt-itil.com', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://tltpro.org/contact",
       "error": "404 Client Error: Not Found for url: https://tltpro.org/contact"
-    },
-    {
-      "url": "https://r77.ai/",
-      "error": "456 Client Error: Unrecoverable Error for url: https://r77.ai/"
     },
     {
       "url": "https://www.aventy.ru",
@@ -643,12 +323,8 @@
       "error": "HTTPSConnectionPool(host='www.org-master.com', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='www.org-master.com', port=443): Failed to resolve 'www.org-master.com' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://www.pprazdnika.ru",
-      "error": "HTTPSConnectionPool(host='www.pprazdnika.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.pprazdnika.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
       "url": "https://www.pprazdnika.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.pprazdnika.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='www.pprazdnika.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "error": "404 Client Error: Not Found for url: https://pprazdnika.ru/contacts"
     },
     {
       "url": "https://fksavoya.ru",
@@ -663,28 +339,12 @@
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.plan-a-event.ru",
-      "error": "HTTPSConnectionPool(host='www.plan-a-event.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.plan-a-event.ru', port=443) at 0x7f7aecc50f50>, 'Connection to www.plan-a-event.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://www.plan-a-event.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.plan-a-event.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.plan-a-event.ru', port=443) at 0x7f7b08167bd0>, 'Connection to www.plan-a-event.ru timed out. (connect timeout=2)'))"
-    },
-    {
       "url": "https://www.nicemomentevent.ru",
       "error": "403 Client Error: Forbidden for url: https://nicemomentevent.ru/"
     },
     {
       "url": "https://www.nicemomentevent.ru/contacts",
       "error": "403 Client Error: Forbidden for url: https://nicemomentevent.ru/contacts"
-    },
-    {
-      "url": "https://www.forwind.ru",
-      "error": "HTTPSConnectionPool(host='www.forwind.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.forwind.ru', port=443) at 0x7f7aecb68110>, 'Connection to www.forwind.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://www.forwind.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.forwind.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.forwind.ru', port=443) at 0x7f7b086c4650>, 'Connection to www.forwind.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.kubagroup.ru/contacts",
@@ -697,14 +357,6 @@
     {
       "url": "https://www.людидобрые.рф/contact",
       "error": "HTTPSConnectionPool(host='www.xn--90afafmqyr3hxa.xn--p1ai', port=443): Max retries exceeded with url: /contact (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)')))"
-    },
-    {
-      "url": "https://www.e5lab.ru",
-      "error": "403 Client Error: Forbidden for url: https://www.e5lab.ru/"
-    },
-    {
-      "url": "https://www.e5lab.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://www.e5lab.ru/contacts"
     },
     {
       "url": "https://www.eventcomp.com",
@@ -723,14 +375,6 @@
       "error": "HTTPSConnectionPool(host='ooe.agency', port=443): Max retries exceeded with url: /contact (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)')))"
     },
     {
-      "url": "https://www.ak-premier.ru",
-      "error": "456 Client Error: Unrecoverable Error for url: https://www.ak-premier.ru/"
-    },
-    {
-      "url": "https://www.ak-premier.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://www.ak-premier.ru/contacts"
-    },
-    {
       "url": "https://hr-bubin.events",
       "error": "HTTPSConnectionPool(host='hr-bubin.events', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='hr-bubin.events', port=443): Failed to resolve 'hr-bubin.events' ([Errno -2] Name or service not known)\"))"
     },
@@ -747,12 +391,8 @@
       "error": "HTTPSConnectionPool(host='b2b.gondo.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'b2b.gondo.ru'. (_ssl.c:1016)\")))"
     },
     {
-      "url": "https://www.netpredela.ru",
-      "error": "HTTPSConnectionPool(host='www.netpredela.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.netpredela.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
       "url": "https://www.netpredela.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.netpredela.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='www.netpredela.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "error": "404 Client Error: Not Found for url: https://www.netpredela.ru/contacts"
     },
     {
       "url": "https://ra-piknik.ru",
@@ -761,14 +401,6 @@
     {
       "url": "https://ra-piknik.ru/contacts",
       "error": "HTTPSConnectionPool(host='ra-piknik.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='ra-piknik.ru', port=443): Failed to resolve 'ra-piknik.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.bravopr.ru",
-      "error": "403 Client Error: Forbidden for url: https://www.bravopr.ru/"
-    },
-    {
-      "url": "https://www.bravopr.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://www.bravopr.ru/contacts"
     },
     {
       "url": "https://www.kraski-nsk.ru",
@@ -793,26 +425,6 @@
     {
       "url": "https://e-p174.ru/contacts",
       "error": "HTTPSConnectionPool(host='e-p174.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='e-p174.ru', port=443): Failed to resolve 'e-p174.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://selyanin.com",
-      "error": "HTTPSConnectionPool(host='selyanin.com', port=443): Read timed out. (read timeout=2)"
-    },
-    {
-      "url": "https://www.neva-e.ru",
-      "error": "403 Client Error: Forbidden for url: https://www.neva-e.ru/"
-    },
-    {
-      "url": "https://www.neva-e.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://www.neva-e.ru/contacts"
-    },
-    {
-      "url": "https://www.remar.ru",
-      "error": "HTTPSConnectionPool(host='www.remar.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.remar.ru', port=443) at 0x7f7b00514610>, 'Connection to www.remar.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://www.remar.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.remar.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.remar.ru', port=443) at 0x7f7aec48a310>, 'Connection to www.remar.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.bebrightevent.ru",
@@ -851,40 +463,12 @@
       "error": "HTTPSConnectionPool(host='nevashow.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nevashow.ru'. (_ssl.c:1016)\")))"
     },
     {
-      "url": "https://prazdnikpro-siberia.ru",
-      "error": "HTTPSConnectionPool(host='prazdnikpro-siberia.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='prazdnikpro-siberia.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://prazdnikpro-siberia.ru/contacts",
-      "error": "HTTPSConnectionPool(host='prazdnikpro-siberia.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='prazdnikpro-siberia.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://marvel-ekb.ru",
-      "error": "HTTPSConnectionPool(host='marvel-ekb.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
-      "url": "https://www.stem-a.ru",
-      "error": "403 Client Error: Forbidden for url: https://www.stem-a.ru/"
-    },
-    {
-      "url": "https://www.stem-a.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://www.stem-a.ru/contacts"
-    },
-    {
       "url": "https://www.bk-adekvat.ru",
       "error": "HTTPSConnectionPool(host='www.bk-adekvat.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.bk-adekvat.ru', port=443): Failed to resolve 'www.bk-adekvat.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
       "url": "https://www.bk-adekvat.ru/contacts",
       "error": "HTTPSConnectionPool(host='www.bk-adekvat.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.bk-adekvat.ru', port=443): Failed to resolve 'www.bk-adekvat.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://gkevent.pro",
-      "error": "HTTPSConnectionPool(host='gkevent.pro', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='gkevent.pro', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://gkevent.pro/contact",
-      "error": "HTTPSConnectionPool(host='gkevent.pro', port=443): Max retries exceeded with url: /contact (Caused by NewConnectionError(\"HTTPSConnection(host='gkevent.pro', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     },
     {
       "url": "https://welcome-krasnodar.ru/contacts",
@@ -947,28 +531,12 @@
       "error": "HTTPSConnectionPool(host='www.idea-fix24.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.idea-fix24.ru', port=443): Failed to resolve 'www.idea-fix24.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://luizaevent.ru",
-      "error": "403 Client Error: Forbidden for url: https://luizaevent.ru/"
-    },
-    {
-      "url": "https://luizaevent.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://luizaevent.ru/contacts"
-    },
-    {
       "url": "https://www.idea-listirk.ru",
       "error": "HTTPSConnectionPool(host='www.idea-listirk.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.idea-listirk.ru', port=443): Failed to resolve 'www.idea-listirk.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
       "url": "https://www.idea-listirk.ru/contacts",
       "error": "HTTPSConnectionPool(host='www.idea-listirk.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.idea-listirk.ru', port=443): Failed to resolve 'www.idea-listirk.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://event-kitchen.ru",
-      "error": "403 Client Error: Forbidden for url: https://event-kitchen.ru/"
-    },
-    {
-      "url": "https://event-kitchen.ru/contacts",
-      "error": "456 Client Error: Unrecoverable Error for url: https://event-kitchen.ru/contacts"
     },
     {
       "url": "https://www.pharm-f.ru",
@@ -1020,35 +588,27 @@
     },
     {
       "url": "https://www.malibu-group.ru",
-      "error": "HTTPSConnectionPool(host='www.malibu-group.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.malibu-group.ru', port=443) at 0x7f7b008d4e90>, 'Connection to www.malibu-group.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='www.malibu-group.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.malibu-group.ru', port=443) at 0x7fd8c8864890>, 'Connection to www.malibu-group.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.malibu-group.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.malibu-group.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.malibu-group.ru', port=443) at 0x7f7b00ce5b10>, 'Connection to www.malibu-group.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='www.malibu-group.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.malibu-group.ru', port=443) at 0x7fd8b0b825d0>, 'Connection to www.malibu-group.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://event-rt.ru",
-      "error": "456 Client Error: Unrecoverable Error for url: https://event-rt.ru/"
+      "error": "404 Client Error: Not Found for url: https://event-rt.ru/"
     },
     {
       "url": "https://event-rt.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://event-rt.ru/contacts"
+      "error": "404 Client Error: Not Found for url: https://event-rt.ru/contacts"
     },
     {
-      "url": "https://www.corporate-event.ru",
-      "error": "HTTPSConnectionPool(host='www.corporate-event.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.corporate-event.ru', port=443) at 0x7f7b00101fd0>, 'Connection to www.corporate-event.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://www.corporate-event.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.corporate-event.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.corporate-event.ru', port=443) at 0x7f7aec683d10>, 'Connection to www.corporate-event.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://media-price.ru",
-      "error": "403 Client Error: Forbidden for url: https://media-price.ru/"
+      "url": "https://eventcatalog.ru/agency/biznes_klass//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://media-price.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://media-price.ru/contacts"
+      "error": "404 Client Error: Not Found for url: https://media-price.ru/contacts"
     },
     {
       "url": "https://www.dreamteamagcy.com",
@@ -1107,6 +667,14 @@
       "error": "500 Server Error: Internal Server Error for url: https://www.na100prazdnik.ru/contacts"
     },
     {
+      "url": "https://teambuilding23.ru",
+      "error": "HTTPSConnectionPool(host='teambuilding23.ru', port=443): Read timed out. (read timeout=3)"
+    },
+    {
+      "url": "https://teambuilding23.ru/contacts",
+      "error": "404 Client Error: Not Found for url: https://teambuilding23.ru/contacts"
+    },
+    {
       "url": "https://www.bravo-sochi.ru",
       "error": "HTTPSConnectionPool(host='www.bravo-sochi.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.bravo-sochi.ru', port=443): Failed to resolve 'www.bravo-sochi.ru' ([Errno -2] Name or service not known)\"))"
     },
@@ -1121,14 +689,6 @@
     {
       "url": "https://event-makers.org/contact",
       "error": "HTTPSConnectionPool(host='event-makers.org', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='event-makers.org', port=443): Failed to resolve 'event-makers.org' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://artlegko.ru",
-      "error": "HTTPSConnectionPool(host='artlegko.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='artlegko.ru', port=443) at 0x7f7b084d4250>, 'Connection to artlegko.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://artlegko.ru/contacts",
-      "error": "HTTPSConnectionPool(host='artlegko.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='artlegko.ru', port=443) at 0x7f7aec661050>, 'Connection to artlegko.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://one-twoagency.ru",
@@ -1147,14 +707,6 @@
       "error": "HTTPSConnectionPool(host='shadowofchekhov.com', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='shadowofchekhov.com', port=443): Failed to resolve 'shadowofchekhov.com' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://tfd-agency.ru",
-      "error": "HTTPSConnectionPool(host='tfd-agency.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='tfd-agency.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://tfd-agency.ru/contacts",
-      "error": "HTTPSConnectionPool(host='tfd-agency.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='tfd-agency.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
       "url": "https://ha-ha-boom.ru",
       "error": "HTTPSConnectionPool(host='ha-ha-boom.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='ha-ha-boom.ru', port=443): Failed to resolve 'ha-ha-boom.ru' ([Errno -2] Name or service not known)\"))"
     },
@@ -1171,12 +723,8 @@
       "error": "HTTPSConnectionPool(host='www.eventin.ikaz.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.eventin.ikaz.ru'. (_ssl.c:1016)\")))"
     },
     {
-      "url": "https://opercompany.ru",
-      "error": "520 Server Error: <none> for url: https://opercompany.ru/"
-    },
-    {
-      "url": "https://opercompany.ru/contacts",
-      "error": "520 Server Error: <none> for url: https://opercompany.ru/contacts"
+      "url": "https://eventcatalog.ru/agency/operativnaya_kompaniya//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://promopull.ru",
@@ -1188,11 +736,11 @@
     },
     {
       "url": "https://www.rise-club.ru",
-      "error": "HTTPSConnectionPool(host='www.rise-club.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.rise-club.ru', port=443) at 0x7f7b00f04c90>, 'Connection to www.rise-club.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='www.rise-club.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
     },
     {
       "url": "https://www.rise-club.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.rise-club.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.rise-club.ru', port=443) at 0x7f7aecc94090>, 'Connection to www.rise-club.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='www.rise-club.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
     },
     {
       "url": "https://vb-creative.com",
@@ -1271,10 +819,6 @@
       "error": "HTTPSConnectionPool(host='www.vip-zona.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)')))"
     },
     {
-      "url": "https://www.dfagency.ru",
-      "error": "HTTPSConnectionPool(host='www.awatereng.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
       "url": "https://www.berezastudio.ru",
       "error": "HTTPSConnectionPool(host='www.berezastudio.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.berezastudio.ru', port=443): Failed to resolve 'www.berezastudio.ru' ([Errno -2] Name or service not known)\"))"
     },
@@ -1339,14 +883,6 @@
       "error": "HTTPSConnectionPool(host='www.xn--74-6kce4cruk1i.xn--p1ai', port=443): Max retries exceeded with url: /contact (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))"
     },
     {
-      "url": "https://www.artsdelka.ru",
-      "error": "403 Client Error: Forbidden for url: https://www.artsdelka.ru/"
-    },
-    {
-      "url": "https://www.artsdelka.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://www.artsdelka.ru/contacts"
-    },
-    {
       "url": "https://crazyfrogagency.ru",
       "error": "HTTPSConnectionPool(host='crazyfrogagency.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='crazyfrogagency.ru', port=443): Failed to resolve 'crazyfrogagency.ru' ([Errno -2] Name or service not known)\"))"
     },
@@ -1387,20 +923,8 @@
       "error": "HTTPSConnectionPool(host='www.osshow.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.osshow.ru', port=443): Failed to resolve 'www.osshow.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://www.tandempromo.ru",
-      "error": "403 Client Error: Forbidden for url: https://www.tandempromo.ru/"
-    },
-    {
-      "url": "https://www.tandempromo.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://www.tandempromo.ru/contacts"
-    },
-    {
-      "url": "https://www.yourbees.ru",
-      "error": "HTTPSConnectionPool(host='www.yourbees.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.yourbees.ru', port=443) at 0x7f7aecc13950>, 'Connection to www.yourbees.ru timed out. (connect timeout=2)'))"
-    },
-    {
       "url": "https://www.yourbees.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.yourbees.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.yourbees.ru', port=443) at 0x7f7b086c6c10>, 'Connection to www.yourbees.ru timed out. (connect timeout=2)'))"
+      "error": "404 Client Error: Not Found for url: https://www.yourbees.ru/contacts"
     },
     {
       "url": "https://agcompany.org",
@@ -1556,23 +1080,19 @@
     },
     {
       "url": "https://www.btlsochi.ru",
-      "error": "HTTPSConnectionPool(host='www.btlsochi.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.btlsochi.ru', port=443) at 0x7f7b003f9690>, 'Connection to www.btlsochi.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='www.btlsochi.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.btlsochi.ru', port=443) at 0x7fd8c0fb10d0>, 'Connection to www.btlsochi.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.btlsochi.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.btlsochi.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.btlsochi.ru', port=443) at 0x7f7b007fa650>, 'Connection to www.btlsochi.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='www.btlsochi.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.btlsochi.ru', port=443) at 0x7fd8c0ad5e10>, 'Connection to www.btlsochi.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.bigvillage.ru/contacts",
       "error": "404 Client Error: Not Found for url: http://bigvillage.ru/contacts"
     },
     {
-      "url": "https://www.arr-media.ru",
-      "error": "HTTPSConnectionPool(host='www.arr-media.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.arr-media.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
       "url": "https://www.arr-media.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.arr-media.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='www.arr-media.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "error": "500 Server Error: Internal Server Error for url: https://www.arr-media.ru/404.html"
     },
     {
       "url": "https://www.event-ideas.ru",
@@ -1591,12 +1111,8 @@
       "error": "HTTPSConnectionPool(host='mainevent.pro', port=443): Max retries exceeded with url: /contact (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mainevent.pro'. (_ssl.c:1016)\")))"
     },
     {
-      "url": "https://www.vshatre.com",
-      "error": "HTTPSConnectionPool(host='www.vshatre.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vshatre.com', port=443) at 0x7f7b00809cd0>, 'Connection to www.vshatre.com timed out. (connect timeout=2)'))"
-    },
-    {
       "url": "https://www.vshatre.com/contact",
-      "error": "HTTPSConnectionPool(host='www.vshatre.com', port=443): Max retries exceeded with url: /contact (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.vshatre.com', port=443) at 0x7f7b009f6090>, 'Connection to www.vshatre.com timed out. (connect timeout=2)'))"
+      "error": "404 Client Error: Not Found for url: https://www.vshatre.com/contact"
     },
     {
       "url": "https://royal-wed.ru/contacts",
@@ -1619,6 +1135,14 @@
       "error": "HTTPSConnectionPool(host='www.mgsmart.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.mgsmart.ru', port=443): Failed to resolve 'www.mgsmart.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
+      "url": "https://eventcatalog.ru/agency/yahtennye_sezony//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+    },
+    {
+      "url": "https://eventcatalog.ru/agency/sazonovstudio//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+    },
+    {
       "url": "https://dosug.ita-matreshka.ru",
       "error": "HTTPSConnectionPool(host='dosug.ita-matreshka.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='dosug.ita-matreshka.ru', port=443): Failed to resolve 'dosug.ita-matreshka.ru' ([Errno -2] Name or service not known)\"))"
     },
@@ -1639,20 +1163,12 @@
       "error": "Invalid URL 'https:///krasnodar.imarry.su': No host supplied"
     },
     {
-      "url": "https://itvoru.events/contacts",
-      "error": "456 Client Error: Unrecoverable Error for url: https://itvoru.events/contacts"
-    },
-    {
-      "url": "https://itvoru.events/contact",
-      "error": "456 Client Error: Unrecoverable Error for url: https://itvoru.events/contact"
-    },
-    {
       "url": "https://www.studio-anima.ru/promo",
-      "error": "HTTPSConnectionPool(host='www.studio-anima.ru', port=443): Max retries exceeded with url: /promo (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.studio-anima.ru', port=443) at 0x7f7aec67ccd0>, 'Connection to www.studio-anima.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='www.studio-anima.ru', port=443): Max retries exceeded with url: /promo (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.studio-anima.ru', port=443) at 0x7fd8c0d11050>, 'Connection to www.studio-anima.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.studio-anima.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.studio-anima.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.studio-anima.ru', port=443) at 0x7f7b00ff0ad0>, 'Connection to www.studio-anima.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='www.studio-anima.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.studio-anima.ru', port=443) at 0x7fd8c027e150>, 'Connection to www.studio-anima.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.академияпраздника-корпоратив.рф",
@@ -1695,14 +1211,6 @@
       "error": "HTTPSConnectionPool(host='www.sloko.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.sloko.ru', port=443): Failed to resolve 'www.sloko.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://www.mdivision.ru",
-      "error": "403 Client Error: Forbidden for url: https://www.mdivision.ru/"
-    },
-    {
-      "url": "https://www.mdivision.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://www.mdivision.ru/contacts"
-    },
-    {
       "url": "https://Diamondcommunication.ru/contacts",
       "error": "404 Client Error: Not Found for url: https://diamondcommunication.ru/contacts"
     },
@@ -1716,19 +1224,11 @@
     },
     {
       "url": "https://www.jk-event.ru",
-      "error": "HTTPSConnectionPool(host='www.jk-event.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jk-event.ru', port=443) at 0x7f7b002e5e10>, 'Connection to www.jk-event.ru timed out. (connect timeout=2)'))"
+      "error": "HTTPSConnectionPool(host='www.jk-event.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jk-event.ru', port=443) at 0x7fd8c0877310>, 'Connection to www.jk-event.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.jk-event.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.jk-event.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jk-event.ru', port=443) at 0x7f7b08313450>, 'Connection to www.jk-event.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://www.terem-prazdnik.ru",
-      "error": "HTTPSConnectionPool(host='www.terem-prazdnik.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.terem-prazdnik.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://www.terem-prazdnik.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.terem-prazdnik.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='www.terem-prazdnik.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "error": "HTTPSConnectionPool(host='www.jk-event.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jk-event.ru', port=443) at 0x7fd8c0b28f90>, 'Connection to www.jk-event.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.evement.ru",
@@ -1831,12 +1331,8 @@
       "error": "HTTPSConnectionPool(host='venturevents.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='venturevents.ru', port=443): Failed to resolve 'venturevents.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://svyshe.com",
-      "error": "403 Client Error: Forbidden for url: https://svyshe.com/"
-    },
-    {
       "url": "https://svyshe.com/contact",
-      "error": "456 Client Error: Unrecoverable Error for url: https://svyshe.com/contact"
+      "error": "404 Client Error: Not Found for url: https://www.svyshe.com/contact"
     },
     {
       "url": "https://aniland.ru/contacts",
@@ -1857,14 +1353,6 @@
     {
       "url": "https://www.uno-events.ru/contacts",
       "error": "HTTPSConnectionPool(host='www.uno-events.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.uno-events.ru', port=443): Failed to resolve 'www.uno-events.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://btltrend.ru",
-      "error": "HTTPSConnectionPool(host='btltrend.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='btltrend.ru', port=443) at 0x7f7b00d11250>, 'Connection to btltrend.ru timed out. (connect timeout=2)'))"
-    },
-    {
-      "url": "https://btltrend.ru/contacts",
-      "error": "HTTPSConnectionPool(host='btltrend.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='btltrend.ru', port=443) at 0x7f7b08451610>, 'Connection to btltrend.ru timed out. (connect timeout=2)'))"
     },
     {
       "url": "https://www.vipshow.ru/contacts",
@@ -1895,12 +1383,8 @@
       "error": "HTTPSConnectionPool(host='xlagency.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='xlagency.ru', port=443): Failed to resolve 'xlagency.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://www.korporativ-ural.ru/uss",
-      "error": "HTTPSConnectionPool(host='www.korporativ-ural.ru', port=443): Max retries exceeded with url: /uss (Caused by NewConnectionError(\"HTTPSConnection(host='www.korporativ-ural.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
       "url": "https://www.korporativ-ural.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.korporativ-ural.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='www.korporativ-ural.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "error": "404 Client Error: Not Found for url: https://www.korporativ-ural.ru/contacts"
     },
     {
       "url": "https://www.eventlifetime.com",
@@ -1911,6 +1395,10 @@
       "error": "HTTPSConnectionPool(host='www.eventlifetime.com', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='www.eventlifetime.com', port=443): Failed to resolve 'www.eventlifetime.com' ([Errno -2] Name or service not known)\"))"
     },
     {
+      "url": "https://eventcatalog.ru/agency/chocolate_creative_studio//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+    },
+    {
       "url": "https://www.imperator-event.ru",
       "error": "HTTPSConnectionPool(host='www.imperator-event.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.imperator-event.ru', port=443): Failed to resolve 'www.imperator-event.ru' ([Errno -2] Name or service not known)\"))"
     },
@@ -1919,12 +1407,8 @@
       "error": "HTTPSConnectionPool(host='www.imperator-event.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.imperator-event.ru', port=443): Failed to resolve 'www.imperator-event.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://www.kasha-agency.com",
-      "error": "HTTPSConnectionPool(host='www.kasha-agency.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.kasha-agency.com', port=443): Failed to resolve 'www.kasha-agency.com' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.kasha-agency.com/contact",
-      "error": "HTTPSConnectionPool(host='www.kasha-agency.com', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='www.kasha-agency.com', port=443): Failed to resolve 'www.kasha-agency.com' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/kasha//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://www.promoformat.com",
@@ -1935,6 +1419,10 @@
       "error": "HTTPSConnectionPool(host='www.promoformat.com', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='www.promoformat.com', port=443): Failed to resolve 'www.promoformat.com' ([Errno -2] Name or service not known)\"))"
     },
     {
+      "url": "https://eventcatalog.ru/agency/evro_holding//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+    },
+    {
       "url": "https://www.rumarin.ru",
       "error": "HTTPSConnectionPool(host='www.rumarin.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.rumarin.ru', port=443): Failed to resolve 'www.rumarin.ru' ([Errno -2] Name or service not known)\"))"
     },
@@ -1943,20 +1431,16 @@
       "error": "HTTPSConnectionPool(host='www.rumarin.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.rumarin.ru', port=443): Failed to resolve 'www.rumarin.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://www.del-arte.com",
-      "error": "HTTPSConnectionPool(host='www.del-arte.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.del-arte.com', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+      "url": "https://eventcatalog.ru/agency/del-arte//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.del-arte.com/contact",
-      "error": "HTTPSConnectionPool(host='www.del-arte.com', port=443): Max retries exceeded with url: /contact (Caused by NewConnectionError(\"HTTPSConnection(host='www.del-arte.com', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+      "url": "https://eventcatalog.ru/agency/patilend//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://abcmodus.com",
-      "error": "HTTPSConnectionPool(host='abcmodus.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='abcmodus.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "url": "https://abcmodus.com/contact",
-      "error": "HTTPSConnectionPool(host='abcmodus.com', port=443): Max retries exceeded with url: /contact (Caused by NewConnectionError(\"HTTPSConnection(host='abcmodus.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "url": "https://eventcatalog.ru/agency/abc_modus//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://jb-nn.ru",
@@ -1967,12 +1451,8 @@
       "error": "403 Client Error: Forbidden for url: https://jb-nn.ru/contacts"
     },
     {
-      "url": "https://www.ideya-fix-event.ru",
-      "error": "HTTPSConnectionPool(host='www.ideya-fix-event.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.ideya-fix-event.ru', port=443): Failed to resolve 'www.ideya-fix-event.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.ideya-fix-event.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.ideya-fix-event.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.ideya-fix-event.ru', port=443): Failed to resolve 'www.ideya-fix-event.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/ideya-fix//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://lv-event.ru",
@@ -1983,56 +1463,44 @@
       "error": "HTTPSConnectionPool(host='lv-event.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='lv-event.ru', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     {
-      "url": "https://www.elit-maykop.ru",
-      "error": "HTTPSConnectionPool(host='www.elit-maykop.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.elit-maykop.ru', port=443): Failed to resolve 'www.elit-maykop.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/arspro//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.elit-maykop.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.elit-maykop.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.elit-maykop.ru', port=443): Failed to resolve 'www.elit-maykop.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/elit//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.grandholiday.org",
-      "error": "HTTPSConnectionPool(host='www.grandholiday.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.grandholiday.org', port=443): Failed to resolve 'www.grandholiday.org' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/eventfriends//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.grandholiday.org/contact",
-      "error": "HTTPSConnectionPool(host='www.grandholiday.org', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='www.grandholiday.org', port=443): Failed to resolve 'www.grandholiday.org' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/grand_holiday//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.happyprazdnik.ru",
-      "error": "HTTPSConnectionPool(host='www.happyprazdnik.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.happyprazdnik.ru', port=443) at 0x7f7aeccc99d0>, 'Connection to www.happyprazdnik.ru timed out. (connect timeout=2)'))"
+      "url": "https://eventcatalog.ru/agency/carskaya_zabava//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.happyprazdnik.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.happyprazdnik.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.happyprazdnik.ru', port=443) at 0x7f7aec314250>, 'Connection to www.happyprazdnik.ru timed out. (connect timeout=2)'))"
+      "url": "https://eventcatalog.ru/agency/zakazatj_korporativ//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://zakazat-korporativ.ru/contacts",
-      "error": "HTTPSConnectionPool(host='zakazat-korporativ.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://eventcatalog.ru/agency/milana_wedding//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.MilanaWedding.ru",
-      "error": "HTTPSConnectionPool(host='www.milanawedding.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.milanawedding.ru'. (_ssl.c:1016)\")))"
+      "url": "https://eventcatalog.ru/agency/media_gruppa_m8//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.MilanaWedding.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.milanawedding.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.milanawedding.ru'. (_ssl.c:1016)\")))"
+      "url": "https://eventcatalog.ru/agency/artlandiya//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.super-reklama8.ru",
-      "error": "HTTPSConnectionPool(host='www.super-reklama8.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.super-reklama8.ru', port=443): Failed to resolve 'www.super-reklama8.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.super-reklama8.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.super-reklama8.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.super-reklama8.ru', port=443): Failed to resolve 'www.super-reklama8.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.artlandiaspb.ru",
-      "error": "HTTPSConnectionPool(host='www.artlandiaspb.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.artlandiaspb.ru', port=443): Failed to resolve 'www.artlandiaspb.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.artlandiaspb.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.artlandiaspb.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.artlandiaspb.ru', port=443): Failed to resolve 'www.artlandiaspb.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/sochi_art//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://volshebnayaskazka.com",
@@ -2043,88 +1511,56 @@
       "error": "HTTPSConnectionPool(host='volshebnayaskazka.com', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='volshebnayaskazka.com', port=443): Failed to resolve 'volshebnayaskazka.com' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://www.albertshou.narod.ru",
-      "error": "HTTPSConnectionPool(host='www.albertshou.narod.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.albertshou.narod.ru'. (_ssl.c:1016)\")))"
+      "url": "https://eventcatalog.ru/agency/aljbert_shou//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.albertshou.narod.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.albertshou.narod.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.albertshou.narod.ru'. (_ssl.c:1016)\")))"
+      "url": "https://eventcatalog.ru/agency/be_abo//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.b-abo.ru",
-      "error": "HTTPSConnectionPool(host='www.b-abo.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.b-abo.ru'. (_ssl.c:1016)\")))"
+      "url": "https://eventcatalog.ru/agency/fashion_empire//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.b-abo.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.b-abo.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.b-abo.ru'. (_ssl.c:1016)\")))"
+      "url": "https://eventcatalog.ru/agency/itforward//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://fashion-empire.pro",
-      "error": "HTTPSConnectionPool(host='fashion-empire.pro', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='fashion-empire.pro', port=443): Failed to resolve 'fashion-empire.pro' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/jandm_show//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://fashion-empire.pro/contact",
-      "error": "HTTPSConnectionPool(host='fashion-empire.pro', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='fashion-empire.pro', port=443): Failed to resolve 'fashion-empire.pro' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/neobychnye_prazdniki//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://it-frwd.ru",
-      "error": "HTTPSConnectionPool(host='it-frwd.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='it-frwd.ru', port=443): Failed to resolve 'it-frwd.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/trava//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://it-frwd.ru/contacts",
-      "error": "HTTPSConnectionPool(host='it-frwd.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='it-frwd.ru', port=443): Failed to resolve 'it-frwd.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/aeroservis-permj//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.jm-school.ru",
-      "error": "403 Client Error: Forbidden for url: https://www.jm-school.ru/"
+      "url": "https://eventcatalog.ru/agency/alex//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.jm-school.ru/contacts",
-      "error": "403 Client Error: Forbidden for url: https://www.jm-school.ru/contacts"
+      "url": "https://eventcatalog.ru/agency/studiya_prazdnika_eleny_faenok//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.neob.ru",
-      "error": "HTTPSConnectionPool(host='www.neob.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))"
+      "url": "https://eventcatalog.ru/agency/imlightnn//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.neob.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.neob.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))"
+      "url": "https://eventcatalog.ru/agency/a1_mice_group//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.aeroservice-perm.ru",
-      "error": "HTTPSConnectionPool(host='www.aeroservice-perm.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.aeroservice-perm.ru', port=443): Failed to resolve 'www.aeroservice-perm.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.aeroservice-perm.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.aeroservice-perm.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.aeroservice-perm.ru', port=443): Failed to resolve 'www.aeroservice-perm.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.alexrhp.jimdo.com",
-      "error": "HTTPSConnectionPool(host='www.alexrhp.jimdo.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)')))"
-    },
-    {
-      "url": "https://www.alexrhp.jimdo.com/contact",
-      "error": "HTTPSConnectionPool(host='www.alexrhp.jimdo.com', port=443): Max retries exceeded with url: /contact (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)')))"
-    },
-    {
-      "url": "https://www.stydia-prazdnika.ru/contacts",
-      "error": "404 Client Error: Not Found for url: https://www.stydia-prazdnika.ru/contacts"
-    },
-    {
-      "url": "https://www.imlightnn.com",
-      "error": "HTTPSConnectionPool(host='www.imlightnn.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.imlightnn.com', port=443): Failed to resolve 'www.imlightnn.com' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.imlightnn.com/contact",
-      "error": "HTTPSConnectionPool(host='www.imlightnn.com', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='www.imlightnn.com', port=443): Failed to resolve 'www.imlightnn.com' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.a1micegroup.ru",
-      "error": "HTTPSConnectionPool(host='www.a1micegroup.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.a1micegroup.ru', port=443): Failed to resolve 'www.a1micegroup.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.a1micegroup.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.a1micegroup.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.a1micegroup.ru', port=443): Failed to resolve 'www.a1micegroup.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/asta_trevel//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://www.spcb.ru",
@@ -2135,171 +1571,123 @@
       "error": "HTTPSConnectionPool(host='www.spcb.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='www.spcb.ru', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     {
+      "url": "https://eventcatalog.ru/agency/dozor_krasnodar//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+    },
+    {
       "url": "https://eventsshow.ru/contacts",
       "error": "404 Client Error: Not Found for url: https://eventsshow.ru/contacts"
     },
     {
-      "url": "https://www.apriorico.ru",
-      "error": "HTTPSConnectionPool(host='www.apriorico.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.apriorico.ru', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
-    },
-    {
-      "url": "https://www.apriorico.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.apriorico.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='www.apriorico.ru', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+      "url": "https://eventcatalog.ru/agency/apriorico//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://lite.dzzzr.ru/contacts",
       "error": "404 Client Error: Not Found for url: https://lite.dzzzr.ru/contacts/"
     },
     {
-      "url": "https://www.f-n.ru",
-      "error": "HTTPSConnectionPool(host='www.f-n.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.f-n.ru', port=443): Failed to resolve 'www.f-n.ru' ([Errno -3] Temporary failure in name resolution)\"))"
+      "url": "https://eventcatalog.ru/agency/fabrika_nastroeniy//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.f-n.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.f-n.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.f-n.ru', port=443): Failed to resolve 'www.f-n.ru' ([Errno -3] Temporary failure in name resolution)\"))"
+      "url": "https://eventcatalog.ru/agency/100_prazdnikov//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.100prazdnikov.com",
-      "error": "HTTPSConnectionPool(host='www.100prazdnikov.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.100prazdnikov.com', port=443): Failed to resolve 'www.100prazdnikov.com' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/bc_communications//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.100prazdnikov.com/contact",
-      "error": "HTTPSConnectionPool(host='www.100prazdnikov.com', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='www.100prazdnikov.com', port=443): Failed to resolve 'www.100prazdnikov.com' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/chudospb_ru//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.chudospb.ru",
-      "error": "HTTPSConnectionPool(host='www.chudospb.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.chudospb.ru', port=443): Failed to resolve 'www.chudospb.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/contacto//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.chudospb.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.chudospb.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.chudospb.ru', port=443): Failed to resolve 'www.chudospb.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/dream_agency//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.acecompany.ru",
-      "error": "HTTPSConnectionPool(host='www.acecompany.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.acecompany.ru', port=443): Failed to resolve 'www.acecompany.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/ace_company//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.acecompany.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.acecompany.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.acecompany.ru', port=443): Failed to resolve 'www.acecompany.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/promofabrika//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.promofabrika.ru",
-      "error": "401 Client Error: Unauthorized for url: https://www.promofabrika.ru/"
+      "url": "https://eventcatalog.ru/agency/miniprazdnik//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.promofabrika.ru/contacts",
-      "error": "401 Client Error: Unauthorized for url: https://www.promofabrika.ru/contacts"
+      "url": "https://eventcatalog.ru/agency/art-_festival//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.miniprazdnik.ru",
-      "error": "HTTPSConnectionPool(host='www.miniprazdnik.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.miniprazdnik.ru', port=443): Failed to resolve 'www.miniprazdnik.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/airsound_studio//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.miniprazdnik.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.miniprazdnik.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.miniprazdnik.ru', port=443): Failed to resolve 'www.miniprazdnik.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/art_byuro_pro//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.art-festival.ru",
-      "error": "HTTPSConnectionPool(host='www.art-festival.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))"
+      "url": "https://eventcatalog.ru/agency/116_prazdnikov//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.art-festival.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.art-festival.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))"
+      "url": "https://eventcatalog.ru/agency/art_tech//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.air-sound.ru",
-      "error": "HTTPSConnectionPool(host='www.air-sound.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.air-sound.ru', port=443): Failed to resolve 'www.air-sound.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/russian_promotion_company//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.air-sound.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.air-sound.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.air-sound.ru', port=443): Failed to resolve 'www.air-sound.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/btg_event_solutions//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.artburopro.ru",
-      "error": "HTTPSConnectionPool(host='www.artburopro.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.artburopro.ru', port=443): Failed to resolve 'www.artburopro.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/business_media_events//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.artburopro.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.artburopro.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.artburopro.ru', port=443): Failed to resolve 'www.artburopro.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/eventamira//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.116prazdnikov.ru",
-      "error": "HTTPSConnectionPool(host='www.116prazdnikov.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.116prazdnikov.ru'. (_ssl.c:1016)\")))"
+      "url": "https://eventcatalog.ru/agency/event_zavod//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.116prazdnikov.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.116prazdnikov.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.116prazdnikov.ru'. (_ssl.c:1016)\")))"
+      "url": "https://eventcatalog.ru/agency/event_planner//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.art-n-tech.ru",
-      "error": "HTTPSConnectionPool(host='www.art-n-tech.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.art-n-tech.ru', port=443): Failed to resolve 'www.art-n-tech.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/festivals_master//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.art-n-tech.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.art-n-tech.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.art-n-tech.ru', port=443): Failed to resolve 'www.art-n-tech.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.rpc-concert.ru",
-      "error": "HTTPSConnectionPool(host='www.rpc-concert.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.rpc-concert.ru', port=443): Failed to resolve 'www.rpc-concert.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.rpc-concert.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.rpc-concert.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.rpc-concert.ru', port=443): Failed to resolve 'www.rpc-concert.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.btgroup.ru",
-      "error": "HTTPSConnectionPool(host='www.btgroup.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)')))"
-    },
-    {
-      "url": "https://www.btgroup.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.btgroup.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)')))"
-    },
-    {
-      "url": "https://www.b-media.ru",
-      "error": "HTTPSConnectionPool(host='www.b-media.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)')))"
-    },
-    {
-      "url": "https://www.b-media.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.b-media.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)')))"
-    },
-    {
-      "url": "https://event-amira.ru",
-      "error": "HTTPSConnectionPool(host='event-amira.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='event-amira.ru', port=443): Failed to resolve 'event-amira.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://event-amira.ru/contacts",
-      "error": "HTTPSConnectionPool(host='event-amira.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='event-amira.ru', port=443): Failed to resolve 'event-amira.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.fermaslonov.ru",
-      "error": "HTTPSConnectionPool(host='www.fermaslonov.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.fermaslonov.ru', port=443): Failed to resolve 'www.fermaslonov.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.fermaslonov.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.fermaslonov.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.fermaslonov.ru', port=443): Failed to resolve 'www.fermaslonov.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.cw-orange.ru",
-      "error": "HTTPSConnectionPool(host='www.cw-orange.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.cw-orange.ru', port=443): Failed to resolve 'www.cw-orange.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.cw-orange.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.cw-orange.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.cw-orange.ru', port=443): Failed to resolve 'www.cw-orange.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/apeljsin//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://eventcatalog.ru/agency/giljdiya_masterov//",
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.plastilin.in",
-      "error": "HTTPSConnectionPool(host='www.plastilin.in', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.plastilin.in', port=443): Failed to resolve 'www.plastilin.in' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.plastilin.in/contact",
-      "error": "HTTPSConnectionPool(host='www.plastilin.in', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='www.plastilin.in', port=443): Failed to resolve 'www.plastilin.in' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/plastilin//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://eventcatalog.ru/agency/te_concept_studio//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+    },
+    {
+      "url": "https://eventcatalog.ru/agency/centr_sobytiy//",
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
@@ -2315,8 +1703,8 @@
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.artacompany.ru/contacts",
-      "error": "404 Client Error: Not Found for url: https://www.artacompany.ru/contacts"
+      "url": "https://eventcatalog.ru/agency/arta//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://eventcatalog.ru/agency/bardach_ok_events_group//",
@@ -2339,12 +1727,8 @@
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://www.lt-prime.ru",
-      "error": "HTTPSConnectionPool(host='www.lt-prime.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.lt-prime.ru', port=443): Failed to resolve 'www.lt-prime.ru' ([Errno -2] Name or service not known)\"))"
-    },
-    {
-      "url": "https://www.lt-prime.ru/contacts",
-      "error": "HTTPSConnectionPool(host='www.lt-prime.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.lt-prime.ru', port=443): Failed to resolve 'www.lt-prime.ru' ([Errno -2] Name or service not known)\"))"
+      "url": "https://eventcatalog.ru/agency/lt-prime//",
+      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://eventcatalog.ru/agency/mon_plaisir//",
@@ -2935,79 +2319,55 @@
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://eventcatalog.ru/agency/art_land//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://pitertsy-event.ru",
+      "error": "HTTPSConnectionPool(host='pitertsy-event.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='pitertsy-event.ru', port=443): Failed to resolve 'pitertsy-event.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/pitercy//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://pitertsy-event.ru/contacts",
+      "error": "HTTPSConnectionPool(host='pitertsy-event.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='pitertsy-event.ru', port=443): Failed to resolve 'pitertsy-event.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/art-galaktika-1//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.артгалактика.рф",
+      "error": "HTTPSConnectionPool(host='www.xn--80aaaam6anbf1cwaf.xn--p1ai', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.xn--80aaaam6anbf1cwaf.xn--p1ai', port=443): Failed to resolve 'www.xn--80aaaam6anbf1cwaf.xn--p1ai' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/teambuiling_pro//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.артгалактика.рф/contact",
+      "error": "HTTPSConnectionPool(host='www.xn--80aaaam6anbf1cwaf.xn--p1ai', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='www.xn--80aaaam6anbf1cwaf.xn--p1ai', port=443): Failed to resolve 'www.xn--80aaaam6anbf1cwaf.xn--p1ai' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/tema_-_true_event_management_agency//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.tatneko.ru",
+      "error": "HTTPSConnectionPool(host='www.tatneko.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.tatneko.ru', port=443): Failed to resolve 'www.tatneko.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/neko//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.tatneko.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.tatneko.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.tatneko.ru', port=443): Failed to resolve 'www.tatneko.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/adagio//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://prspektiva.ru/contacts",
+      "error": "404 Client Error: Not Found for url: https://prspektiva.ru/contacts"
     },
     {
-      "url": "https://eventcatalog.ru/agency/event_pro_ufa//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://interrecord.ru/contacts",
+      "error": "404 Client Error: Not Found for url: https://www.interrecord.ru/contacts"
     },
     {
-      "url": "https://eventcatalog.ru/agency/perspektiva//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.adis-pr.ru",
+      "error": "HTTPSConnectionPool(host='www.adis-pr.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.adis-pr.ru', port=443): Failed to resolve 'www.adis-pr.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/setevye_kommunikacii//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.adis-pr.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.adis-pr.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.adis-pr.ru', port=443): Failed to resolve 'www.adis-pr.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/agm_group//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://dkcd.ru",
+      "error": "HTTPSConnectionPool(host='dkcd.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='dkcd.ru', port=443): Failed to resolve 'dkcd.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/interrekord//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
-      "url": "https://eventcatalog.ru/agency/mayti_grup//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
-      "url": "https://eventcatalog.ru/agency/oniks//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
-      "url": "https://eventcatalog.ru/agency/adis_pr//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
-      "url": "https://eventcatalog.ru/agency/dk_studio//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
-      "url": "https://eventcatalog.ru/agency/slog//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://dkcd.ru/contacts",
+      "error": "HTTPSConnectionPool(host='dkcd.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='dkcd.ru', port=443): Failed to resolve 'dkcd.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
       "url": "https://eventcatalog.ru/agency/wifly//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
-      "url": "https://eventcatalog.ru/agency/krasreklama//",
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
@@ -3023,24 +2383,24 @@
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://eventcatalog.ru/agency/artstyle//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.ra-36.ru",
+      "error": "HTTPSConnectionPool(host='www.ra-36.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.ra-36.ru', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/partizan//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.ra-36.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.ra-36.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='www.ra-36.ru', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/shar//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.rashar.ru",
+      "error": "HTTPSConnectionPool(host='www.rashar.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.rashar.ru', port=443): Failed to resolve 'www.rashar.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/region_media//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.rashar.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.rashar.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.rashar.ru', port=443): Failed to resolve 'www.rashar.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/gcom//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://region-media-yug.ru",
+      "error": "HTTPSConnectionPool(host='region-media-yug.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
       "url": "https://eventcatalog.ru/agency/perfekt//",
@@ -3051,20 +2411,16 @@
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://eventcatalog.ru/agency/arena//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
       "url": "https://eventcatalog.ru/agency/agentstvo_kreativnyh_kommunikaciy_dt//",
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://eventcatalog.ru/agency/studio7//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://klientprosto.ru",
+      "error": "HTTPSConnectionPool(host='klientprosto.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'klientprosto.ru'. (_ssl.c:1016)\")))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/klient_prosto//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://klientprosto.ru/contacts",
+      "error": "HTTPSConnectionPool(host='klientprosto.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'klientprosto.ru'. (_ssl.c:1016)\")))"
     },
     {
       "url": "https://eventcatalog.ru/agency/limon//",
@@ -3075,80 +2431,108 @@
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://eventcatalog.ru/agency/piranjya//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://piarnya.ru",
+      "error": "HTTPSConnectionPool(host='piarnya.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='piarnya.ru', port=443): Failed to resolve 'piarnya.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/brend//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://piarnya.ru/contacts",
+      "error": "HTTPSConnectionPool(host='piarnya.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='piarnya.ru', port=443): Failed to resolve 'piarnya.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/kommunikacionnoe_agentstvo_6_19//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://brend-ural.ru",
+      "error": "HTTPSConnectionPool(host='brend-ural.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='brend-ural.ru', port=443): Failed to resolve 'brend-ural.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/uspeh_voronezh//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://brend-ural.ru/contacts",
+      "error": "HTTPSConnectionPool(host='brend-ural.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='brend-ural.ru', port=443): Failed to resolve 'brend-ural.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/tesla_target//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://619agency.com/contact",
+      "error": "404 Client Error: Not Found for url: https://619agency.com/contact"
     },
     {
-      "url": "https://eventcatalog.ru/agency/global_marketing//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://akm-uspeh.ru",
+      "error": "HTTPSConnectionPool(host='akm-uspeh.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='akm-uspeh.ru', port=443): Failed to resolve 'akm-uspeh.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/siniy_kot//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://akm-uspeh.ru/contacts",
+      "error": "HTTPSConnectionPool(host='akm-uspeh.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='akm-uspeh.ru', port=443): Failed to resolve 'akm-uspeh.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/streakoza//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://marketing.global-cg.ru",
+      "error": "HTTPSConnectionPool(host='marketing.global-cg.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='marketing.global-cg.ru', port=443) at 0x7fd8c0a3d790>, 'Connection to marketing.global-cg.ru timed out. (connect timeout=2)'))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/4d//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://marketing.global-cg.ru/contacts",
+      "error": "HTTPSConnectionPool(host='marketing.global-cg.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='marketing.global-cg.ru', port=443) at 0x7fd8c8b7d2d0>, 'Connection to marketing.global-cg.ru timed out. (connect timeout=2)'))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/fishkey//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.rpgcat.ru",
+      "error": "HTTPSConnectionPool(host='www.rpgcat.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.rpgcat.ru', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/dancepromo//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.rpgcat.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.rpgcat.ru', port=443): Max retries exceeded with url: /contacts (Caused by NewConnectionError(\"HTTPSConnection(host='www.rpgcat.ru', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/mavros//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.4dpr.ru",
+      "error": "HTTPSConnectionPool(host='www.4dpr.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.4dpr.ru'. (_ssl.c:1016)\")))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/golova//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.4dpr.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.4dpr.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.4dpr.ru'. (_ssl.c:1016)\")))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/noname_team//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.dancepromo.ru",
+      "error": "HTTPSConnectionPool(host='www.dancepromo.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.dancepromo.ru', port=443): Failed to resolve 'www.dancepromo.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/kitchen_club//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.dancepromo.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.dancepromo.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.dancepromo.ru', port=443): Failed to resolve 'www.dancepromo.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/zolotoe_zveno//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://mavros.a5.ru",
+      "error": "HTTPSConnectionPool(host='mavros.a5.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mavros.a5.ru'. (_ssl.c:1016)\")))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/alkor_group//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://mavros.a5.ru/contacts",
+      "error": "HTTPSConnectionPool(host='mavros.a5.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mavros.a5.ru'. (_ssl.c:1016)\")))"
+    },
+    {
+      "url": "https://www.nonameteam.ru",
+      "error": "HTTPSConnectionPool(host='www.nonameteam.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.nonameteam.ru', port=443): Failed to resolve 'www.nonameteam.ru' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "url": "https://www.nonameteam.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.nonameteam.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.nonameteam.ru', port=443): Failed to resolve 'www.nonameteam.ru' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "url": "https://www.buck-up.ru",
+      "error": "HTTPSConnectionPool(host='www.buck-up.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.buck-up.ru', port=443): Failed to resolve 'www.buck-up.ru' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "url": "https://www.buck-up.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.buck-up.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.buck-up.ru', port=443): Failed to resolve 'www.buck-up.ru' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "url": "https://www.alkorgroup.ru",
+      "error": "HTTPSConnectionPool(host='www.alkorgroup.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.alkorgroup.ru'. (_ssl.c:1016)\")))"
+    },
+    {
+      "url": "https://www.alkorgroup.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.alkorgroup.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.alkorgroup.ru'. (_ssl.c:1016)\")))"
     },
     {
       "url": "https://eventcatalog.ru/agency/btl-piter//",
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://eventcatalog.ru/agency/btl_konsalt//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.btl-consult.ru",
+      "error": "HTTPSConnectionPool(host='www.btl-consult.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.btl-consult.ru'. (_ssl.c:1016)\")))"
+    },
+    {
+      "url": "https://www.btl-consult.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.btl-consult.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.btl-consult.ru'. (_ssl.c:1016)\")))"
     },
     {
       "url": "https://eventcatalog.ru/agency/cosmopolitica//",
@@ -3179,12 +2563,20 @@
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://eventcatalog.ru/agency/nova_studiya//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.nova-studiya.ru",
+      "error": "HTTPSConnectionPool(host='www.nova-studiya.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/novaya_volna//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.nova-studiya.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.nova-studiya.ru', port=443): Max retries exceeded with url: /contacts (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))"
+    },
+    {
+      "url": "https://www.ravolna.ru",
+      "error": "403 Client Error: Forbidden for url: https://www.ravolna.ru/"
+    },
+    {
+      "url": "https://www.ravolna.ru/contacts",
+      "error": "403 Client Error: Forbidden for url: https://www.ravolna.ru/contacts"
     },
     {
       "url": "https://eventcatalog.ru/agency/proline//",
@@ -3323,10 +2715,6 @@
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://eventcatalog.ru/agency/internet_kompaniya_yug//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
       "url": "https://eventcatalog.ru/agency/ritz//",
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
@@ -3336,10 +2724,6 @@
     },
     {
       "url": "https://eventcatalog.ru/agency/clicknet//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
-    },
-    {
-      "url": "https://eventcatalog.ru/agency/it-ontime//",
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
@@ -3359,168 +2743,196 @@
       "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
     },
     {
-      "url": "https://eventcatalog.ru/agency/adjoy//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://altezza.bz",
+      "error": "HTTPSConnectionPool(host='altezza.bz', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='altezza.bz', port=443): Failed to resolve 'altezza.bz' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/altezza//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://altezza.bz/contact",
+      "error": "HTTPSConnectionPool(host='altezza.bz', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='altezza.bz', port=443): Failed to resolve 'altezza.bz' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/bpg_group//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://bpggroup.ru",
+      "error": "HTTPSConnectionPool(host='bpggroup.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='bpggroup.ru', port=443): Failed to resolve 'bpggroup.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/btl-novosibirsk//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://bpggroup.ru/contacts",
+      "error": "HTTPSConnectionPool(host='bpggroup.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='bpggroup.ru', port=443): Failed to resolve 'bpggroup.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/saint_digital//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.btl-novosibirsk.ru",
+      "error": "HTTPSConnectionPool(host='www.btl-novosibirsk.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.btl-novosibirsk.ru', port=443): Failed to resolve 'www.btl-novosibirsk.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/magic_design//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.btl-novosibirsk.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.btl-novosibirsk.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.btl-novosibirsk.ru', port=443): Failed to resolve 'www.btl-novosibirsk.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/media-aljyans//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://saint-digital.agency/contact",
+      "error": "404 Client Error: Not Found for url: https://saint-digital.agency/contact"
     },
     {
-      "url": "https://eventcatalog.ru/agency/ginesys//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.сайт-хочу.рф",
+      "error": "HTTPSConnectionPool(host='www.xn----7sb1avlijot.xn--p1ai', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.xn----7sb1avlijot.xn--p1ai', port=443): Failed to resolve 'www.xn----7sb1avlijot.xn--p1ai' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/soyuz-media//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.сайт-хочу.рф/contact",
+      "error": "HTTPSConnectionPool(host='www.xn----7sb1avlijot.xn--p1ai', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='www.xn----7sb1avlijot.xn--p1ai', port=443): Failed to resolve 'www.xn----7sb1avlijot.xn--p1ai' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/kima_by_coruna//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://ginesys.ru/contacts",
+      "error": "404 Client Error: Not Found for url: https://ginesys.ru/contacts"
     },
     {
-      "url": "https://eventcatalog.ru/agency/studiya_romana_korytova//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.soyuz-reklama.ru",
+      "error": "HTTPSConnectionPool(host='www.soyuz-reklama.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.soyuz-reklama.ru', port=443): Failed to resolve 'www.soyuz-reklama.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/argument//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.soyuz-reklama.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.soyuz-reklama.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.soyuz-reklama.ru', port=443): Failed to resolve 'www.soyuz-reklama.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/im-group//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://argument74.com/contact",
+      "error": "404 Client Error: Not Found for url: https://argument74.com/contact"
     },
     {
-      "url": "https://eventcatalog.ru/agency/nai_becar_promo//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://imgroup54.ru",
+      "error": "403 Client Error: Forbidden for url: https://imgroup54.ru/"
     },
     {
-      "url": "https://eventcatalog.ru/agency/brendingovoe_agentstvo_ekateriny_kononovoy//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://imgroup54.ru/contacts",
+      "error": "403 Client Error: Forbidden for url: https://imgroup54.ru/contacts"
     },
     {
-      "url": "https://eventcatalog.ru/agency/kreatiff//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.person-brand.ru",
+      "error": "HTTPSConnectionPool(host='www.person-brand.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.person-brand.ru', port=443): Failed to resolve 'www.person-brand.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/kruzhok//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.person-brand.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.person-brand.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.person-brand.ru', port=443): Failed to resolve 'www.person-brand.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/praton//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://kruzhok.agency",
+      "error": "HTTPSConnectionPool(host='kruzhok.agency', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='kruzhok.agency', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/revizionnaya_shkola_isas//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://kruzhok.agency/contact",
+      "error": "HTTPSConnectionPool(host='kruzhok.agency', port=443): Max retries exceeded with url: /contact (Caused by NewConnectionError(\"HTTPSConnection(host='kruzhok.agency', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/reklama_mama//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.pra-ton.ru",
+      "error": "403 Client Error: Forbidden for url: https://www.pra-ton.ru/"
     },
     {
-      "url": "https://eventcatalog.ru/agency/vashi_preimuwestva//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.pra-ton.ru/contacts",
+      "error": "403 Client Error: Forbidden for url: https://www.pra-ton.ru/contacts"
     },
     {
-      "url": "https://eventcatalog.ru/agency/stealth_marketing//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://rekmama.ru",
+      "error": "HTTPSConnectionPool(host='rekmama.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='rekmama.ru', port=443) at 0x7fd8c8ca60d0>, 'Connection to rekmama.ru timed out. (connect timeout=2)'))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/renome//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://rekmama.ru/contacts",
+      "error": "HTTPSConnectionPool(host='rekmama.ru', port=443): Max retries exceeded with url: /contacts (Caused by ConnectTimeoutError(<HTTPSConnection(host='rekmama.ru', port=443) at 0x7fd8c8a03690>, 'Connection to rekmama.ru timed out. (connect timeout=2)'))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/fresh//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.st-mk.ru",
+      "error": "HTTPSConnectionPool(host='www.st-mk.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.st-mk.ru', port=443): Failed to resolve 'www.st-mk.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/teleport//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.st-mk.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.st-mk.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.st-mk.ru', port=443): Failed to resolve 'www.st-mk.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/cherry//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://renome-ra.ru",
+      "error": "HTTPSConnectionPool(host='renome-ra.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='renome-ra.ru', port=443): Failed to resolve 'renome-ra.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/progress//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://renome-ra.ru/contacts",
+      "error": "HTTPSConnectionPool(host='renome-ra.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='renome-ra.ru', port=443): Failed to resolve 'renome-ra.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/kvadrobum//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.rafresh.ru",
+      "error": "HTTPSConnectionPool(host='www.rafresh.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.rafresh.ru', port=443): Failed to resolve 'www.rafresh.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/moneta//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.rafresh.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.rafresh.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.rafresh.ru', port=443): Failed to resolve 'www.rafresh.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/dusha_oljhona//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.amk-cherry.com",
+      "error": "HTTPSConnectionPool(host='www.amk-cherry.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.amk-cherry.com', port=443): Failed to resolve 'www.amk-cherry.com' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/univer_tur//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.amk-cherry.com/contact",
+      "error": "HTTPSConnectionPool(host='www.amk-cherry.com', port=443): Max retries exceeded with url: /contact (Caused by NameResolutionError(\"HTTPSConnection(host='www.amk-cherry.com', port=443): Failed to resolve 'www.amk-cherry.com' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/aljfa//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.ps-promo.ru",
+      "error": "403 Client Error: Forbidden for url: https://www.ps-promo.ru/"
     },
     {
-      "url": "https://eventcatalog.ru/agency/expert//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.ps-promo.ru/contacts",
+      "error": "403 Client Error: Forbidden for url: https://www.ps-promo.ru/contacts"
     },
     {
-      "url": "https://eventcatalog.ru/agency/sovetskiy//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.baikal-soul.ru",
+      "error": "HTTPSConnectionPool(host='www.baikal-soul.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.baikal-soul.ru', port=443): Failed to resolve 'www.baikal-soul.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/kendi_layf//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.baikal-soul.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.baikal-soul.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.baikal-soul.ru', port=443): Failed to resolve 'www.baikal-soul.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/shtrih-kot//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.univer-tur.ru",
+      "error": "HTTPSConnectionPool(host='www.univer-tur.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.univer-tur.ru', port=443): Failed to resolve 'www.univer-tur.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/pervoe_vystavochnoe_obedinenie//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.univer-tur.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.univer-tur.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.univer-tur.ru', port=443): Failed to resolve 'www.univer-tur.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
-      "url": "https://eventcatalog.ru/agency/planeta_skazka//",
-      "error": "HTTPSConnectionPool(host='eventcatalog.ru', port=443): Read timed out. (read timeout=3)"
+      "url": "https://www.miralfa-spb.ru",
+      "error": "HTTPSConnectionPool(host='www.miralfa-spb.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.miralfa-spb.ru', port=443): Failed to resolve 'www.miralfa-spb.ru' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "url": "https://www.miralfa-spb.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.miralfa-spb.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.miralfa-spb.ru', port=443): Failed to resolve 'www.miralfa-spb.ru' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "url": "https://www.expo96.com",
+      "error": "403 Client Error: Forbidden for url: https://www.expo96.com/"
+    },
+    {
+      "url": "https://www.expo96.com/contact",
+      "error": "403 Client Error: Forbidden for url: https://www.expo96.com/contact"
+    },
+    {
+      "url": "https://www.sovtravelclub.ru",
+      "error": "HTTPSConnectionPool(host='www.sovtravelclub.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.sovtravelclub.ru', port=443): Failed to resolve 'www.sovtravelclub.ru' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "url": "https://www.sovtravelclub.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.sovtravelclub.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.sovtravelclub.ru', port=443): Failed to resolve 'www.sovtravelclub.ru' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "url": "https://www.mycandylife.ru",
+      "error": "HTTPSConnectionPool(host='www.mycandylife.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.mycandylife.ru', port=443): Failed to resolve 'www.mycandylife.ru' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "url": "https://www.mycandylife.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.mycandylife.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.mycandylife.ru', port=443): Failed to resolve 'www.mycandylife.ru' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "url": "https://www.planeta-skazka.ru",
+      "error": "HTTPSConnectionPool(host='www.planeta-skazka.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.planeta-skazka.ru', port=443): Failed to resolve 'www.planeta-skazka.ru' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "url": "https://www.planeta-skazka.ru/contacts",
+      "error": "HTTPSConnectionPool(host='www.planeta-skazka.ru', port=443): Max retries exceeded with url: /contacts (Caused by NameResolutionError(\"HTTPSConnection(host='www.planeta-skazka.ru', port=443): Failed to resolve 'www.planeta-skazka.ru' ([Errno -2] Name or service not known)\"))"
     },
     {
       "url": "https://pitchworx.com/",
       "error": "403 Client Error: Forbidden for url: https://pitchworx.com/"
-    },
-    {
-      "url": "https://w-presentations.com/",
-      "error": "403 Client Error: Forbidden for url: https://w-presentations.com/"
-    },
-    {
-      "url": "https://keyslide.ru/",
-      "error": "403 Client Error: Forbidden for url: https://keyslide.ru/"
     },
     {
       "url": "https://deckez.com/",
@@ -3529,10 +2941,6 @@
     {
       "url": "https://perfectpitchdeck.com/",
       "error": "403 Client Error: Forbidden for url: https://perfectpitchdeck.com/"
-    },
-    {
-      "url": "https://vizualiya.ru/",
-      "error": "403 Client Error: Forbidden for url: https://vizualiya.ru/"
     }
   ]
 }
