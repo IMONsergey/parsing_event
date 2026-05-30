@@ -1,37 +1,37 @@
 {
-  "checked_at": "2026-05-29T09:06:33.784383+00:00",
-  "total_contact_rows": 2076,
-  "unique_companies": 1652,
-  "companies_with_email": 966,
-  "companies_without_email": 686,
-  "companies_with_website": 1652,
+  "checked_at": "2026-05-30T08:18:17.127932+00:00",
+  "total_contact_rows": 2069,
+  "unique_companies": 1639,
+  "companies_with_email": 998,
+  "companies_without_email": 641,
+  "companies_with_website": 1639,
   "companies_without_website": 0,
-  "companies_with_multiple_contacts": 206,
+  "companies_with_multiple_contacts": 211,
   "max_contacts_per_company": 18,
   "average_contacts_per_company": 1.26,
   "companies_by_segment": {
-    "event": 577,
-    "pr": 361,
-    "marketing": 249,
+    "event": 574,
+    "pr": 360,
+    "marketing": 247,
     "communications": 144,
-    "digital": 83,
+    "digital": 81,
     "branding": 75,
     "presentations": 38,
     "community": 34,
-    "consulting": 31,
-    "production": 26,
+    "consulting": 30,
+    "production": 23,
     "sales": 20,
     "education": 12,
-    "hr": 2
+    "hr": 1
   },
   "companies_by_priority": {
-    "A": 993,
-    "B": 588,
+    "A": 992,
+    "B": 576,
     "C": 64,
     "AA": 7
   },
   "companies_by_country": {
-    "Россия": 1605,
+    "Россия": 1592,
     "International": 24,
     "ОАЭ": 8,
     "Казахстан": 6,
@@ -43,8 +43,8 @@
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 1223,
-    "Готово": 429
+    "Проверить": 1200,
+    "Готово": 439
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
@@ -138,21 +138,21 @@
       "priority": "A"
     },
     {
-      "company_key": "hse.ru",
-      "Компания": "HSE Business Incubator",
-      "Сайт": "https://inc.hse.ru/",
+      "company_key": "mvk.ru",
+      "Компания": "MVK",
+      "Сайт": "https://mvk.ru/",
       "contacts_count": 8,
       "emails": [
-        "admissions_gsb@hse.ru",
-        "business@hse.ru",
-        "careers@hse.ru",
-        "corporate@hse.ru",
-        "gsb@hse.ru",
-        "gsb_alumni@hse.ru",
-        "marcom-gsb@hse.ru",
-        "mba.info@hse.ru"
+        "hr.krd@mvk.ru",
+        "hr.msk@mvk.ru",
+        "hr.spb@mvk.ru",
+        "hr.ural@mvk.ru",
+        "info@mvk.ru",
+        "krasnodar@mvk.ru",
+        "spb@mvk.ru",
+        "ural@mvk.ru"
       ],
-      "segment": "community",
+      "segment": "event",
       "priority": "A"
     },
     {
@@ -174,53 +174,19 @@
       "priority": "B"
     },
     {
-      "company_key": "mvk.ru",
-      "Компания": "MVK",
-      "Сайт": "https://mvk.ru/",
+      "company_key": "hse.ru",
+      "Компания": "HSE Business Incubator",
+      "Сайт": "https://inc.hse.ru/",
       "contacts_count": 8,
       "emails": [
-        "hr.krd@mvk.ru",
-        "hr.msk@mvk.ru",
-        "hr.spb@mvk.ru",
-        "hr.ural@mvk.ru",
-        "info@mvk.ru",
-        "krasnodar@mvk.ru",
-        "spb@mvk.ru",
-        "ural@mvk.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "cipr.ru",
-      "Компания": "CIPR",
-      "Сайт": "https://cipr.ru/",
-      "contacts_count": 7,
-      "emails": [
-        "award@cipr.ru",
-        "info@cipr.ru",
-        "pozhidaev@cipr.ru",
-        "pr@cipr.ru",
-        "sales@cipr.ru",
-        "speaker@cipr.ru",
-        "techfriendly.speaker@cipr.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "iidf.ru",
-      "Компания": "Акселератор Спринт",
-      "Сайт": "https://sprint.iidf.ru/",
-      "contacts_count": 7,
-      "emails": [
-        "aalekseeva@iidf.ru",
-        "accelerator@iidf.ru",
-        "info@iidf.ru",
-        "partners@iidf.ru",
-        "pr@iidf.ru",
-        "sprint@iidf.ru",
-        "support@iidf.ru"
+        "admissions_gsb@hse.ru",
+        "business@hse.ru",
+        "careers@hse.ru",
+        "corporate@hse.ru",
+        "gsb@hse.ru",
+        "gsb_alumni@hse.ru",
+        "marcom-gsb@hse.ru",
+        "mba.info@hse.ru"
       ],
       "segment": "community",
       "priority": "A"
@@ -243,20 +209,20 @@
       "priority": "B"
     },
     {
-      "company_key": "ranepa.ru",
-      "Компания": "РАНХиГС Бизнес-образование",
-      "Сайт": "https://www.ranepa.ru/",
+      "company_key": "cipr.ru",
+      "Компания": "CIPR",
+      "Сайт": "https://cipr.ru/",
       "contacts_count": 7,
       "emails": [
-        "anticorruption@ranepa.ru",
-        "army@ranepa.ru",
-        "information@ranepa.ru",
-        "intensive@ranepa.ru",
-        "pkranepa@ranepa.ru",
-        "press@ranepa.ru",
-        "rabota@ranepa.ru"
+        "award@cipr.ru",
+        "info@cipr.ru",
+        "pozhidaev@cipr.ru",
+        "pr@cipr.ru",
+        "sales@cipr.ru",
+        "speaker@cipr.ru",
+        "techfriendly.speaker@cipr.ru"
       ],
-      "segment": "education",
+      "segment": "event",
       "priority": "A"
     },
     {
@@ -277,19 +243,85 @@
       "priority": "A"
     },
     {
-      "company_key": "dvfu.ru",
-      "Компания": "Far Eastern Federal University",
-      "Сайт": "http://www.dvfu.ru",
+      "company_key": "iidf.ru",
+      "Компания": "Акселератор Спринт",
+      "Сайт": "https://sprint.iidf.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "aalekseeva@iidf.ru",
+        "accelerator@iidf.ru",
+        "info@iidf.ru",
+        "partners@iidf.ru",
+        "pr@iidf.ru",
+        "sprint@iidf.ru",
+        "support@iidf.ru"
+      ],
+      "segment": "community",
+      "priority": "A"
+    },
+    {
+      "company_key": "ranepa.ru",
+      "Компания": "РАНХиГС Бизнес-образование",
+      "Сайт": "https://www.ranepa.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "anticorruption@ranepa.ru",
+        "army@ranepa.ru",
+        "information@ranepa.ru",
+        "intensive@ranepa.ru",
+        "pkranepa@ranepa.ru",
+        "press@ranepa.ru",
+        "rabota@ranepa.ru"
+      ],
+      "segment": "education",
+      "priority": "A"
+    },
+    {
+      "company_key": "beaversbrothers.ru",
+      "Компания": "Beavers Brothers",
+      "Сайт": "https://beaversbrothers.ru/",
       "contacts_count": 6,
       "emails": [
-        "callcenter@dvfu.ru",
-        "disp@dvfu.ru",
-        "dkb@dvfu.ru",
-        "it-help@dvfu.ru",
-        "psiholog@dvfu.ru",
-        "rectorat@dvfu.ru"
+        "avi@beaversbrothers.uz",
+        "avi@dabb.pro",
+        "avi@dabb.ru",
+        "hello@beaversbrothers.uz",
+        "hello@dabb.pro",
+        "hello@dabb.ru"
+      ],
+      "segment": "production",
+      "priority": "B"
+    },
+    {
+      "company_key": "apanshin.ru",
+      "Компания": "Паньшин Групп",
+      "Сайт": "https://apanshin.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "control@apanshin.ru",
+        "director@apanshin.ru",
+        "hr@apanshin.ru",
+        "manager@apanshin.ru",
+        "office@apanshin.ru",
+        "sales@apanshin.ru"
       ],
       "segment": "pr",
+      "priority": "B"
+    },
+    {
+      "company_key": "mgubs.ru",
+      "Компания": "МГУ Бизнес-школа",
+      "Сайт": "https://mgubs.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "admission@edu.mgubs.ru",
+        "ba@edu.mgubs.ru",
+        "d.denisova@edu.mgubs.ru",
+        "db@edu.mgubs.ru",
+        "ma@edu.mgubs.ru",
+        "mba@edu.mgubs.ru"
+      ],
+      "segment": "education",
       "priority": "A"
     },
     {
@@ -306,22 +338,6 @@
         "tatarstan@equium.club"
       ],
       "segment": "community",
-      "priority": "A"
-    },
-    {
-      "company_key": "dpgrussia.com",
-      "Компания": "DPG Russia",
-      "Сайт": "https://dpgrussia.com/",
-      "contacts_count": 6,
-      "emails": [
-        "agency@dpgrussia.com",
-        "kremer@dpgrussia.com",
-        "mikheikina@dpgrussia.com",
-        "miller@dpgrussia.com",
-        "saviniukhova@dpgrussia.com",
-        "shvedova@dpgrussia.com"
-      ],
-      "segment": "communications",
       "priority": "A"
     },
     {
@@ -357,20 +373,20 @@
       "priority": "B"
     },
     {
-      "company_key": "apanshin.ru",
-      "Компания": "Паньшин Групп",
-      "Сайт": "https://apanshin.ru/",
+      "company_key": "dvfu.ru",
+      "Компания": "Far Eastern Federal University",
+      "Сайт": "http://www.dvfu.ru",
       "contacts_count": 6,
       "emails": [
-        "control@apanshin.ru",
-        "director@apanshin.ru",
-        "hr@apanshin.ru",
-        "manager@apanshin.ru",
-        "office@apanshin.ru",
-        "sales@apanshin.ru"
+        "callcenter@dvfu.ru",
+        "disp@dvfu.ru",
+        "dkb@dvfu.ru",
+        "it-help@dvfu.ru",
+        "psiholog@dvfu.ru",
+        "rectorat@dvfu.ru"
       ],
       "segment": "pr",
-      "priority": "B"
+      "priority": "A"
     },
     {
       "company_key": "racurs.agency",
@@ -389,81 +405,20 @@
       "priority": "B"
     },
     {
-      "company_key": "beaversbrothers.ru",
-      "Компания": "Beavers Brothers",
-      "Сайт": "https://beaversbrothers.ru/",
+      "company_key": "dpgrussia.com",
+      "Компания": "DPG Russia",
+      "Сайт": "https://dpgrussia.com/",
       "contacts_count": 6,
       "emails": [
-        "avi@beaversbrothers.uz",
-        "avi@dabb.pro",
-        "avi@dabb.ru",
-        "hello@beaversbrothers.uz",
-        "hello@dabb.pro",
-        "hello@dabb.ru"
+        "agency@dpgrussia.com",
+        "kremer@dpgrussia.com",
+        "mikheikina@dpgrussia.com",
+        "miller@dpgrussia.com",
+        "saviniukhova@dpgrussia.com",
+        "shvedova@dpgrussia.com"
       ],
-      "segment": "production",
-      "priority": "B"
-    },
-    {
-      "company_key": "mgubs.ru",
-      "Компания": "МГУ Бизнес-школа",
-      "Сайт": "https://mgubs.ru/",
-      "contacts_count": 6,
-      "emails": [
-        "admission@edu.mgubs.ru",
-        "ba@edu.mgubs.ru",
-        "d.denisova@edu.mgubs.ru",
-        "db@edu.mgubs.ru",
-        "ma@edu.mgubs.ru",
-        "mba@edu.mgubs.ru"
-      ],
-      "segment": "education",
+      "segment": "communications",
       "priority": "A"
-    },
-    {
-      "company_key": "gefestevent.ru",
-      "Компания": "Гефест Event Новосибирск",
-      "Сайт": "https://www.gefestevent.ru",
-      "contacts_count": 5,
-      "emails": [
-        "event54@gefestcapital.ru",
-        "event77@gefestcapital.ru",
-        "info@gefestcapital.ru",
-        "kazan@gefestkzn.com",
-        "sochi@gefestcapital.ru"
-      ],
-      "segment": "event",
-      "priority": "B"
-    },
-    {
-      "company_key": "cstb.ru",
-      "Компания": "CSTB.PRO.MEDIA / Мидэкспо",
-      "Сайт": "https://cstb.ru/",
-      "contacts_count": 5,
-      "emails": [
-        "anna.v@midexpo.org",
-        "aslanova@midexpo.org",
-        "cstb.conf@midexpo.org",
-        "tatyana@midexpo.org",
-        "zhanna@midexpo.org"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "artwell.ru",
-      "Компания": "АРТВЕЛЛ",
-      "Сайт": "http://www.artwell.ru/",
-      "contacts_count": 5,
-      "emails": [
-        "clients@artwell.ru",
-        "karaganda@artwell.ru",
-        "komi@artwell.ru",
-        "spb@artwell.ru",
-        "support@artwell.ru"
-      ],
-      "segment": "marketing",
-      "priority": "B"
     },
     {
       "company_key": "deasign.ru",
@@ -481,16 +436,16 @@
       "priority": "B"
     },
     {
-      "company_key": "mice-excellence.ru",
-      "Компания": "MICE Excellence",
-      "Сайт": "https://www.mice-excellence.ru/",
+      "company_key": "cstb.ru",
+      "Компания": "CSTB.PRO.MEDIA / Мидэкспо",
+      "Сайт": "https://cstb.ru/",
       "contacts_count": 5,
       "emails": [
-        "hello@mice-excellence.ru",
-        "irina@mice-excellence.ru",
-        "sales@mice-excellence.ru",
-        "tatiana@mice-excellence.ru",
-        "team@mice-excellence.ru"
+        "anna.v@midexpo.org",
+        "aslanova@midexpo.org",
+        "cstb.conf@midexpo.org",
+        "tatyana@midexpo.org",
+        "zhanna@midexpo.org"
       ],
       "segment": "event",
       "priority": "A"
@@ -511,6 +466,36 @@
       "priority": "A"
     },
     {
+      "company_key": "artwell.ru",
+      "Компания": "АРТВЕЛЛ",
+      "Сайт": "http://www.artwell.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "clients@artwell.ru",
+        "karaganda@artwell.ru",
+        "komi@artwell.ru",
+        "spb@artwell.ru",
+        "support@artwell.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
+      "company_key": "gefestevent.ru",
+      "Компания": "Гефест Event Новосибирск",
+      "Сайт": "https://www.gefestevent.ru",
+      "contacts_count": 5,
+      "emails": [
+        "event54@gefestcapital.ru",
+        "event77@gefestcapital.ru",
+        "info@gefestcapital.ru",
+        "kazan@gefestkzn.com",
+        "sochi@gefestcapital.ru"
+      ],
+      "segment": "event",
+      "priority": "B"
+    },
+    {
       "company_key": "proactivity.ru",
       "Компания": "Proactivity Group",
       "Сайт": "http://www.proactivity.ru/",
@@ -526,32 +511,47 @@
       "priority": "B"
     },
     {
-      "company_key": "1ps.ru",
-      "Компания": "1PS.RU",
-      "Сайт": "https://1ps.ru/",
+      "company_key": "mice-excellence.ru",
+      "Компания": "MICE Excellence",
+      "Сайт": "https://www.mice-excellence.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "hello@mice-excellence.ru",
+        "irina@mice-excellence.ru",
+        "sales@mice-excellence.ru",
+        "tatiana@mice-excellence.ru",
+        "team@mice-excellence.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "webest.ru",
+      "Компания": "Webest",
+      "Сайт": "https://webest.ru/",
       "contacts_count": 4,
       "emails": [
-        "admin@1ps.ru",
-        "hr@1ps.ru",
-        "irina@1ps.ru",
-        "partner@1ps.ru"
+        "ekaterina.k@webest.ru",
+        "info@webest.ru",
+        "stanislav.k@webest.ru",
+        "yulia.sh@webest.ru"
       ],
       "segment": "marketing",
       "priority": "B"
     },
     {
-      "company_key": "newsmedia.ru",
-      "Компания": "Newsmedia",
-      "Сайт": "https://newsmedia.ru/",
+      "company_key": "itb-company.com",
+      "Компания": "itb",
+      "Сайт": "https://itb-company.com/",
       "contacts_count": 4,
       "emails": [
-        "advertising@newsmedia.ru",
-        "hr@newsmedia.ru",
-        "law@newsmedia.ru",
-        "studio@newsmedia.ru"
+        "info@itb-company.com",
+        "msk@itb-company.com",
+        "nsk@itb-company.com",
+        "spb@itb-company.com"
       ],
       "segment": "communications",
-      "priority": "A"
+      "priority": "B"
     }
   ]
 }
