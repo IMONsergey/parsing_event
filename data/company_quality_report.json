@@ -1,22 +1,22 @@
 {
-  "checked_at": "2026-06-04T09:44:10.423987+00:00",
-  "total_contact_rows": 2087,
-  "unique_companies": 1653,
-  "companies_with_email": 1023,
-  "companies_without_email": 630,
-  "companies_with_website": 1653,
+  "checked_at": "2026-06-05T09:06:29.979652+00:00",
+  "total_contact_rows": 2083,
+  "unique_companies": 1650,
+  "companies_with_email": 989,
+  "companies_without_email": 661,
+  "companies_with_website": 1650,
   "companies_without_website": 0,
-  "companies_with_multiple_contacts": 213,
+  "companies_with_multiple_contacts": 212,
   "max_contacts_per_company": 18,
   "average_contacts_per_company": 1.26,
   "companies_by_segment": {
     "event": 579,
     "pr": 361,
-    "marketing": 249,
+    "marketing": 248,
     "communications": 144,
-    "digital": 83,
-    "branding": 76,
-    "presentations": 36,
+    "digital": 81,
+    "branding": 75,
+    "presentations": 37,
     "community": 34,
     "consulting": 31,
     "production": 26,
@@ -25,14 +25,14 @@
     "hr": 2
   },
   "companies_by_priority": {
-    "A": 993,
-    "B": 588,
-    "C": 65,
+    "A": 994,
+    "B": 585,
+    "C": 64,
     "AA": 7
   },
   "companies_by_country": {
-    "Россия": 1608,
-    "International": 23,
+    "Россия": 1604,
+    "International": 24,
     "ОАЭ": 8,
     "Казахстан": 6,
     "UK": 2,
@@ -43,8 +43,8 @@
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 1202,
-    "Готово": 451
+    "Проверить": 1213,
+    "Готово": 437
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
@@ -156,24 +156,6 @@
       "priority": "A"
     },
     {
-      "company_key": "mvk.ru",
-      "Компания": "MVK",
-      "Сайт": "https://mvk.ru/",
-      "contacts_count": 8,
-      "emails": [
-        "hr.krd@mvk.ru",
-        "hr.msk@mvk.ru",
-        "hr.spb@mvk.ru",
-        "hr.ural@mvk.ru",
-        "info@mvk.ru",
-        "krasnodar@mvk.ru",
-        "spb@mvk.ru",
-        "ural@mvk.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
       "company_key": "siteactiv.ru",
       "Компания": "СайтАктив",
       "Сайт": "https://siteactiv.ru/",
@@ -192,21 +174,22 @@
       "priority": "B"
     },
     {
-      "company_key": "medianet.ru",
-      "Компания": "Medianet",
-      "Сайт": "http://www.medianet.ru/",
-      "contacts_count": 7,
+      "company_key": "mvk.ru",
+      "Компания": "MVK",
+      "Сайт": "https://mvk.ru/",
+      "contacts_count": 8,
       "emails": [
-        "infoekaterinburg@medianet.ru",
-        "infokrasnodar@medianet.ru",
-        "infomoscow@medianet.ru",
-        "infonovosibirsk@medianet.ru",
-        "infosamara@medianet.ru",
-        "infospb@medianet.ru",
-        "infovladivostok@medianet.ru"
+        "hr.krd@mvk.ru",
+        "hr.msk@mvk.ru",
+        "hr.spb@mvk.ru",
+        "hr.ural@mvk.ru",
+        "info@mvk.ru",
+        "krasnodar@mvk.ru",
+        "spb@mvk.ru",
+        "ural@mvk.ru"
       ],
-      "segment": "marketing",
-      "priority": "B"
+      "segment": "event",
+      "priority": "A"
     },
     {
       "company_key": "cipr.ru",
@@ -224,6 +207,23 @@
       ],
       "segment": "event",
       "priority": "A"
+    },
+    {
+      "company_key": "medianet.ru",
+      "Компания": "Medianet",
+      "Сайт": "http://www.medianet.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "infoekaterinburg@medianet.ru",
+        "infokrasnodar@medianet.ru",
+        "infomoscow@medianet.ru",
+        "infonovosibirsk@medianet.ru",
+        "infosamara@medianet.ru",
+        "infospb@medianet.ru",
+        "infovladivostok@medianet.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
     },
     {
       "company_key": "iidf.ru",
@@ -277,70 +277,6 @@
       "priority": "A"
     },
     {
-      "company_key": "mice-excellence.ru",
-      "Компания": "MICE Excellence",
-      "Сайт": "https://www.mice-excellence.ru/",
-      "contacts_count": 6,
-      "emails": [
-        "hello@mice-excellence.ru",
-        "irina@mice-excellence.ru",
-        "mems1@mice-excellence.ru",
-        "sales@mice-excellence.ru",
-        "tatiana@mice-excellence.ru",
-        "team@mice-excellence.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "equium.kz",
-      "Компания": "Эквиум Казахстан",
-      "Сайт": "https://equium.kz/",
-      "contacts_count": 6,
-      "emails": [
-        "coordinator@equium-heidelberg.de",
-        "dubai@equium.club",
-        "equium.minsk@gmail.com",
-        "equiumkz@gmail.com",
-        "nnv@equium.club",
-        "tatarstan@equium.club"
-      ],
-      "segment": "community",
-      "priority": "A"
-    },
-    {
-      "company_key": "dpgrussia.com",
-      "Компания": "DPG Russia",
-      "Сайт": "https://dpgrussia.com/",
-      "contacts_count": 6,
-      "emails": [
-        "agency@dpgrussia.com",
-        "kremer@dpgrussia.com",
-        "mikheikina@dpgrussia.com",
-        "miller@dpgrussia.com",
-        "saviniukhova@dpgrussia.com",
-        "shvedova@dpgrussia.com"
-      ],
-      "segment": "communications",
-      "priority": "A"
-    },
-    {
-      "company_key": "makeloveagency.com",
-      "Компания": "makelove",
-      "Сайт": "https://makeloveagency.com/",
-      "contacts_count": 6,
-      "emails": [
-        "info.br@makeloveagency.com",
-        "info.ge@makeloveagency.com",
-        "info.sa@makeloveagency.com",
-        "info.uk@makeloveagency.com",
-        "info@makeloveagency.com",
-        "jobs@makeloveagency.com"
-      ],
-      "segment": "marketing",
-      "priority": "B"
-    },
-    {
       "company_key": "dvfu.ru",
       "Компания": "Far Eastern Federal University",
       "Сайт": "http://www.dvfu.ru",
@@ -389,6 +325,38 @@
       "priority": "B"
     },
     {
+      "company_key": "mgubs.ru",
+      "Компания": "МГУ Бизнес-школа",
+      "Сайт": "https://mgubs.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "admission@edu.mgubs.ru",
+        "ba@edu.mgubs.ru",
+        "d.denisova@edu.mgubs.ru",
+        "db@edu.mgubs.ru",
+        "ma@edu.mgubs.ru",
+        "mba@edu.mgubs.ru"
+      ],
+      "segment": "education",
+      "priority": "A"
+    },
+    {
+      "company_key": "mice-excellence.ru",
+      "Компания": "MICE Excellence",
+      "Сайт": "https://www.mice-excellence.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "hello@mice-excellence.ru",
+        "irina@mice-excellence.ru",
+        "mems1@mice-excellence.ru",
+        "sales@mice-excellence.ru",
+        "tatiana@mice-excellence.ru",
+        "team@mice-excellence.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
       "company_key": "apanshin.ru",
       "Компания": "Паньшин Групп",
       "Сайт": "https://apanshin.ru/",
@@ -403,6 +371,54 @@
       ],
       "segment": "pr",
       "priority": "B"
+    },
+    {
+      "company_key": "makeloveagency.com",
+      "Компания": "makelove",
+      "Сайт": "https://makeloveagency.com/",
+      "contacts_count": 6,
+      "emails": [
+        "info.br@makeloveagency.com",
+        "info.ge@makeloveagency.com",
+        "info.sa@makeloveagency.com",
+        "info.uk@makeloveagency.com",
+        "info@makeloveagency.com",
+        "jobs@makeloveagency.com"
+      ],
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
+      "company_key": "dpgrussia.com",
+      "Компания": "DPG Russia",
+      "Сайт": "https://dpgrussia.com/",
+      "contacts_count": 6,
+      "emails": [
+        "agency@dpgrussia.com",
+        "kremer@dpgrussia.com",
+        "mikheikina@dpgrussia.com",
+        "miller@dpgrussia.com",
+        "saviniukhova@dpgrussia.com",
+        "shvedova@dpgrussia.com"
+      ],
+      "segment": "communications",
+      "priority": "A"
+    },
+    {
+      "company_key": "equium.kz",
+      "Компания": "Эквиум Казахстан",
+      "Сайт": "https://equium.kz/",
+      "contacts_count": 6,
+      "emails": [
+        "coordinator@equium-heidelberg.de",
+        "dubai@equium.club",
+        "equium.minsk@gmail.com",
+        "equiumkz@gmail.com",
+        "nnv@equium.club",
+        "tatarstan@equium.club"
+      ],
+      "segment": "community",
+      "priority": "A"
     },
     {
       "company_key": "beaversbrothers.ru",
@@ -421,37 +437,6 @@
       "priority": "B"
     },
     {
-      "company_key": "mgubs.ru",
-      "Компания": "МГУ Бизнес-школа",
-      "Сайт": "https://mgubs.ru/",
-      "contacts_count": 6,
-      "emails": [
-        "admission@edu.mgubs.ru",
-        "ba@edu.mgubs.ru",
-        "d.denisova@edu.mgubs.ru",
-        "db@edu.mgubs.ru",
-        "ma@edu.mgubs.ru",
-        "mba@edu.mgubs.ru"
-      ],
-      "segment": "education",
-      "priority": "A"
-    },
-    {
-      "company_key": "gefestevent.ru",
-      "Компания": "Гефест Event Новосибирск",
-      "Сайт": "https://www.gefestevent.ru",
-      "contacts_count": 5,
-      "emails": [
-        "event54@gefestcapital.ru",
-        "event77@gefestcapital.ru",
-        "info@gefestcapital.ru",
-        "kazan@gefestkzn.com",
-        "sochi@gefestcapital.ru"
-      ],
-      "segment": "event",
-      "priority": "B"
-    },
-    {
       "company_key": "cstb.ru",
       "Компания": "CSTB.PRO.MEDIA / Мидэкспо",
       "Сайт": "https://cstb.ru/",
@@ -467,18 +452,18 @@
       "priority": "A"
     },
     {
-      "company_key": "proactivity.ru",
-      "Компания": "Proactivity Group",
-      "Сайт": "http://www.proactivity.ru/",
+      "company_key": "artwell.ru",
+      "Компания": "АРТВЕЛЛ",
+      "Сайт": "http://www.artwell.ru/",
       "contacts_count": 5,
       "emails": [
-        "ad@proactivity.ru",
-        "angelina@proactivity.ru",
-        "logvinova@proactivity.ru",
-        "sb@proactivity.ru",
-        "vika@proactivity.ru"
+        "clients@artwell.ru",
+        "karaganda@artwell.ru",
+        "komi@artwell.ru",
+        "spb@artwell.ru",
+        "support@artwell.ru"
       ],
-      "segment": "event",
+      "segment": "marketing",
       "priority": "B"
     },
     {
@@ -497,18 +482,33 @@
       "priority": "B"
     },
     {
-      "company_key": "artwell.ru",
-      "Компания": "АРТВЕЛЛ",
-      "Сайт": "http://www.artwell.ru/",
+      "company_key": "proactivity.ru",
+      "Компания": "Proactivity Group",
+      "Сайт": "http://www.proactivity.ru/",
       "contacts_count": 5,
       "emails": [
-        "clients@artwell.ru",
-        "karaganda@artwell.ru",
-        "komi@artwell.ru",
-        "spb@artwell.ru",
-        "support@artwell.ru"
+        "ad@proactivity.ru",
+        "angelina@proactivity.ru",
+        "logvinova@proactivity.ru",
+        "sb@proactivity.ru",
+        "vika@proactivity.ru"
       ],
-      "segment": "marketing",
+      "segment": "event",
+      "priority": "B"
+    },
+    {
+      "company_key": "gefestevent.ru",
+      "Компания": "Гефест Event Новосибирск",
+      "Сайт": "https://www.gefestevent.ru",
+      "contacts_count": 5,
+      "emails": [
+        "event54@gefestcapital.ru",
+        "event77@gefestcapital.ru",
+        "info@gefestcapital.ru",
+        "kazan@gefestkzn.com",
+        "sochi@gefestcapital.ru"
+      ],
+      "segment": "event",
       "priority": "B"
     },
     {
@@ -527,17 +527,17 @@
       "priority": "A"
     },
     {
-      "company_key": "productsense.io",
-      "Компания": "ProductSense",
-      "Сайт": "https://productsense.io/",
+      "company_key": "scrumtrek.ru",
+      "Компания": "ScrumTrek",
+      "Сайт": "https://scrumtrek.ru/",
       "contacts_count": 4,
       "emails": [
-        "account@productsense.io",
-        "ageev@productsense.io",
-        "support@productsense.io",
-        "talks@productsense.io"
+        "bo@scrumtrek.ru",
+        "conf@scrumtrek.ru",
+        "corp@scrumtrek.ru",
+        "edu@scrumtrek.ru"
       ],
-      "segment": "event",
+      "segment": "consulting",
       "priority": "A"
     },
     {
