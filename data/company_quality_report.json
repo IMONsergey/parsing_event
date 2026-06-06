@@ -1,50 +1,50 @@
 {
-  "checked_at": "2026-06-05T09:06:29.979652+00:00",
-  "total_contact_rows": 2083,
-  "unique_companies": 1650,
-  "companies_with_email": 989,
-  "companies_without_email": 661,
-  "companies_with_website": 1650,
+  "checked_at": "2026-06-06T08:25:45.803259+00:00",
+  "total_contact_rows": 2079,
+  "unique_companies": 1640,
+  "companies_with_email": 1035,
+  "companies_without_email": 605,
+  "companies_with_website": 1640,
   "companies_without_website": 0,
-  "companies_with_multiple_contacts": 212,
+  "companies_with_multiple_contacts": 218,
   "max_contacts_per_company": 18,
-  "average_contacts_per_company": 1.26,
+  "average_contacts_per_company": 1.27,
   "companies_by_segment": {
-    "event": 579,
-    "pr": 361,
-    "marketing": 248,
+    "event": 574,
+    "pr": 360,
+    "marketing": 247,
     "communications": 144,
     "digital": 81,
     "branding": 75,
     "presentations": 37,
     "community": 34,
-    "consulting": 31,
-    "production": 26,
+    "consulting": 30,
+    "production": 24,
     "sales": 20,
     "education": 12,
     "hr": 2
   },
   "companies_by_priority": {
-    "A": 994,
-    "B": 585,
+    "A": 991,
+    "B": 578,
     "C": 64,
     "AA": 7
   },
   "companies_by_country": {
-    "Россия": 1604,
-    "International": 24,
+    "Россия": 1594,
+    "International": 23,
     "ОАЭ": 8,
     "Казахстан": 6,
+    "США": 3,
     "UK": 2,
-    "США": 2,
     "Беларусь": 1,
     "Армения": 1,
     "Грузия": 1,
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 1213,
-    "Готово": 437
+    "Проверить": 1189,
+    "Готово": 451
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
@@ -138,24 +138,6 @@
       "priority": "A"
     },
     {
-      "company_key": "hse.ru",
-      "Компания": "HSE Business Incubator",
-      "Сайт": "https://inc.hse.ru/",
-      "contacts_count": 8,
-      "emails": [
-        "admissions_gsb@hse.ru",
-        "business@hse.ru",
-        "careers@hse.ru",
-        "corporate@hse.ru",
-        "gsb@hse.ru",
-        "gsb_alumni@hse.ru",
-        "marcom-gsb@hse.ru",
-        "mba.info@hse.ru"
-      ],
-      "segment": "community",
-      "priority": "A"
-    },
-    {
       "company_key": "siteactiv.ru",
       "Компания": "СайтАктив",
       "Сайт": "https://siteactiv.ru/",
@@ -172,6 +154,24 @@
       ],
       "segment": "marketing",
       "priority": "B"
+    },
+    {
+      "company_key": "hse.ru",
+      "Компания": "HSE Business Incubator",
+      "Сайт": "https://inc.hse.ru/",
+      "contacts_count": 8,
+      "emails": [
+        "admissions_gsb@hse.ru",
+        "business@hse.ru",
+        "careers@hse.ru",
+        "corporate@hse.ru",
+        "gsb@hse.ru",
+        "gsb_alumni@hse.ru",
+        "marcom-gsb@hse.ru",
+        "mba.info@hse.ru"
+      ],
+      "segment": "community",
+      "priority": "A"
     },
     {
       "company_key": "mvk.ru",
@@ -192,20 +192,37 @@
       "priority": "A"
     },
     {
-      "company_key": "cipr.ru",
-      "Компания": "CIPR",
-      "Сайт": "https://cipr.ru/",
+      "company_key": "interforums.ru",
+      "Компания": "InterForum",
+      "Сайт": "https://interforums.ru/",
       "contacts_count": 7,
       "emails": [
-        "award@cipr.ru",
-        "info@cipr.ru",
-        "pozhidaev@cipr.ru",
-        "pr@cipr.ru",
-        "sales@cipr.ru",
-        "speaker@cipr.ru",
-        "techfriendly.speaker@cipr.ru"
+        "a.romanovich@interforums.ru",
+        "borisova@interforums.ru",
+        "dedenko@interforums.ru",
+        "info@interforums.ru",
+        "maxim@interforums.ru",
+        "spirin.a@interforums.ru",
+        "stepanov@interforums.ru"
       ],
       "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "iidf.ru",
+      "Компания": "Акселератор Спринт",
+      "Сайт": "https://sprint.iidf.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "aalekseeva@iidf.ru",
+        "accelerator@iidf.ru",
+        "info@iidf.ru",
+        "partners@iidf.ru",
+        "pr@iidf.ru",
+        "sprint@iidf.ru",
+        "support@iidf.ru"
+      ],
+      "segment": "community",
       "priority": "A"
     },
     {
@@ -226,35 +243,18 @@
       "priority": "B"
     },
     {
-      "company_key": "iidf.ru",
-      "Компания": "Акселератор Спринт",
-      "Сайт": "https://sprint.iidf.ru/",
+      "company_key": "cipr.ru",
+      "Компания": "CIPR",
+      "Сайт": "https://cipr.ru/",
       "contacts_count": 7,
       "emails": [
-        "aalekseeva@iidf.ru",
-        "accelerator@iidf.ru",
-        "info@iidf.ru",
-        "partners@iidf.ru",
-        "pr@iidf.ru",
-        "sprint@iidf.ru",
-        "support@iidf.ru"
-      ],
-      "segment": "community",
-      "priority": "A"
-    },
-    {
-      "company_key": "interforums.ru",
-      "Компания": "InterForum",
-      "Сайт": "https://interforums.ru/",
-      "contacts_count": 7,
-      "emails": [
-        "a.romanovich@interforums.ru",
-        "borisova@interforums.ru",
-        "dedenko@interforums.ru",
-        "info@interforums.ru",
-        "maxim@interforums.ru",
-        "spirin.a@interforums.ru",
-        "stepanov@interforums.ru"
+        "award@cipr.ru",
+        "info@cipr.ru",
+        "pozhidaev@cipr.ru",
+        "pr@cipr.ru",
+        "sales@cipr.ru",
+        "speaker@cipr.ru",
+        "techfriendly.speaker@cipr.ru"
       ],
       "segment": "event",
       "priority": "A"
@@ -277,19 +277,35 @@
       "priority": "A"
     },
     {
-      "company_key": "dvfu.ru",
-      "Компания": "Far Eastern Federal University",
-      "Сайт": "http://www.dvfu.ru",
+      "company_key": "apanshin.ru",
+      "Компания": "Паньшин Групп",
+      "Сайт": "https://apanshin.ru/",
       "contacts_count": 6,
       "emails": [
-        "callcenter@dvfu.ru",
-        "disp@dvfu.ru",
-        "dkb@dvfu.ru",
-        "it-help@dvfu.ru",
-        "psiholog@dvfu.ru",
-        "rectorat@dvfu.ru"
+        "control@apanshin.ru",
+        "director@apanshin.ru",
+        "hr@apanshin.ru",
+        "manager@apanshin.ru",
+        "office@apanshin.ru",
+        "sales@apanshin.ru"
       ],
       "segment": "pr",
+      "priority": "B"
+    },
+    {
+      "company_key": "equium.kz",
+      "Компания": "Эквиум Казахстан",
+      "Сайт": "https://equium.kz/",
+      "contacts_count": 6,
+      "emails": [
+        "coordinator@equium-heidelberg.de",
+        "dubai@equium.club",
+        "equium.minsk@gmail.com",
+        "equiumkz@gmail.com",
+        "nnv@equium.club",
+        "tatarstan@equium.club"
+      ],
+      "segment": "community",
       "priority": "A"
     },
     {
@@ -325,19 +341,35 @@
       "priority": "B"
     },
     {
-      "company_key": "mgubs.ru",
-      "Компания": "МГУ Бизнес-школа",
-      "Сайт": "https://mgubs.ru/",
+      "company_key": "makeloveagency.com",
+      "Компания": "makelove",
+      "Сайт": "https://makeloveagency.com/",
       "contacts_count": 6,
       "emails": [
-        "admission@edu.mgubs.ru",
-        "ba@edu.mgubs.ru",
-        "d.denisova@edu.mgubs.ru",
-        "db@edu.mgubs.ru",
-        "ma@edu.mgubs.ru",
-        "mba@edu.mgubs.ru"
+        "info.br@makeloveagency.com",
+        "info.ge@makeloveagency.com",
+        "info.sa@makeloveagency.com",
+        "info.uk@makeloveagency.com",
+        "info@makeloveagency.com",
+        "jobs@makeloveagency.com"
       ],
-      "segment": "education",
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
+      "company_key": "dvfu.ru",
+      "Компания": "Far Eastern Federal University",
+      "Сайт": "http://www.dvfu.ru",
+      "contacts_count": 6,
+      "emails": [
+        "callcenter@dvfu.ru",
+        "disp@dvfu.ru",
+        "dkb@dvfu.ru",
+        "it-help@dvfu.ru",
+        "psiholog@dvfu.ru",
+        "rectorat@dvfu.ru"
+      ],
+      "segment": "pr",
       "priority": "A"
     },
     {
@@ -357,38 +389,6 @@
       "priority": "A"
     },
     {
-      "company_key": "apanshin.ru",
-      "Компания": "Паньшин Групп",
-      "Сайт": "https://apanshin.ru/",
-      "contacts_count": 6,
-      "emails": [
-        "control@apanshin.ru",
-        "director@apanshin.ru",
-        "hr@apanshin.ru",
-        "manager@apanshin.ru",
-        "office@apanshin.ru",
-        "sales@apanshin.ru"
-      ],
-      "segment": "pr",
-      "priority": "B"
-    },
-    {
-      "company_key": "makeloveagency.com",
-      "Компания": "makelove",
-      "Сайт": "https://makeloveagency.com/",
-      "contacts_count": 6,
-      "emails": [
-        "info.br@makeloveagency.com",
-        "info.ge@makeloveagency.com",
-        "info.sa@makeloveagency.com",
-        "info.uk@makeloveagency.com",
-        "info@makeloveagency.com",
-        "jobs@makeloveagency.com"
-      ],
-      "segment": "marketing",
-      "priority": "B"
-    },
-    {
       "company_key": "dpgrussia.com",
       "Компания": "DPG Russia",
       "Сайт": "https://dpgrussia.com/",
@@ -402,22 +402,6 @@
         "shvedova@dpgrussia.com"
       ],
       "segment": "communications",
-      "priority": "A"
-    },
-    {
-      "company_key": "equium.kz",
-      "Компания": "Эквиум Казахстан",
-      "Сайт": "https://equium.kz/",
-      "contacts_count": 6,
-      "emails": [
-        "coordinator@equium-heidelberg.de",
-        "dubai@equium.club",
-        "equium.minsk@gmail.com",
-        "equiumkz@gmail.com",
-        "nnv@equium.club",
-        "tatarstan@equium.club"
-      ],
-      "segment": "community",
       "priority": "A"
     },
     {
@@ -437,6 +421,37 @@
       "priority": "B"
     },
     {
+      "company_key": "mgubs.ru",
+      "Компания": "МГУ Бизнес-школа",
+      "Сайт": "https://mgubs.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "admission@edu.mgubs.ru",
+        "ba@edu.mgubs.ru",
+        "d.denisova@edu.mgubs.ru",
+        "db@edu.mgubs.ru",
+        "ma@edu.mgubs.ru",
+        "mba@edu.mgubs.ru"
+      ],
+      "segment": "education",
+      "priority": "A"
+    },
+    {
+      "company_key": "highload.ru",
+      "Компания": "HighLoad++",
+      "Сайт": "https://highload.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "marketing@ontico.team",
+        "org@ontico.ru",
+        "partners@ontico.ru",
+        "speakers@ontico.ru",
+        "support@ontico.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
       "company_key": "cstb.ru",
       "Компания": "CSTB.PRO.MEDIA / Мидэкспо",
       "Сайт": "https://cstb.ru/",
@@ -452,18 +467,18 @@
       "priority": "A"
     },
     {
-      "company_key": "artwell.ru",
-      "Компания": "АРТВЕЛЛ",
-      "Сайт": "http://www.artwell.ru/",
+      "company_key": "gefestevent.ru",
+      "Компания": "Гефест Event Новосибирск",
+      "Сайт": "https://www.gefestevent.ru",
       "contacts_count": 5,
       "emails": [
-        "clients@artwell.ru",
-        "karaganda@artwell.ru",
-        "komi@artwell.ru",
-        "spb@artwell.ru",
-        "support@artwell.ru"
+        "event54@gefestcapital.ru",
+        "event77@gefestcapital.ru",
+        "info@gefestcapital.ru",
+        "kazan@gefestkzn.com",
+        "sochi@gefestcapital.ru"
       ],
-      "segment": "marketing",
+      "segment": "event",
       "priority": "B"
     },
     {
@@ -497,50 +512,6 @@
       "priority": "B"
     },
     {
-      "company_key": "gefestevent.ru",
-      "Компания": "Гефест Event Новосибирск",
-      "Сайт": "https://www.gefestevent.ru",
-      "contacts_count": 5,
-      "emails": [
-        "event54@gefestcapital.ru",
-        "event77@gefestcapital.ru",
-        "info@gefestcapital.ru",
-        "kazan@gefestkzn.com",
-        "sochi@gefestcapital.ru"
-      ],
-      "segment": "event",
-      "priority": "B"
-    },
-    {
-      "company_key": "highload.ru",
-      "Компания": "HighLoad++",
-      "Сайт": "https://highload.ru/",
-      "contacts_count": 5,
-      "emails": [
-        "marketing@ontico.team",
-        "org@ontico.ru",
-        "partners@ontico.ru",
-        "speakers@ontico.ru",
-        "support@ontico.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "scrumtrek.ru",
-      "Компания": "ScrumTrek",
-      "Сайт": "https://scrumtrek.ru/",
-      "contacts_count": 4,
-      "emails": [
-        "bo@scrumtrek.ru",
-        "conf@scrumtrek.ru",
-        "corp@scrumtrek.ru",
-        "edu@scrumtrek.ru"
-      ],
-      "segment": "consulting",
-      "priority": "A"
-    },
-    {
       "company_key": "win2win.ru",
       "Компания": "Win2Win",
       "Сайт": "https://win2win.ru/",
@@ -550,6 +521,34 @@
         "hr@win2win.ru",
         "info@win2win.ru",
         "ivan.menshenin@win2win.ru"
+      ],
+      "segment": "communications",
+      "priority": "A"
+    },
+    {
+      "company_key": "newsmedia.ru",
+      "Компания": "Newsmedia",
+      "Сайт": "https://newsmedia.ru/",
+      "contacts_count": 4,
+      "emails": [
+        "advertising@newsmedia.ru",
+        "hr@newsmedia.ru",
+        "law@newsmedia.ru",
+        "studio@newsmedia.ru"
+      ],
+      "segment": "communications",
+      "priority": "A"
+    },
+    {
+      "company_key": "movie-group.ru",
+      "Компания": "Movie Group",
+      "Сайт": "https://movie-group.ru/",
+      "contacts_count": 4,
+      "emails": [
+        "hr@movie360.ru",
+        "info@movie360.ru",
+        "pr@movie360.ru",
+        "welcome@movie360.ru"
       ],
       "segment": "communications",
       "priority": "A"
