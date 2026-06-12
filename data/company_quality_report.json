@@ -1,50 +1,50 @@
 {
-  "checked_at": "2026-06-11T10:05:28.188207+00:00",
-  "total_contact_rows": 2068,
-  "unique_companies": 1649,
-  "companies_with_email": 933,
-  "companies_without_email": 716,
-  "companies_with_website": 1649,
+  "checked_at": "2026-06-12T09:57:56.726879+00:00",
+  "total_contact_rows": 2058,
+  "unique_companies": 1636,
+  "companies_with_email": 934,
+  "companies_without_email": 702,
+  "companies_with_website": 1636,
   "companies_without_website": 0,
-  "companies_with_multiple_contacts": 203,
+  "companies_with_multiple_contacts": 206,
   "max_contacts_per_company": 18,
-  "average_contacts_per_company": 1.25,
+  "average_contacts_per_company": 1.26,
   "companies_by_segment": {
-    "event": 577,
-    "pr": 361,
-    "marketing": 248,
+    "event": 574,
+    "pr": 360,
+    "marketing": 243,
     "communications": 144,
     "digital": 81,
     "branding": 76,
-    "presentations": 38,
+    "presentations": 37,
     "community": 34,
-    "consulting": 31,
-    "production": 25,
+    "consulting": 30,
+    "production": 23,
     "sales": 20,
     "education": 12,
     "hr": 2
   },
   "companies_by_priority": {
-    "A": 993,
-    "B": 584,
+    "A": 991,
+    "B": 573,
     "C": 65,
     "AA": 7
   },
   "companies_by_country": {
-    "Россия": 1602,
+    "Россия": 1590,
     "International": 24,
     "ОАЭ": 8,
     "Казахстан": 6,
-    "США": 3,
     "UK": 2,
+    "США": 2,
     "Беларусь": 1,
     "Армения": 1,
     "Грузия": 1,
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 1227,
-    "Готово": 422
+    "Проверить": 1215,
+    "Готово": 421
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
@@ -192,21 +192,21 @@
       "priority": "A"
     },
     {
-      "company_key": "interforums.ru",
-      "Компания": "InterForum",
-      "Сайт": "https://interforums.ru/",
+      "company_key": "medianet.ru",
+      "Компания": "Medianet",
+      "Сайт": "http://www.medianet.ru/",
       "contacts_count": 7,
       "emails": [
-        "a.romanovich@interforums.ru",
-        "borisova@interforums.ru",
-        "dedenko@interforums.ru",
-        "info@interforums.ru",
-        "maxim@interforums.ru",
-        "spirin.a@interforums.ru",
-        "stepanov@interforums.ru"
+        "infoekaterinburg@medianet.ru",
+        "infokrasnodar@medianet.ru",
+        "infomoscow@medianet.ru",
+        "infonovosibirsk@medianet.ru",
+        "infosamara@medianet.ru",
+        "infospb@medianet.ru",
+        "infovladivostok@medianet.ru"
       ],
-      "segment": "event",
-      "priority": "A"
+      "segment": "marketing",
+      "priority": "B"
     },
     {
       "company_key": "iidf.ru",
@@ -260,21 +260,53 @@
       "priority": "A"
     },
     {
-      "company_key": "medianet.ru",
-      "Компания": "Medianet",
-      "Сайт": "http://www.medianet.ru/",
+      "company_key": "interforums.ru",
+      "Компания": "InterForum",
+      "Сайт": "https://interforums.ru/",
       "contacts_count": 7,
       "emails": [
-        "infoekaterinburg@medianet.ru",
-        "infokrasnodar@medianet.ru",
-        "infomoscow@medianet.ru",
-        "infonovosibirsk@medianet.ru",
-        "infosamara@medianet.ru",
-        "infospb@medianet.ru",
-        "infovladivostok@medianet.ru"
+        "a.romanovich@interforums.ru",
+        "borisova@interforums.ru",
+        "dedenko@interforums.ru",
+        "info@interforums.ru",
+        "maxim@interforums.ru",
+        "spirin.a@interforums.ru",
+        "stepanov@interforums.ru"
       ],
-      "segment": "marketing",
-      "priority": "B"
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "dpgrussia.com",
+      "Компания": "DPG Russia",
+      "Сайт": "https://dpgrussia.com/",
+      "contacts_count": 6,
+      "emails": [
+        "agency@dpgrussia.com",
+        "kremer@dpgrussia.com",
+        "mikheikina@dpgrussia.com",
+        "miller@dpgrussia.com",
+        "saviniukhova@dpgrussia.com",
+        "shvedova@dpgrussia.com"
+      ],
+      "segment": "communications",
+      "priority": "A"
+    },
+    {
+      "company_key": "mice-excellence.ru",
+      "Компания": "MICE Excellence",
+      "Сайт": "https://www.mice-excellence.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "hello@mice-excellence.ru",
+        "irina@mice-excellence.ru",
+        "mems1@mice-excellence.ru",
+        "sales@mice-excellence.ru",
+        "tatiana@mice-excellence.ru",
+        "team@mice-excellence.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
     },
     {
       "company_key": "astanahub.com",
@@ -291,22 +323,6 @@
       ],
       "segment": "event",
       "priority": "A"
-    },
-    {
-      "company_key": "apanshin.ru",
-      "Компания": "Паньшин Групп",
-      "Сайт": "https://apanshin.ru/",
-      "contacts_count": 6,
-      "emails": [
-        "control@apanshin.ru",
-        "director@apanshin.ru",
-        "hr@apanshin.ru",
-        "manager@apanshin.ru",
-        "office@apanshin.ru",
-        "sales@apanshin.ru"
-      ],
-      "segment": "pr",
-      "priority": "B"
     },
     {
       "company_key": "racurs.agency",
@@ -341,6 +357,22 @@
       "priority": "A"
     },
     {
+      "company_key": "apanshin.ru",
+      "Компания": "Паньшин Групп",
+      "Сайт": "https://apanshin.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "control@apanshin.ru",
+        "director@apanshin.ru",
+        "hr@apanshin.ru",
+        "manager@apanshin.ru",
+        "office@apanshin.ru",
+        "sales@apanshin.ru"
+      ],
+      "segment": "pr",
+      "priority": "B"
+    },
+    {
       "company_key": "mgubs.ru",
       "Компания": "МГУ Бизнес-школа",
       "Сайт": "https://mgubs.ru/",
@@ -355,6 +387,22 @@
       ],
       "segment": "education",
       "priority": "A"
+    },
+    {
+      "company_key": "makeloveagency.com",
+      "Компания": "makelove",
+      "Сайт": "https://makeloveagency.com/",
+      "contacts_count": 6,
+      "emails": [
+        "info.br@makeloveagency.com",
+        "info.ge@makeloveagency.com",
+        "info.sa@makeloveagency.com",
+        "info.uk@makeloveagency.com",
+        "info@makeloveagency.com",
+        "jobs@makeloveagency.com"
+      ],
+      "segment": "marketing",
+      "priority": "B"
     },
     {
       "company_key": "beaversbrothers.ru",
@@ -389,54 +437,6 @@
       "priority": "A"
     },
     {
-      "company_key": "makeloveagency.com",
-      "Компания": "makelove",
-      "Сайт": "https://makeloveagency.com/",
-      "contacts_count": 6,
-      "emails": [
-        "info.br@makeloveagency.com",
-        "info.ge@makeloveagency.com",
-        "info.sa@makeloveagency.com",
-        "info.uk@makeloveagency.com",
-        "info@makeloveagency.com",
-        "jobs@makeloveagency.com"
-      ],
-      "segment": "marketing",
-      "priority": "B"
-    },
-    {
-      "company_key": "mice-excellence.ru",
-      "Компания": "MICE Excellence",
-      "Сайт": "https://www.mice-excellence.ru/",
-      "contacts_count": 6,
-      "emails": [
-        "hello@mice-excellence.ru",
-        "irina@mice-excellence.ru",
-        "mems1@mice-excellence.ru",
-        "sales@mice-excellence.ru",
-        "tatiana@mice-excellence.ru",
-        "team@mice-excellence.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "dpgrussia.com",
-      "Компания": "DPG Russia",
-      "Сайт": "https://dpgrussia.com/",
-      "contacts_count": 6,
-      "emails": [
-        "agency@dpgrussia.com",
-        "kremer@dpgrussia.com",
-        "mikheikina@dpgrussia.com",
-        "miller@dpgrussia.com",
-        "saviniukhova@dpgrussia.com",
-        "shvedova@dpgrussia.com"
-      ],
-      "segment": "communications",
-      "priority": "A"
-    },
-    {
       "company_key": "artwell.ru",
       "Компания": "АРТВЕЛЛ",
       "Сайт": "http://www.artwell.ru/",
@@ -449,36 +449,6 @@
         "support@artwell.ru"
       ],
       "segment": "marketing",
-      "priority": "B"
-    },
-    {
-      "company_key": "highload.ru",
-      "Компания": "HighLoad++",
-      "Сайт": "https://highload.ru/",
-      "contacts_count": 5,
-      "emails": [
-        "marketing@ontico.team",
-        "org@ontico.ru",
-        "partners@ontico.ru",
-        "speakers@ontico.ru",
-        "support@ontico.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "deasign.ru",
-      "Компания": "Deasign",
-      "Сайт": "https://deasign.ru/",
-      "contacts_count": 5,
-      "emails": [
-        "alla@deasign.ru",
-        "axel@deasign.ru",
-        "kirill.nessin@deasign.ru",
-        "office@deasign.ru",
-        "yakov@deasign.ru"
-      ],
-      "segment": "production",
       "priority": "B"
     },
     {
@@ -495,6 +465,21 @@
       ],
       "segment": "event",
       "priority": "B"
+    },
+    {
+      "company_key": "highload.ru",
+      "Компания": "HighLoad++",
+      "Сайт": "https://highload.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "marketing@ontico.team",
+        "org@ontico.ru",
+        "partners@ontico.ru",
+        "speakers@ontico.ru",
+        "support@ontico.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
     },
     {
       "company_key": "gefestevent.ru",
@@ -527,29 +512,44 @@
       "priority": "A"
     },
     {
-      "company_key": "nota.media",
-      "Компания": "Notamedia",
-      "Сайт": "https://nota.media/",
-      "contacts_count": 4,
+      "company_key": "deasign.ru",
+      "Компания": "Deasign",
+      "Сайт": "https://deasign.ru/",
+      "contacts_count": 5,
       "emails": [
-        "agency@notamedia.ru",
-        "info@notamedia.com",
-        "info@notamedia.ru",
-        "sales.in@notamedia.com"
+        "alla@deasign.ru",
+        "axel@deasign.ru",
+        "kirill.nessin@deasign.ru",
+        "office@deasign.ru",
+        "yakov@deasign.ru"
       ],
-      "segment": "communications",
-      "priority": "AA"
+      "segment": "production",
+      "priority": "B"
     },
     {
-      "company_key": "snp.agency",
-      "Компания": "SALT AND PEPPER",
-      "Сайт": "https://snp.agency/",
+      "company_key": "artics.ru",
+      "Компания": "Artics",
+      "Сайт": "https://www.artics.ru/",
       "contacts_count": 4,
       "emails": [
-        "hello@snp.agency",
-        "join@snp.agency",
-        "newbiz@snp.agency",
-        "u003ehello@snp.agency"
+        "hr@artics.ru",
+        "msk@artics.ru",
+        "pr@artics.ru",
+        "spb@artics.ru"
+      ],
+      "segment": "digital",
+      "priority": "B"
+    },
+    {
+      "company_key": "itb-company.com",
+      "Компания": "itb",
+      "Сайт": "https://itb-company.com/",
+      "contacts_count": 4,
+      "emails": [
+        "info@itb-company.com",
+        "msk@itb-company.com",
+        "nsk@itb-company.com",
+        "spb@itb-company.com"
       ],
       "segment": "communications",
       "priority": "B"
