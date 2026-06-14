@@ -1,37 +1,37 @@
 {
-  "checked_at": "2026-06-13T08:49:32.336040+00:00",
-  "total_contact_rows": 2082,
-  "unique_companies": 1647,
-  "companies_with_email": 1016,
-  "companies_without_email": 631,
-  "companies_with_website": 1647,
+  "checked_at": "2026-06-14T09:04:31.260735+00:00",
+  "total_contact_rows": 2084,
+  "unique_companies": 1655,
+  "companies_with_email": 1009,
+  "companies_without_email": 646,
+  "companies_with_website": 1655,
   "companies_without_website": 0,
-  "companies_with_multiple_contacts": 214,
+  "companies_with_multiple_contacts": 211,
   "max_contacts_per_company": 18,
   "average_contacts_per_company": 1.26,
   "companies_by_segment": {
-    "event": 576,
+    "event": 579,
     "pr": 361,
-    "marketing": 248,
+    "marketing": 249,
     "communications": 144,
-    "digital": 81,
-    "branding": 75,
+    "digital": 83,
+    "branding": 76,
     "presentations": 38,
     "community": 34,
     "consulting": 31,
-    "production": 25,
+    "production": 26,
     "sales": 20,
     "education": 12,
     "hr": 2
   },
   "companies_by_priority": {
-    "A": 992,
-    "B": 584,
-    "C": 64,
+    "A": 995,
+    "B": 588,
+    "C": 65,
     "AA": 7
   },
   "companies_by_country": {
-    "Россия": 1600,
+    "Россия": 1608,
     "International": 24,
     "ОАЭ": 8,
     "Казахстан": 6,
@@ -43,8 +43,8 @@
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 1199,
-    "Готово": 448
+    "Проверить": 1210,
+    "Готово": 445
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
@@ -138,22 +138,22 @@
       "priority": "A"
     },
     {
-      "company_key": "mvk.ru",
-      "Компания": "MVK",
-      "Сайт": "https://mvk.ru/",
+      "company_key": "siteactiv.ru",
+      "Компания": "СайтАктив",
+      "Сайт": "https://siteactiv.ru/",
       "contacts_count": 8,
       "emails": [
-        "hr.krd@mvk.ru",
-        "hr.msk@mvk.ru",
-        "hr.spb@mvk.ru",
-        "hr.ural@mvk.ru",
-        "info@mvk.ru",
-        "krasnodar@mvk.ru",
-        "spb@mvk.ru",
-        "ural@mvk.ru"
+        "info@siteactiv.ru",
+        "job@siteactiv.ru",
+        "kazan@siteactiv.ru",
+        "krasnodar@siteactiv.ru",
+        "moscow@siteactiv.ru",
+        "novosibirsk@siteactiv.ru",
+        "spb@siteactiv.ru",
+        "welcome@siteactiv.ru"
       ],
-      "segment": "event",
-      "priority": "A"
+      "segment": "marketing",
+      "priority": "B"
     },
     {
       "company_key": "hse.ru",
@@ -174,53 +174,19 @@
       "priority": "A"
     },
     {
-      "company_key": "siteactiv.ru",
-      "Компания": "СайтАктив",
-      "Сайт": "https://siteactiv.ru/",
+      "company_key": "mvk.ru",
+      "Компания": "MVK",
+      "Сайт": "https://mvk.ru/",
       "contacts_count": 8,
       "emails": [
-        "info@siteactiv.ru",
-        "job@siteactiv.ru",
-        "kazan@siteactiv.ru",
-        "krasnodar@siteactiv.ru",
-        "moscow@siteactiv.ru",
-        "novosibirsk@siteactiv.ru",
-        "spb@siteactiv.ru",
-        "welcome@siteactiv.ru"
-      ],
-      "segment": "marketing",
-      "priority": "B"
-    },
-    {
-      "company_key": "ranepa.ru",
-      "Компания": "РАНХиГС Бизнес-образование",
-      "Сайт": "https://www.ranepa.ru/",
-      "contacts_count": 7,
-      "emails": [
-        "anticorruption@ranepa.ru",
-        "army@ranepa.ru",
-        "information@ranepa.ru",
-        "intensive@ranepa.ru",
-        "pkranepa@ranepa.ru",
-        "press@ranepa.ru",
-        "rabota@ranepa.ru"
-      ],
-      "segment": "education",
-      "priority": "A"
-    },
-    {
-      "company_key": "interforums.ru",
-      "Компания": "InterForum",
-      "Сайт": "https://interforums.ru/",
-      "contacts_count": 7,
-      "emails": [
-        "a.romanovich@interforums.ru",
-        "borisova@interforums.ru",
-        "dedenko@interforums.ru",
-        "info@interforums.ru",
-        "maxim@interforums.ru",
-        "spirin.a@interforums.ru",
-        "stepanov@interforums.ru"
+        "hr.krd@mvk.ru",
+        "hr.msk@mvk.ru",
+        "hr.spb@mvk.ru",
+        "hr.ural@mvk.ru",
+        "info@mvk.ru",
+        "krasnodar@mvk.ru",
+        "spb@mvk.ru",
+        "ural@mvk.ru"
       ],
       "segment": "event",
       "priority": "A"
@@ -243,21 +209,21 @@
       "priority": "A"
     },
     {
-      "company_key": "medianet.ru",
-      "Компания": "Medianet",
-      "Сайт": "http://www.medianet.ru/",
+      "company_key": "ranepa.ru",
+      "Компания": "РАНХиГС Бизнес-образование",
+      "Сайт": "https://www.ranepa.ru/",
       "contacts_count": 7,
       "emails": [
-        "infoekaterinburg@medianet.ru",
-        "infokrasnodar@medianet.ru",
-        "infomoscow@medianet.ru",
-        "infonovosibirsk@medianet.ru",
-        "infosamara@medianet.ru",
-        "infospb@medianet.ru",
-        "infovladivostok@medianet.ru"
+        "anticorruption@ranepa.ru",
+        "army@ranepa.ru",
+        "information@ranepa.ru",
+        "intensive@ranepa.ru",
+        "pkranepa@ranepa.ru",
+        "press@ranepa.ru",
+        "rabota@ranepa.ru"
       ],
-      "segment": "marketing",
-      "priority": "B"
+      "segment": "education",
+      "priority": "A"
     },
     {
       "company_key": "cipr.ru",
@@ -277,19 +243,37 @@
       "priority": "A"
     },
     {
-      "company_key": "dvfu.ru",
-      "Компания": "Far Eastern Federal University",
-      "Сайт": "http://www.dvfu.ru",
-      "contacts_count": 6,
+      "company_key": "medianet.ru",
+      "Компания": "Medianet",
+      "Сайт": "http://www.medianet.ru/",
+      "contacts_count": 7,
       "emails": [
-        "callcenter@dvfu.ru",
-        "disp@dvfu.ru",
-        "dkb@dvfu.ru",
-        "it-help@dvfu.ru",
-        "psiholog@dvfu.ru",
-        "rectorat@dvfu.ru"
+        "infoekaterinburg@medianet.ru",
+        "infokrasnodar@medianet.ru",
+        "infomoscow@medianet.ru",
+        "infonovosibirsk@medianet.ru",
+        "infosamara@medianet.ru",
+        "infospb@medianet.ru",
+        "infovladivostok@medianet.ru"
       ],
-      "segment": "pr",
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
+      "company_key": "interforums.ru",
+      "Компания": "InterForum",
+      "Сайт": "https://interforums.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "a.romanovich@interforums.ru",
+        "borisova@interforums.ru",
+        "dedenko@interforums.ru",
+        "info@interforums.ru",
+        "maxim@interforums.ru",
+        "spirin.a@interforums.ru",
+        "stepanov@interforums.ru"
+      ],
+      "segment": "event",
       "priority": "A"
     },
     {
@@ -309,6 +293,70 @@
       "priority": "A"
     },
     {
+      "company_key": "astanahub.com",
+      "Компания": "Astana Hub",
+      "Сайт": "https://astanahub.com/",
+      "contacts_count": 6,
+      "emails": [
+        "ceo@astanahub.com",
+        "cv@astanahub.com",
+        "info@astanahub.com",
+        "media@astanahub.com",
+        "quality@astanahub.com",
+        "support@astanahub.com"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "mgubs.ru",
+      "Компания": "МГУ Бизнес-школа",
+      "Сайт": "https://mgubs.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "admission@edu.mgubs.ru",
+        "ba@edu.mgubs.ru",
+        "d.denisova@edu.mgubs.ru",
+        "db@edu.mgubs.ru",
+        "ma@edu.mgubs.ru",
+        "mba@edu.mgubs.ru"
+      ],
+      "segment": "education",
+      "priority": "A"
+    },
+    {
+      "company_key": "dvfu.ru",
+      "Компания": "Far Eastern Federal University",
+      "Сайт": "http://www.dvfu.ru",
+      "contacts_count": 6,
+      "emails": [
+        "callcenter@dvfu.ru",
+        "disp@dvfu.ru",
+        "dkb@dvfu.ru",
+        "it-help@dvfu.ru",
+        "psiholog@dvfu.ru",
+        "rectorat@dvfu.ru"
+      ],
+      "segment": "pr",
+      "priority": "A"
+    },
+    {
+      "company_key": "apanshin.ru",
+      "Компания": "Паньшин Групп",
+      "Сайт": "https://apanshin.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "control@apanshin.ru",
+        "director@apanshin.ru",
+        "hr@apanshin.ru",
+        "manager@apanshin.ru",
+        "office@apanshin.ru",
+        "sales@apanshin.ru"
+      ],
+      "segment": "pr",
+      "priority": "B"
+    },
+    {
       "company_key": "mice-excellence.ru",
       "Компания": "MICE Excellence",
       "Сайт": "https://www.mice-excellence.ru/",
@@ -325,17 +373,17 @@
       "priority": "A"
     },
     {
-      "company_key": "apanshin.ru",
-      "Компания": "Паньшин Групп",
-      "Сайт": "https://apanshin.ru/",
+      "company_key": "racurs.agency",
+      "Компания": "#RACURS",
+      "Сайт": "https://racurs.agency/",
       "contacts_count": 6,
       "emails": [
-        "control@apanshin.ru",
-        "director@apanshin.ru",
-        "hr@apanshin.ru",
-        "manager@apanshin.ru",
-        "office@apanshin.ru",
-        "sales@apanshin.ru"
+        "churikova@racurs.agency",
+        "hr@racurs.agency",
+        "katrin@racurs.agency",
+        "kornushina@racurs.agency",
+        "rudakova@racurs.agency",
+        "sales@racurs.agency"
       ],
       "segment": "pr",
       "priority": "B"
@@ -357,35 +405,19 @@
       "priority": "B"
     },
     {
-      "company_key": "mgubs.ru",
-      "Компания": "МГУ Бизнес-школа",
-      "Сайт": "https://mgubs.ru/",
+      "company_key": "beaversbrothers.ru",
+      "Компания": "Beavers Brothers",
+      "Сайт": "https://beaversbrothers.ru/",
       "contacts_count": 6,
       "emails": [
-        "admission@edu.mgubs.ru",
-        "ba@edu.mgubs.ru",
-        "d.denisova@edu.mgubs.ru",
-        "db@edu.mgubs.ru",
-        "ma@edu.mgubs.ru",
-        "mba@edu.mgubs.ru"
+        "avi@beaversbrothers.uz",
+        "avi@dabb.pro",
+        "avi@dabb.ru",
+        "hello@beaversbrothers.uz",
+        "hello@dabb.pro",
+        "hello@dabb.ru"
       ],
-      "segment": "education",
-      "priority": "A"
-    },
-    {
-      "company_key": "racurs.agency",
-      "Компания": "#RACURS",
-      "Сайт": "https://racurs.agency/",
-      "contacts_count": 6,
-      "emails": [
-        "churikova@racurs.agency",
-        "hr@racurs.agency",
-        "katrin@racurs.agency",
-        "kornushina@racurs.agency",
-        "rudakova@racurs.agency",
-        "sales@racurs.agency"
-      ],
-      "segment": "pr",
+      "segment": "production",
       "priority": "B"
     },
     {
@@ -405,36 +437,19 @@
       "priority": "A"
     },
     {
-      "company_key": "astanahub.com",
-      "Компания": "Astana Hub",
-      "Сайт": "https://astanahub.com/",
-      "contacts_count": 6,
+      "company_key": "cstb.ru",
+      "Компания": "CSTB.PRO.MEDIA / Мидэкспо",
+      "Сайт": "https://cstb.ru/",
+      "contacts_count": 5,
       "emails": [
-        "ceo@astanahub.com",
-        "cv@astanahub.com",
-        "info@astanahub.com",
-        "media@astanahub.com",
-        "quality@astanahub.com",
-        "support@astanahub.com"
+        "anna.v@midexpo.org",
+        "aslanova@midexpo.org",
+        "cstb.conf@midexpo.org",
+        "tatyana@midexpo.org",
+        "zhanna@midexpo.org"
       ],
       "segment": "event",
       "priority": "A"
-    },
-    {
-      "company_key": "beaversbrothers.ru",
-      "Компания": "Beavers Brothers",
-      "Сайт": "https://beaversbrothers.ru/",
-      "contacts_count": 6,
-      "emails": [
-        "avi@beaversbrothers.uz",
-        "avi@dabb.pro",
-        "avi@dabb.ru",
-        "hello@beaversbrothers.uz",
-        "hello@dabb.pro",
-        "hello@dabb.ru"
-      ],
-      "segment": "production",
-      "priority": "B"
     },
     {
       "company_key": "deasign.ru",
@@ -449,6 +464,21 @@
         "yakov@deasign.ru"
       ],
       "segment": "production",
+      "priority": "B"
+    },
+    {
+      "company_key": "gefestevent.ru",
+      "Компания": "Гефест Event Новосибирск",
+      "Сайт": "https://www.gefestevent.ru",
+      "contacts_count": 5,
+      "emails": [
+        "event54@gefestcapital.ru",
+        "event77@gefestcapital.ru",
+        "info@gefestcapital.ru",
+        "kazan@gefestkzn.com",
+        "sochi@gefestcapital.ru"
+      ],
+      "segment": "event",
       "priority": "B"
     },
     {
@@ -467,36 +497,6 @@
       "priority": "B"
     },
     {
-      "company_key": "highload.ru",
-      "Компания": "HighLoad++",
-      "Сайт": "https://highload.ru/",
-      "contacts_count": 5,
-      "emails": [
-        "marketing@ontico.team",
-        "org@ontico.ru",
-        "partners@ontico.ru",
-        "speakers@ontico.ru",
-        "support@ontico.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "gefestevent.ru",
-      "Компания": "Гефест Event Новосибирск",
-      "Сайт": "https://www.gefestevent.ru",
-      "contacts_count": 5,
-      "emails": [
-        "event54@gefestcapital.ru",
-        "event77@gefestcapital.ru",
-        "info@gefestcapital.ru",
-        "kazan@gefestkzn.com",
-        "sochi@gefestcapital.ru"
-      ],
-      "segment": "event",
-      "priority": "B"
-    },
-    {
       "company_key": "proactivity.ru",
       "Компания": "Proactivity Group",
       "Сайт": "http://www.proactivity.ru/",
@@ -512,46 +512,46 @@
       "priority": "B"
     },
     {
-      "company_key": "cstb.ru",
-      "Компания": "CSTB.PRO.MEDIA / Мидэкспо",
-      "Сайт": "https://cstb.ru/",
+      "company_key": "highload.ru",
+      "Компания": "HighLoad++",
+      "Сайт": "https://highload.ru/",
       "contacts_count": 5,
       "emails": [
-        "anna.v@midexpo.org",
-        "aslanova@midexpo.org",
-        "cstb.conf@midexpo.org",
-        "tatyana@midexpo.org",
-        "zhanna@midexpo.org"
+        "marketing@ontico.team",
+        "org@ontico.ru",
+        "partners@ontico.ru",
+        "speakers@ontico.ru",
+        "support@ontico.ru"
       ],
       "segment": "event",
       "priority": "A"
     },
     {
-      "company_key": "movie-group.ru",
-      "Компания": "Movie Group",
-      "Сайт": "https://movie-group.ru/",
+      "company_key": "snp.agency",
+      "Компания": "SALT AND PEPPER",
+      "Сайт": "https://snp.agency/",
       "contacts_count": 4,
       "emails": [
-        "hr@movie360.ru",
-        "info@movie360.ru",
-        "pr@movie360.ru",
-        "welcome@movie360.ru"
+        "hello@snp.agency",
+        "join@snp.agency",
+        "newbiz@snp.agency",
+        "u003ehello@snp.agency"
       ],
       "segment": "communications",
-      "priority": "A"
+      "priority": "B"
     },
     {
-      "company_key": "productsense.io",
-      "Компания": "ProductSense",
-      "Сайт": "https://productsense.io/",
+      "company_key": "scrumtrek.ru",
+      "Компания": "ScrumTrek",
+      "Сайт": "https://scrumtrek.ru/",
       "contacts_count": 4,
       "emails": [
-        "account@productsense.io",
-        "ageev@productsense.io",
-        "support@productsense.io",
-        "talks@productsense.io"
+        "bo@scrumtrek.ru",
+        "conf@scrumtrek.ru",
+        "corp@scrumtrek.ru",
+        "edu@scrumtrek.ru"
       ],
-      "segment": "event",
+      "segment": "consulting",
       "priority": "A"
     }
   ]
