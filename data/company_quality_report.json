@@ -1,37 +1,37 @@
 {
-  "checked_at": "2026-06-15T11:45:22.538557+00:00",
-  "total_contact_rows": 2071,
-  "unique_companies": 1643,
-  "companies_with_email": 982,
-  "companies_without_email": 661,
-  "companies_with_website": 1643,
+  "checked_at": "2026-06-16T10:54:39.109358+00:00",
+  "total_contact_rows": 2026,
+  "unique_companies": 1609,
+  "companies_with_email": 931,
+  "companies_without_email": 678,
+  "companies_with_website": 1609,
   "companies_without_website": 0,
-  "companies_with_multiple_contacts": 212,
+  "companies_with_multiple_contacts": 205,
   "max_contacts_per_company": 18,
   "average_contacts_per_company": 1.26,
   "companies_by_segment": {
-    "event": 579,
-    "pr": 361,
-    "marketing": 239,
-    "communications": 144,
-    "digital": 82,
+    "event": 575,
+    "pr": 353,
+    "marketing": 228,
+    "communications": 134,
+    "digital": 83,
     "branding": 76,
     "presentations": 38,
     "community": 34,
-    "consulting": 31,
-    "production": 26,
-    "sales": 19,
+    "consulting": 30,
+    "production": 24,
+    "sales": 20,
     "education": 12,
     "hr": 2
   },
   "companies_by_priority": {
-    "A": 995,
-    "B": 576,
+    "A": 990,
+    "B": 547,
     "C": 65,
     "AA": 7
   },
   "companies_by_country": {
-    "Россия": 1596,
+    "Россия": 1562,
     "International": 24,
     "ОАЭ": 8,
     "Казахстан": 6,
@@ -43,8 +43,8 @@
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 1204,
-    "Готово": 439
+    "Проверить": 1192,
+    "Готово": 417
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
@@ -192,6 +192,40 @@
       "priority": "A"
     },
     {
+      "company_key": "interforums.ru",
+      "Компания": "InterForum",
+      "Сайт": "https://interforums.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "a.romanovich@interforums.ru",
+        "borisova@interforums.ru",
+        "dedenko@interforums.ru",
+        "info@interforums.ru",
+        "maxim@interforums.ru",
+        "spirin.a@interforums.ru",
+        "stepanov@interforums.ru"
+      ],
+      "segment": "event",
+      "priority": "A"
+    },
+    {
+      "company_key": "medianet.ru",
+      "Компания": "Medianet",
+      "Сайт": "http://www.medianet.ru/",
+      "contacts_count": 7,
+      "emails": [
+        "infoekaterinburg@medianet.ru",
+        "infokrasnodar@medianet.ru",
+        "infomoscow@medianet.ru",
+        "infonovosibirsk@medianet.ru",
+        "infosamara@medianet.ru",
+        "infospb@medianet.ru",
+        "infovladivostok@medianet.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
       "company_key": "iidf.ru",
       "Компания": "Акселератор Спринт",
       "Сайт": "https://sprint.iidf.ru/",
@@ -226,23 +260,6 @@
       "priority": "A"
     },
     {
-      "company_key": "medianet.ru",
-      "Компания": "Medianet",
-      "Сайт": "http://www.medianet.ru/",
-      "contacts_count": 7,
-      "emails": [
-        "infoekaterinburg@medianet.ru",
-        "infokrasnodar@medianet.ru",
-        "infomoscow@medianet.ru",
-        "infonovosibirsk@medianet.ru",
-        "infosamara@medianet.ru",
-        "infospb@medianet.ru",
-        "infovladivostok@medianet.ru"
-      ],
-      "segment": "marketing",
-      "priority": "B"
-    },
-    {
       "company_key": "cipr.ru",
       "Компания": "CIPR",
       "Сайт": "https://cipr.ru/",
@@ -255,23 +272,6 @@
         "sales@cipr.ru",
         "speaker@cipr.ru",
         "techfriendly.speaker@cipr.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "interforums.ru",
-      "Компания": "InterForum",
-      "Сайт": "https://interforums.ru/",
-      "contacts_count": 7,
-      "emails": [
-        "a.romanovich@interforums.ru",
-        "borisova@interforums.ru",
-        "dedenko@interforums.ru",
-        "info@interforums.ru",
-        "maxim@interforums.ru",
-        "spirin.a@interforums.ru",
-        "stepanov@interforums.ru"
       ],
       "segment": "event",
       "priority": "A"
@@ -325,54 +325,6 @@
       "priority": "A"
     },
     {
-      "company_key": "mice-excellence.ru",
-      "Компания": "MICE Excellence",
-      "Сайт": "https://www.mice-excellence.ru/",
-      "contacts_count": 6,
-      "emails": [
-        "hello@mice-excellence.ru",
-        "irina@mice-excellence.ru",
-        "mems1@mice-excellence.ru",
-        "sales@mice-excellence.ru",
-        "tatiana@mice-excellence.ru",
-        "team@mice-excellence.ru"
-      ],
-      "segment": "event",
-      "priority": "A"
-    },
-    {
-      "company_key": "equium.kz",
-      "Компания": "Эквиум Казахстан",
-      "Сайт": "https://equium.kz/",
-      "contacts_count": 6,
-      "emails": [
-        "coordinator@equium-heidelberg.de",
-        "dubai@equium.club",
-        "equium.minsk@gmail.com",
-        "equiumkz@gmail.com",
-        "nnv@equium.club",
-        "tatarstan@equium.club"
-      ],
-      "segment": "community",
-      "priority": "A"
-    },
-    {
-      "company_key": "beaversbrothers.ru",
-      "Компания": "Beavers Brothers",
-      "Сайт": "https://beaversbrothers.ru/",
-      "contacts_count": 6,
-      "emails": [
-        "avi@beaversbrothers.uz",
-        "avi@dabb.pro",
-        "avi@dabb.ru",
-        "hello@beaversbrothers.uz",
-        "hello@dabb.pro",
-        "hello@dabb.ru"
-      ],
-      "segment": "production",
-      "priority": "B"
-    },
-    {
       "company_key": "dvfu.ru",
       "Компания": "Far Eastern Federal University",
       "Сайт": "http://www.dvfu.ru",
@@ -386,6 +338,22 @@
         "rectorat@dvfu.ru"
       ],
       "segment": "pr",
+      "priority": "A"
+    },
+    {
+      "company_key": "mice-excellence.ru",
+      "Компания": "MICE Excellence",
+      "Сайт": "https://www.mice-excellence.ru/",
+      "contacts_count": 6,
+      "emails": [
+        "hello@mice-excellence.ru",
+        "irina@mice-excellence.ru",
+        "mems1@mice-excellence.ru",
+        "sales@mice-excellence.ru",
+        "tatiana@mice-excellence.ru",
+        "team@mice-excellence.ru"
+      ],
+      "segment": "event",
       "priority": "A"
     },
     {
@@ -405,19 +373,19 @@
       "priority": "A"
     },
     {
-      "company_key": "apanshin.ru",
-      "Компания": "Паньшин Групп",
-      "Сайт": "https://apanshin.ru/",
+      "company_key": "beaversbrothers.ru",
+      "Компания": "Beavers Brothers",
+      "Сайт": "https://beaversbrothers.ru/",
       "contacts_count": 6,
       "emails": [
-        "control@apanshin.ru",
-        "director@apanshin.ru",
-        "hr@apanshin.ru",
-        "manager@apanshin.ru",
-        "office@apanshin.ru",
-        "sales@apanshin.ru"
+        "avi@beaversbrothers.uz",
+        "avi@dabb.pro",
+        "avi@dabb.ru",
+        "hello@beaversbrothers.uz",
+        "hello@dabb.pro",
+        "hello@dabb.ru"
       ],
-      "segment": "pr",
+      "segment": "production",
       "priority": "B"
     },
     {
@@ -437,34 +405,20 @@
       "priority": "A"
     },
     {
-      "company_key": "deasign.ru",
-      "Компания": "Deasign",
-      "Сайт": "https://deasign.ru/",
-      "contacts_count": 5,
+      "company_key": "equium.kz",
+      "Компания": "Эквиум Казахстан",
+      "Сайт": "https://equium.kz/",
+      "contacts_count": 6,
       "emails": [
-        "alla@deasign.ru",
-        "axel@deasign.ru",
-        "kirill.nessin@deasign.ru",
-        "office@deasign.ru",
-        "yakov@deasign.ru"
+        "coordinator@equium-heidelberg.de",
+        "dubai@equium.club",
+        "equium.minsk@gmail.com",
+        "equiumkz@gmail.com",
+        "nnv@equium.club",
+        "tatarstan@equium.club"
       ],
-      "segment": "production",
-      "priority": "B"
-    },
-    {
-      "company_key": "artwell.ru",
-      "Компания": "АРТВЕЛЛ",
-      "Сайт": "http://www.artwell.ru/",
-      "contacts_count": 5,
-      "emails": [
-        "clients@artwell.ru",
-        "karaganda@artwell.ru",
-        "komi@artwell.ru",
-        "spb@artwell.ru",
-        "support@artwell.ru"
-      ],
-      "segment": "marketing",
-      "priority": "B"
+      "segment": "community",
+      "priority": "A"
     },
     {
       "company_key": "cstb.ru",
@@ -512,6 +466,36 @@
       "priority": "B"
     },
     {
+      "company_key": "deasign.ru",
+      "Компания": "Deasign",
+      "Сайт": "https://deasign.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "alla@deasign.ru",
+        "axel@deasign.ru",
+        "kirill.nessin@deasign.ru",
+        "office@deasign.ru",
+        "yakov@deasign.ru"
+      ],
+      "segment": "production",
+      "priority": "B"
+    },
+    {
+      "company_key": "artwell.ru",
+      "Компания": "АРТВЕЛЛ",
+      "Сайт": "http://www.artwell.ru/",
+      "contacts_count": 5,
+      "emails": [
+        "clients@artwell.ru",
+        "karaganda@artwell.ru",
+        "komi@artwell.ru",
+        "spb@artwell.ru",
+        "support@artwell.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
+    },
+    {
       "company_key": "proactivity.ru",
       "Компания": "Proactivity Group",
       "Сайт": "http://www.proactivity.ru/",
@@ -527,32 +511,46 @@
       "priority": "B"
     },
     {
-      "company_key": "movie-group.ru",
-      "Компания": "Movie Group",
-      "Сайт": "https://movie-group.ru/",
+      "company_key": "productsense.io",
+      "Компания": "ProductSense",
+      "Сайт": "https://productsense.io/",
       "contacts_count": 4,
       "emails": [
-        "hr@movie360.ru",
-        "info@movie360.ru",
-        "pr@movie360.ru",
-        "welcome@movie360.ru"
+        "account@productsense.io",
+        "ageev@productsense.io",
+        "support@productsense.io",
+        "talks@productsense.io"
       ],
-      "segment": "communications",
+      "segment": "event",
       "priority": "A"
     },
     {
-      "company_key": "newsmedia.ru",
-      "Компания": "Newsmedia",
-      "Сайт": "https://newsmedia.ru/",
+      "company_key": "fistashki.org",
+      "Компания": "Fistashki",
+      "Сайт": "https://www.fistashki.org/",
       "contacts_count": 4,
       "emails": [
-        "advertising@newsmedia.ru",
-        "hr@newsmedia.ru",
-        "law@newsmedia.ru",
-        "studio@newsmedia.ru"
+        "hr@fistashki.org",
+        "likee@fistashki.org",
+        "nb@fistashki.org",
+        "pr@fistashki.org"
       ],
-      "segment": "communications",
-      "priority": "A"
+      "segment": "pr",
+      "priority": "B"
+    },
+    {
+      "company_key": "webest.ru",
+      "Компания": "Webest",
+      "Сайт": "https://webest.ru/",
+      "contacts_count": 4,
+      "emails": [
+        "ekaterina.k@webest.ru",
+        "info@webest.ru",
+        "stanislav.k@webest.ru",
+        "yulia.sh@webest.ru"
+      ],
+      "segment": "marketing",
+      "priority": "B"
     }
   ]
 }
