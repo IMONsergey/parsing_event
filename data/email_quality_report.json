@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-06-18T10:07:14.819071+00:00",
-  "total_rows": 2085,
-  "rows_with_email": 1398,
-  "rows_without_email": 687,
+  "checked_at": "2026-06-19T10:13:42.454165+00:00",
+  "total_rows": 2087,
+  "rows_with_email": 1403,
+  "rows_without_email": 684,
   "invalid_email_count": 0,
   "disallowed_email_count": 0,
   "placeholder_email_count": 0,
@@ -11,6 +11,6 @@
   "technical_email_count": 0,
   "relay_email_count": 0,
   "hash_like_email_count": 0,
-  "business_usable_email_count": 1398,
+  "business_usable_email_count": 1403,
   "suspicious_examples": []
 }
