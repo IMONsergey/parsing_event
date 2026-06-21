@@ -1,20 +1,20 @@
 {
-  "checked_at": "2026-06-20T08:43:16.809235+00:00",
-  "total_contact_rows": 2092,
-  "unique_companies": 1653,
-  "companies_with_email": 997,
-  "companies_without_email": 656,
-  "companies_with_website": 1653,
+  "checked_at": "2026-06-21T09:37:59.269682+00:00",
+  "total_contact_rows": 2089,
+  "unique_companies": 1649,
+  "companies_with_email": 1007,
+  "companies_without_email": 642,
+  "companies_with_website": 1649,
   "companies_without_website": 0,
   "companies_with_multiple_contacts": 215,
   "max_contacts_per_company": 18,
   "average_contacts_per_company": 1.27,
   "companies_by_segment": {
-    "event": 579,
+    "event": 578,
     "pr": 361,
-    "marketing": 249,
+    "marketing": 248,
     "communications": 144,
-    "digital": 83,
+    "digital": 81,
     "branding": 75,
     "presentations": 38,
     "community": 34,
@@ -26,12 +26,12 @@
   },
   "companies_by_priority": {
     "A": 995,
-    "B": 587,
+    "B": 583,
     "C": 64,
     "AA": 7
   },
   "companies_by_country": {
-    "Россия": 1606,
+    "Россия": 1602,
     "International": 24,
     "ОАЭ": 8,
     "Казахстан": 6,
@@ -43,8 +43,8 @@
     "Узбекистан": 1
   },
   "companies_by_status_best": {
-    "Проверить": 1213,
-    "Готово": 440
+    "Проверить": 1206,
+    "Готово": 443
   },
   "duplicate_company_candidates": [],
   "top_domains_with_multiple_companies": [],
